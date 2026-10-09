@@ -40,7 +40,10 @@ export function MobileMenu({nav, current}: {nav: NavItem[]; current?: string}) {
         aria-label={t('menu')}
         onClick={() => setOpen((v) => !v)}
       >
-        {open ? <CloseIcon className="icon-close" /> : <MenuIcon className="icon-open" />}
+        {/* Both icons are rendered; .burger[aria-expanded] in styles.css
+            decides which one shows, as in the design. */}
+        <MenuIcon className="icon-open" />
+        <CloseIcon className="icon-close" />
       </button>
 
       <nav
