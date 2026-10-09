@@ -17,6 +17,31 @@ const nextConfig: NextConfig = {
     // The sources are already soft, upscaled scans. Re-encoding them at the
     // default 75 compounds the artefacts; 82 costs a few KB and holds detail.
     qualities: [82]
+  },
+
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          // Do not leak the full URL to third parties; send the origin only
+          // when crossing to another site.
+          {key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin'},
+          {key: 'X-Content-Type-Options', value: 'nosniff'},
+          {key: 'X-Frame-Options', value: 'SAMEORIGIN'},
+          // The site asks for none of these.
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
+          },
+          // Only meaningful over HTTPS; browsers ignore it on http://localhost.
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload'
+          }
+        ]
+      }
+    ];
   }
 };
 

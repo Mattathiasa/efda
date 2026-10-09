@@ -8,5 +8,10 @@ import {routing} from './i18n/routing';
 export default createMiddleware(routing);
 
 export const config = {
-  matcher: '/((?!api|_next|_vercel|.*\\..*).*)'
+  // Excludes API routes, Next internals, and anything with a file extension.
+  // The three dotless metadata routes have to be named explicitly, or locale
+  // negotiation redirects /icon to /en/icon - which silently breaks the
+  // manifest's icon references and every raster favicon request. Anchored
+  // with $ so a future /icons page would still be localized.
+  matcher: '/((?!api|_next|_vercel|icon$|apple-icon$|manifest\\.webmanifest$|.*\\..*).*)'
 };

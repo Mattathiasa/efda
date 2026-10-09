@@ -5,6 +5,7 @@ import {getTranslations} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import {site} from '@/content/site';
 import {ScrollEffects} from '@/components/ScrollEffects';
+import {Analytics} from '@/components/Analytics';
 
 /* Design CSS first, Tailwind last. tailwind.css deliberately omits preflight -
    styles.css carries the design's own reset. */
@@ -33,7 +34,17 @@ export async function generateMetadata({
     metadataBase: new URL(site.url),
     title: {default: t('title'), template: `%s — EFDA`},
     description: t('description'),
-    icons: {icon: [{url: '/logo/efda-favicon.svg', type: 'image/svg+xml'}]}
+    // Declared explicitly because setting metadata.icons at all suppresses
+    // Next's automatic pickup of app/icon.tsx and app/apple-icon.tsx. The SVG
+    // comes first for browsers that take it and scale it cleanly; the
+    // generated PNGs cover everything else.
+    icons: {
+      icon: [
+        {url: '/logo/efda-favicon.svg', type: 'image/svg+xml'},
+        {url: '/icon', type: 'image/png', sizes: '512x512'}
+      ],
+      apple: [{url: '/apple-icon', sizes: '180x180'}]
+    }
   };
 }
 
@@ -52,6 +63,7 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <ScrollEffects />
+        <Analytics />
       </body>
     </html>
   );
