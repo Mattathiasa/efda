@@ -33,13 +33,20 @@ export function CompareSlider({
         } as React.CSSProperties
       }
     >
-      <Image src={photos.classroom} alt={afterAlt} fill sizes="(max-width: 900px) 100vw, 50vw" />
+      <Image
+        src={photos.classroom}
+        alt={afterAlt}
+        fill
+        sizes="(max-width: 900px) 100vw, 50vw"
+        placeholder="blur"
+      />
       <Image
         className="compare__before"
         src={photos.treeClass}
         alt={beforeAlt}
         fill
         sizes="(max-width: 900px) 100vw, 50vw"
+        placeholder="blur"
       />
       <span className="compare__tag compare__tag--before">{beforeTag}</span>
       <span className="compare__tag compare__tag--after">{afterTag}</span>

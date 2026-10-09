@@ -153,6 +153,25 @@ html.js-motion [data-reveal-group].is-in > *:nth-child(n + 6) { transition-delay
 .site-header--dark .progress { background: var(--honey); }
 .site-header.is-stuck .progress { opacity: 1; }
 
+/* While a tapped link is still fetching, the same hairline runs an
+   indeterminate sweep. The 120ms delay means a prefetched transition - which
+   is most of them - completes before anything appears, so the bar only ever
+   shows when there is genuinely something to wait for. */
+.progress.is-navigating {
+  opacity: 1;
+  transform: none;
+  transform-origin: 0 50%;
+  animation: nav-sweep 1.1s var(--ease) infinite;
+  animation-delay: 120ms;
+  animation-fill-mode: both;
+}
+@keyframes nav-sweep {
+  0% { transform: scaleX(0); transform-origin: 0 50%; }
+  55% { transform: scaleX(1); transform-origin: 0 50%; }
+  56% { transform: scaleX(1); transform-origin: 100% 50%; }
+  100% { transform: scaleX(0); transform-origin: 100% 50%; }
+}
+
 /* ---------- 4. Buttons ----------
    The arrow leads the way out of the button on hover. */
 .btn svg { transition: transform .35s var(--ease); }
@@ -234,4 +253,5 @@ html.js-motion [data-reveal-group].is-in > *:nth-child(n + 6) { transition-delay
   .pcard__num, .act, .chip, .topic, .lang-btn, .input { transition: none; }
   .prog:hover { padding-left: 0; }
   .progress { display: none; }
+  .progress.is-navigating { animation: none; }
 }

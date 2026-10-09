@@ -3,6 +3,8 @@ import {Link} from '@/i18n/navigation';
 import {GlobeMark} from './GlobeMark';
 import {Grain} from './Grain';
 import {LanguageSwitcher} from './LanguageSwitcher';
+import {Progress} from './Progress';
+import {NavLink} from './NavLink';
 import {MobileMenu} from './MobileMenu';
 import {navItems, mobileNavItems} from './nav';
 
@@ -21,8 +23,9 @@ export function SiteHeader({
   return (
     <header className={`site-header site-header--${variant}${dark ? ' on-dark' : ''}`}>
       {dark ? <Grain /> : null}
-      {/* Reading progress. Decorative - never the only signal for anything. */}
-      <span className="progress" aria-hidden="true" />
+      {/* Reading progress, and an indeterminate sweep while a navigation is
+          still fetching. Decorative either way. */}
+      <Progress />
 
       <div className="container site-header__inner">
         <Link className="brand" href="/" aria-label={t('homeAria')}>
@@ -38,14 +41,14 @@ export function SiteHeader({
 
         <nav className="nav" aria-label={t('navAria')}>
           {navItems.map((item) => (
-            <Link
+            <NavLink
               key={item.key}
               className="navlink"
               href={item.href}
               aria-current={current === item.key ? 'page' : undefined}
             >
               {t(item.key)}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 

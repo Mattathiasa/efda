@@ -27,8 +27,8 @@
   --line: rgba(16, 32, 26, .14);
   --line-dark: rgba(242, 241, 236, .16);
 
-  --font-display: 'Bricolage Grotesque', 'Noto Sans Ethiopic', ui-sans-serif, system-ui, sans-serif;
-  --font-body: 'Instrument Sans', 'Noto Sans Ethiopic', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Noto Sans Ethiopic', 'Bricolage Fallback', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Instrument Sans', 'Noto Sans Ethiopic', 'Instrument Fallback', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'DM Mono', 'Noto Sans Ethiopic', ui-monospace, Menlo, monospace;
   --font-ethiopic: 'Noto Sans Ethiopic Lockup', 'Noto Sans Ethiopic', sans-serif;
 

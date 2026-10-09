@@ -78,3 +78,37 @@
      lacks. The subset is 3 KB and the lockup is on every page, so there is
      nothing to gain by deferring its fetch. */
 }
+
+/* ---------- Fallback faces, metric-matched ----------
+   Until a webfont arrives, text is drawn in a system face of a different
+   width, and the swap reflows the line. Bricolage is 128 KB and carries every
+   headline, so on a slow connection that reflow is the most visible thing on
+   the page.
+
+   size-adjust scales the fallback so it occupies the same width as the real
+   face. The values are measured, not guessed: a reference string rendered at
+   100px in each face, webfont width divided by fallback width - 3151.0/3467.3
+   for Bricolage and 3287.2/3212.9 for Instrument, both against Arial.
+
+   No ascent-override or descent-override, deliberately. Those only matter
+   where line box height derives from font metrics, and styles.css sets an
+   explicit line-height on every text role, so the vertical rhythm is already
+   fixed independently of which face is drawing.
+
+   Measured against Arial on macOS. Android resolves local('Roboto') instead,
+   whose metrics differ by a couple of percent - so this corrects most of a 9%
+   mismatch there rather than all of it, which is still far better than none.
+
+   DM Mono is deliberately left alone: it is 14 KB, used only for small
+   uppercase labels, and a fallback tuned to the wrong metric would make the
+   shift worse rather than better. */
+@font-face {
+  font-family: 'Bricolage Fallback';
+  src: local('Arial'), local('Helvetica'), local('Roboto');
+  size-adjust: 90.9%;
+}
+@font-face {
+  font-family: 'Instrument Fallback';
+  src: local('Arial'), local('Helvetica'), local('Roboto');
+  size-adjust: 102.3%;
+}

@@ -38,6 +38,10 @@ export function Photo({
         priority={priority}
         loading={priority ? undefined : 'lazy'}
         quality={82}
+        // Static imports carry a generated blurDataURL, so this is free. It
+        // is the largest perceived-loading win available on a slow
+        // connection: something of the photo is there immediately.
+        placeholder="blur"
         style={objectPosition ? {objectPosition} : undefined}
       />
       <span className="duo__frame" aria-hidden="true" />
