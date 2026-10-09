@@ -542,6 +542,8 @@
     "fMsg": "Message",
     "replyNote": "We usually reply within [X] working days.",
     "send": "Send message",
+    "sending": "Sending…",
+    "errorP": "That did not send. Please try again, or call us on",
     "sentH2": "Thank you. Your message is on its way.",
     "sentP": "Someone from our Addis Ababa office will reply by email.",
     "another": "Send another message",

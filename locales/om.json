@@ -542,6 +542,8 @@
     "fMsg": "Ergaa",
     "replyNote": "Yeroo baay'ee guyyoota hojii [X] keessatti deebii kennina.",
     "send": "Ergaa ergaa",
+    "sending": "Ergamaa jira…",
+    "errorP": "Ergaan hin ergamne. Maaloo irra deebi’aa yaalaa, yookaan nuuf bilbilaa",
     "sentH2": "Galatoomaa. Ergaan keessan karaa irra jira.",
     "sentP": "Waajjira keenya Finfinnee irraa namni tokko imeeliidhaan deebii isiniif kenna.",
     "another": "Ergaa biraa ergaa",

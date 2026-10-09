@@ -20,18 +20,22 @@ function Brand() {
    simple - Contact: brand, org name and the legal line only */
 export function SiteFooter({
   variant,
-  ns
+  ns,
+  bordered = false
 }: {
   variant: Variant;
   /** Namespace holding this page's footer copy. */
   ns: 'home' | 'about' | 'projects' | 'contact';
+  /** Adds a top rule - needed when the footer abuts a dark section. */
+  bordered?: boolean;
 }) {
   const t = useTranslations(ns);
   const c = useTranslations('common');
+  const root = `site-footer on-dark${bordered ? ' site-footer--bordered' : ''}`;
 
   if (variant === 'simple') {
     return (
-      <footer className="site-footer on-dark">
+      <footer className={root}>
         <div className="container">
           <div className="site-footer__grid site-footer__grid--simple">
             <Brand />
@@ -58,7 +62,7 @@ export function SiteFooter({
 
   if (variant === 'cta') {
     return (
-      <footer className="site-footer on-dark">
+      <footer className={root}>
         <div className="container">
           <div className="site-footer__cta">
             <h2>{t('footH2')}</h2>
@@ -102,7 +106,7 @@ export function SiteFooter({
   }
 
   return (
-    <footer className="site-footer on-dark">
+    <footer className={root}>
       <div className="container">
         <div className="site-footer__grid site-footer__grid--top">
           <div className="footer-col footer-col--brand">
