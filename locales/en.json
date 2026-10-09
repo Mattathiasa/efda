@@ -1,0 +1,535 @@
+{
+  "_meta": {
+    "lang": "en",
+    "name": "English",
+    "dir": "ltr",
+    "status": "source"
+  },
+  "common": {
+    "homeAria": "EFDA — Education For Development Association, home",
+    "navAria": "Main",
+    "navAbout": "About",
+    "navPrograms": "Programs",
+    "navProjects": "Projects",
+    "navStory": "Our story",
+    "navContact": "Contact",
+    "ctaPartner": "Partner with us",
+    "menu": "Menu",
+    "langLabel": "Language"
+  },
+  "home": {
+    "eyebrowYear": "Est. 1999",
+    "eyebrowRegions": "Oromia · Benishangul Gumuz",
+    "heroLines": [
+      {
+        "a": "Education is",
+        "b": "",
+        "c": ""
+      },
+      {
+        "a": "our instrument",
+        "b": "",
+        "c": ""
+      },
+      {
+        "a": "of ",
+        "b": "change.",
+        "c": ""
+      }
+    ],
+    "heroP": "Since 1999, EFDA has worked alongside rural communities — in classrooms, on hillsides, in hives and orchards — so they can solve their own problems with their own skills, knowledge and resources.",
+    "btnProjects": "See our projects",
+    "btnStory": "Our story",
+    "heroAlt": "Girls lying on the grass, reading and writing in their exercise books",
+    "heroCaption": "Alternative Basic Education — from EFDA’s first years",
+    "heroCaptionPlace": "Oromia",
+    "badge": "EDUCATION FOR DEVELOPMENT • SINCE 1999 • ",
+    "stats": [
+      {
+        "num": "75,000+",
+        "label": "children reached in 181 government primary schools — 44% of them girls"
+      },
+      {
+        "num": "2,400 ha",
+        "label": "of degraded land rehabilitated in Horro woreda, Horro Guduru"
+      },
+      {
+        "num": "1,270",
+        "label": "young women and men trained in vocational skills"
+      },
+      {
+        "num": "602",
+        "label": "households earning a living from improved beekeeping"
+      }
+    ],
+    "aboutLabel": "(01) What we stand for",
+    "statementA": "We measure our work by how little a community needs us afterwards — ",
+    "statementB": "its own skills, knowledge and resources",
+    "statementC": " doing the work.",
+    "vmg": [
+      {
+        "label": "Vision",
+        "num": "01",
+        "text": "A literate, self-reliant and productive community that is capable of solving its economic, social and environmental problems."
+      },
+      {
+        "label": "Mission",
+        "num": "02",
+        "text": "To facilitate, foster and influence a process of ongoing change in favour of the poor through community-based development."
+      },
+      {
+        "label": "Overall goal",
+        "num": "03",
+        "text": "To empower communities to manage their own economic, social, environmental and health problems — relying on their own skills, knowledge and resources, with minimum dependence on external support."
+      }
+    ],
+    "progLabel": "(02) One integrated approach",
+    "progH2a": "Five programs.",
+    "progH2b": "One community.",
+    "progP": "A child who can read, a hillside that holds its soil, a hive that earns, a healthy mother and a village at peace are parts of the same life. EFDA works on them together, through the community’s own institutions.",
+    "photoTbd": "[PHOTO TO BE SUPPLIED BY EFDA]",
+    "programs": [
+      {
+        "title": "Primary education & job creation",
+        "short": "From catch-up classes to vocational skills",
+        "region": "Woliso · Sibu Sire · Asosa · 181 government schools",
+        "text": "Alternative Basic Education, Speed School catch-up classes for out-of-school children and quality support inside government primary schools — then vocational training, so that learning becomes a livelihood.",
+        "statNum": "75,000+",
+        "statLabel": "children reached in 181 schools across five zones — 44% of them girls",
+        "alt": "A school library with wooden shelves full of books",
+        "quote": ""
+      },
+      {
+        "title": "Environmental sustainability",
+        "short": "Terraces, forests and fuel-saving stoves",
+        "region": "Horro woreda · Horro Guduru zone",
+        "text": "Communities terrace degraded hillsides, protect farmland and forest, and build fuel-saving stoves from locally available clay — easing the pressure on the trees that remain.",
+        "statNum": "2,400 ha",
+        "statLabel": "of degraded land rehabilitated, and over 5,000 ha of farmland protected",
+        "alt": "Community members digging terraces across a steep hillside",
+        "quote": ""
+      },
+      {
+        "title": "Community livelihood development",
+        "short": "Honey, apples, enset and enterprise",
+        "region": "Horro Guduru · Woliso",
+        "text": "Improved beekeeping, apple orchards, youth cooperatives in small-scale animal fattening, and enset processing that opens markets to women — income that sustains a family without clearing more forest.",
+        "statNum": "602",
+        "statLabel": "households in improved beekeeping, and 465 farmers now growing apples",
+        "alt": "Jars of locally produced honey",
+        "quote": ""
+      },
+      {
+        "title": "Community health promotion",
+        "short": "Working with elders and traditions",
+        "region": "East Arsi · Merti & Guna woredas",
+        "text": "We work in conformity with community traditions — through elders, women and local government — from reproductive health promotion to community bylaws that end harmful practices.",
+        "statNum": "Bylaw",
+        "statLabel": "declared by the community and local government against female genital mutilation",
+        "alt": "Women elders in white traditional dress at a community declaration event",
+        "quote": ""
+      },
+      {
+        "title": "Conflict prevention & peacebuilding",
+        "short": "Youth, dialogue and transitional justice",
+        "region": "West Wollega · Gimbi, Nedjo, K/Kara",
+        "text": "Young people take an active part in local peacebuilding, while civil society actors across the Wollega zones are trained for national dialogue and transitional justice initiatives.",
+        "statNum": "4 zones",
+        "statLabel": "East, West, Horro Guduru and Kelem Wollega — national dialogue capacity building",
+        "alt": "",
+        "quote": "Active youth engagement in local peacebuilding."
+      }
+    ],
+    "storyLabel": "(03) Our story",
+    "storyH2": "From the shade of a tree to 181 schools.",
+    "storyP": "In 2000, EFDA’s first Alternative Basic Education classes met outdoors, under trees. Since then, communities, government and EFDA have built and equipped classrooms, libraries and furniture — and education has become the thread running through every other project we run.",
+    "timeline": [
+      {
+        "year": "1999",
+        "text": "EFDA is established"
+      },
+      {
+        "year": "2000",
+        "text": "First Alternative Basic Education classes, under the trees"
+      },
+      {
+        "year": "2019",
+        "text": "Re-registered as Ethiopian Civil Society Organization No. 0035"
+      },
+      {
+        "year": "Today",
+        "text": "Seven projects across Oromia and Benishangul Gumuz"
+      }
+    ],
+    "beforeTag": "2000 · Under a tree",
+    "afterTag": "Later · In a classroom",
+    "beforeAlt": "2000: children seated in rows under a large tree in front of a blackboard",
+    "afterAlt": "Later: children seated at desks in a classroom",
+    "compareAria": "Compare EFDA’s classes in 2000 with classrooms today",
+    "compareCaption": "Drag to compare — from EFDA’s 2024 organizational profile",
+    "whereLabel": "(04) Where we work",
+    "whereH2a": "Two regions.",
+    "whereH2b": "Seven projects.",
+    "whereP": "Field offices in Woliso, Shambu and Asosa keep our staff close to the communities they serve. Current portfolio as of EFDA’s January 2024 profile.",
+    "btnAllProjects": "Explore all projects",
+    "projects": [
+      {
+        "region": "Oromia",
+        "zone": "South West Shewa",
+        "place": "Woliso",
+        "rowTitle": "Speed School (ALFA) for out-of-school children",
+        "funder": "Geneva Global Ethiopia"
+      },
+      {
+        "region": "Oromia",
+        "zone": "East Wollega",
+        "place": "Sibu Sire",
+        "rowTitle": "Speed School (ALFA) for out-of-school children",
+        "funder": "Geneva Global"
+      },
+      {
+        "region": "Oromia",
+        "zone": "South West Shewa",
+        "place": "Woliso",
+        "rowTitle": "Women’s economic empowerment through enset processing and marketing",
+        "funder": "SCD"
+      },
+      {
+        "region": "Oromia",
+        "zone": "West Wollega",
+        "place": "Gimbi, Nedjo & K/Kara",
+        "rowTitle": "Conflict prevention and peacebuilding with youth",
+        "funder": "[FUNDER — CONFIRM]"
+      },
+      {
+        "region": "Oromia",
+        "zone": "Wollega zones",
+        "place": "East, West, Horro Guduru & Kelem",
+        "rowTitle": "Capacity building for national dialogue and transitional justice",
+        "funder": "CSSP2"
+      },
+      {
+        "region": "Oromia",
+        "zone": "East Arsi",
+        "place": "Merti & Guna",
+        "rowTitle": "Women’s reproductive health promotion",
+        "funder": "Packard Foundation with CCRDA"
+      },
+      {
+        "region": "Benishangul Gumuz",
+        "zone": "Asosa office",
+        "place": "Regional State",
+        "rowTitle": "Within-system education quality and equity support",
+        "funder": "Education Development Trust"
+      }
+    ],
+    "fundersLabel": "Our work is funded and supported by",
+    "ctaH2": "Let’s build the next school, hillside and hive together.",
+    "ctaP": "Funders, government offices and fellow NGOs: talk to our program team about partnering in Oromia or Benishangul Gumuz.",
+    "orgName": "Education For Development Association",
+    "footContact": "Contact",
+    "footOffices": "Field offices",
+    "footExplore": "Explore",
+    "address1": "P.O. Box 25725, Code 1000",
+    "address2": "Addis Ababa, Ethiopia",
+    "officeWoliso": "Woliso — South West Shewa",
+    "officeShambu": "Shambu — Horro Guduru",
+    "officeAsosa": "Asosa — Benishangul Gumuz",
+    "exploreAbout": "About & leadership",
+    "rights": "© 2026 Education For Development Association",
+    "reg": "Registered Ethiopian Civil Society Organization No. 0035"
+  },
+  "about": {
+    "btnProjects": "See our projects",
+    "pageLabel": "About EFDA",
+    "h1": "Rooted in community since 1999.",
+    "facts": [
+      {
+        "k": "Established",
+        "v": "1999"
+      },
+      {
+        "k": "Legal status",
+        "v": "Ethiopian Civil Society Organization No. 0035, re-registered under Proclamation 1113/2019"
+      },
+      {
+        "k": "Where we work",
+        "v": "Oromia and Benishangul Gumuz Regional States"
+      },
+      {
+        "k": "Head office",
+        "v": "Addis Ababa — P.O. Box 25725, Code 1000"
+      }
+    ],
+    "heroAlt": "EFDA’s Woliso project office and resource centre: thatched round buildings among trees",
+    "heroCaption": "Woliso project office and resource centre — used as a community training centre and cultural materials archive",
+    "whoLabel": "(01) Who we are",
+    "whoH2": "Education as an instrument of change — in everything we do.",
+    "whoParas": [
+      {
+        "text": "Education For Development Association (EFDA) is an Ethiopian civil society organization working through community-based development in Oromia and Benishangul Gumuz."
+      },
+      {
+        "text": "Alongside standalone basic education projects run since our founding, EFDA uses education as an instrument of change in every other program — environmental protection, livelihoods, community health and peacebuilding — so that knowledge stays in the community long after a project ends."
+      },
+      {
+        "text": "Our education work spans Alternative Basic Education, quality improvement inside government primary schools, and the Speed School programme for children out of school for socioeconomic reasons."
+      }
+    ],
+    "philLabel": "(02) Development philosophy",
+    "vmg": [
+      {
+        "label": "Vision",
+        "text": "A literate, self-reliant and productive community that is capable of solving its economic, social and environmental problems."
+      },
+      {
+        "label": "Mission",
+        "text": "To facilitate, foster and influence a process of ongoing change in favour of the poor through community-based development."
+      },
+      {
+        "label": "Overall goal",
+        "text": "To empower communities to manage their own economic, social, environmental and health problems — relying on their own skills, knowledge and resources, with minimum dependence on external support."
+      }
+    ],
+    "orgLabel": "(03) Organization",
+    "orgH2": "How EFDA is organized.",
+    "orgP": "A Board of Directors governs EFDA, alongside an independent external auditor. The Managing Director leads two arms: Program Management, which runs our project offices, and Finance & Administration.",
+    "chart": {
+      "board": "Board of Directors",
+      "boardSub": "Chair: Ililli Hordofa",
+      "md": "Managing Director",
+      "auditor": "External Auditor",
+      "auditorSub": "Independent",
+      "pm": "Program Management",
+      "fa": "Finance & Administration",
+      "pi": "Planning & Implementation",
+      "piSub": "Project offices",
+      "me": "Monitoring & Evaluation",
+      "fin": "Finance",
+      "hr": "Human Resources & Property"
+    },
+    "leadLabel": "(04) Leadership",
+    "leadH2": "Board of Directors.",
+    "portraitsNote": "[PORTRAITS TO BE SUPPLIED — INITIALS SHOWN UNTIL THEN]",
+    "roles": [
+      "Board Chair",
+      "Secretary & Managing Director",
+      "Board Secretary",
+      "Board Member & Resource Mobilization Advisor",
+      "Board Member",
+      "Board Member"
+    ],
+    "officesLabel": "(05) Our offices",
+    "officesH2": "Close to the work.",
+    "asosaPhoto": "[ASOSA OFFICE PHOTO]",
+    "offices": [
+      {
+        "region": "Oromia · South West Shewa",
+        "name": "Woliso",
+        "text": "Project office and resource centre — a community training centre and cultural materials archive.",
+        "alt": "Woliso project office and resource centre"
+      },
+      {
+        "region": "Oromia · Horro Guduru Wollega",
+        "name": "Shambu",
+        "text": "Office, community training centre and cultural materials archive for the Horro Guduru projects.",
+        "alt": "EFDA’s office building in Shambu with a covered porch"
+      },
+      {
+        "region": "Benishangul Gumuz",
+        "name": "Asosa",
+        "text": "Regional office for our work in Benishangul Gumuz, including within-system education quality and equity support.",
+        "alt": ""
+      }
+    ],
+    "footH2": "Work with us in Oromia and Benishangul Gumuz.",
+    "address1": "P.O. Box 25725, Code 1000",
+    "address2": "Addis Ababa, Ethiopia",
+    "rights": "© 2026 EFDA",
+    "reg": "Ethiopian CSO No. 0035"
+  },
+  "projects": {
+    "btnAbout": "About EFDA",
+    "pageLabel": "Projects",
+    "h1a": "Seven projects.",
+    "h1b": "Two regions.",
+    "intro": "Every project combines education with the community’s own priorities — and is run from a field office near the people it serves. Current portfolio as of EFDA’s January 2024 profile.",
+    "themeAria": "Filter by theme",
+    "regionAria": "Filter by region",
+    "themes": {
+      "all": "All themes",
+      "edu": "Education",
+      "live": "Livelihoods",
+      "health": "Health",
+      "peace": "Peacebuilding"
+    },
+    "regions": {
+      "all": "All regions",
+      "or": "Oromia",
+      "bg": "Benishangul Gumuz"
+    },
+    "showing": "Showing {n} of 7 projects",
+    "fundedBy": "Funded by",
+    "empty": "No current projects match both filters.",
+    "emptyHint": "Try “All themes” or another region.",
+    "projects": [
+      {
+        "zone": "South West Shewa",
+        "place": "Woliso",
+        "title": "Speed School (ALFA)",
+        "desc": "Creating access to primary education for out-of-school children through the Speed School programme.",
+        "funder": "Geneva Global Ethiopia"
+      },
+      {
+        "zone": "East Wollega",
+        "place": "Sibu Sire",
+        "title": "Speed School (ALFA)",
+        "desc": "Educational access for out-of-school children through the Speed School programme.",
+        "funder": "Geneva Global"
+      },
+      {
+        "zone": "South West Shewa",
+        "place": "Woliso",
+        "title": "Women’s economic empowerment",
+        "desc": "Creating pathways to women’s economic empowerment through improved enset processing and product marketing.",
+        "funder": "SCD"
+      },
+      {
+        "zone": "West Wollega",
+        "place": "Gimbi, Nedjo & K/Kara woredas",
+        "title": "Conflict prevention & peacebuilding",
+        "desc": "Enhancing active youth engagement in local peacebuilding processes.",
+        "funder": "[FUNDER — CONFIRM]"
+      },
+      {
+        "zone": "Wollega zones",
+        "place": "East, West, Horro Guduru & Kelem Wollega",
+        "title": "National dialogue & transitional justice",
+        "desc": "Building the capacity of local actors to take part in national dialogue and transitional justice initiatives.",
+        "funder": "CSSP2"
+      },
+      {
+        "zone": "East Arsi",
+        "place": "Merti & Guna woredas",
+        "title": "Women’s reproductive health",
+        "desc": "Promoting women’s reproductive health in Merti and Guna woredas.",
+        "funder": "Packard Foundation with CCRDA"
+      },
+      {
+        "zone": "Asosa office",
+        "place": "Benishangul Gumuz Regional State",
+        "title": "Education quality & equity",
+        "desc": "Within-system support to improve the quality and equity of education in government schools.",
+        "funder": "Education Development Trust"
+      }
+    ],
+    "trackLabel": "Track record",
+    "trackH2": "What the years have built.",
+    "trackP": "Results from completed and ongoing EFDA projects across Oromia and Benishangul Gumuz.",
+    "tiles": [
+      {
+        "big": "2000",
+        "text": "Alternative Basic Education begins — in the shade of trees, before there were classrooms.",
+        "alt": "Children seated in rows under a tree, facing a blackboard"
+      },
+      {
+        "big": "75,000+",
+        "text": "children in 181 schools, five zones — 44% girls",
+        "alt": "A school library with full bookshelves"
+      },
+      {
+        "big": "2,400 ha",
+        "text": "degraded land rehabilitated; 5,000+ ha farmland protected",
+        "alt": "Terraced hillside fields"
+      },
+      {
+        "big": "602",
+        "text": "households in improved beekeeping",
+        "alt": "Yellow improved beehives in a forest clearing"
+      },
+      {
+        "big": "465",
+        "text": "farmers growing apples in Horro Guduru",
+        "alt": "A farmer reaching up to an apple tree heavy with fruit"
+      },
+      {
+        "big": "1,270",
+        "text": "young women and men trained in vocational skills",
+        "alt": "Two young women learning to use a sewing machine"
+      },
+      {
+        "big": "120",
+        "text": "households served by a pico-hydro scheme, Benishangul Gumuz",
+        "alt": "Community members laying a large pipe for a pico-hydro scheme"
+      },
+      {
+        "big": "Clay stoves",
+        "text": "fuel-saving stoves from local clay, to protect forests",
+        "alt": "Community members shaping a fuel-saving stove from clay"
+      },
+      {
+        "big": "Community bylaw",
+        "text": "against female genital mutilation, declared with local government",
+        "alt": "Women elders in white traditional dress"
+      },
+      {
+        "big": "Pottery & crafts",
+        "text": "among the vocational skills taught, alongside tailoring and leatherwork",
+        "alt": "Women seated behind rows of handmade clay pots"
+      }
+    ],
+    "footH2": "Fund the next project with a team that knows the ground.",
+    "address1": "P.O. Box 25725, Code 1000",
+    "address2": "Addis Ababa, Ethiopia",
+    "rights": "© 2026 EFDA",
+    "reg": "Ethiopian CSO No. 0035"
+  },
+  "contact": {
+    "pageLabel": "Contact",
+    "h1": "Talk to EFDA.",
+    "intro": "Partnerships, program questions or a visit to one of our field offices — reach the right person directly, or send us a message.",
+    "people": [
+      {
+        "dept": "Office of the Executive Director",
+        "role": "Secretary & Managing Director"
+      },
+      {
+        "dept": "Programs & partnerships",
+        "role": "Program Manager"
+      },
+      {
+        "dept": "[ROLE — CONFIRM]",
+        "role": "Also on +251 922 491 481"
+      }
+    ],
+    "headOffice": "Head office",
+    "streetTbd": "[STREET ADDRESS — CONFIRM]",
+    "fieldOffices": "Field offices",
+    "address1": "P.O. Box 25725, Code 1000",
+    "address2": "Addis Ababa, Ethiopia",
+    "officeWoliso": "Woliso — South West Shewa",
+    "officeShambu": "Shambu — Horro Guduru Wollega",
+    "officeAsosa": "Asosa — Benishangul Gumuz",
+    "formH2": "Send a message",
+    "topicQ": "What is this about?",
+    "topics": {
+      "partner": "Partnership or funding",
+      "program": "Our programs",
+      "visit": "Field visit",
+      "other": "Something else"
+    },
+    "fName": "Full name",
+    "fOrg": "Organization",
+    "fEmail": "Email",
+    "fPhone": "Phone (optional)",
+    "fMsg": "Message",
+    "replyNote": "We usually reply within [X] working days.",
+    "send": "Send message",
+    "sentH2": "Thank you. Your message is on its way.",
+    "sentP": "Someone from our Addis Ababa office will reply by email.",
+    "another": "Send another message",
+    "orgName": "Education For Development Association",
+    "rights": "© 2026 EFDA",
+    "reg": "Ethiopian CSO No. 0035"
+  }
+}

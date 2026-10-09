@@ -1,0 +1,535 @@
+{
+  "_meta": {
+    "lang": "om",
+    "name": "Afaan Oromoo",
+    "dir": "ltr",
+    "status": "DRAFT — needs review by a native speaker before launch"
+  },
+  "common": {
+    "homeAria": "EFDA — Waldaa Barnoota Misoomaaf, fuula jalqabaa",
+    "navAria": "Baafata ijoo",
+    "navAbout": "Waa'ee keenya",
+    "navPrograms": "Sagantaalee",
+    "navProjects": "Pirojektoota",
+    "navStory": "Seenaa keenya",
+    "navContact": "Nu qunnamaa",
+    "ctaPartner": "Michuu keenya ta'aa",
+    "menu": "Baafata",
+    "langLabel": "Afaan"
+  },
+  "home": {
+    "eyebrowYear": "Bara 1999 irraa kaasee",
+    "eyebrowRegions": "Oromiyaa · Beenishaangul Gumuz",
+    "heroLines": [
+      {
+        "a": "Barnoonni",
+        "b": "",
+        "c": ""
+      },
+      {
+        "a": "meeshaa ",
+        "b": "jijjiiramaa",
+        "c": ""
+      },
+      {
+        "a": "keenyaati.",
+        "b": "",
+        "c": ""
+      }
+    ],
+    "heroP": "Bara 1999 irraa eegalee, EFDA hawaasa baadiyyaa wajjin — kutaa barnootaa keessatti, gaarran irratti, gaagura fi oyiruu muka firii keessatti — rakkoo isaanii dandeettii, beekumsaa fi qabeenya mataa isaaniitiin akka furatan hojjeteera.",
+    "btnProjects": "Pirojektoota keenya ilaalaa",
+    "btnStory": "Seenaa keenya",
+    "heroAlt": "Shamarran marga irra ciisanii kitaaba barreeffamaa isaanii irratti dubbisaa fi barreessaa jiran",
+    "heroCaption": "Barnoota Bu'uuraa Filannoo — waggoota jalqabaa EFDA irraa",
+    "heroCaptionPlace": "Oromiyaa",
+    "badge": "BARNOOTA MISOOMAAF • BARA 1999 IRRAA • ",
+    "stats": [
+      {
+        "num": "75,000+",
+        "label": "ijoollee manneen barnootaa sadarkaa duraa mootummaa 181 keessatti fayyadaman — 44% isaanii shamarran"
+      },
+      {
+        "num": "2,400 ha",
+        "label": "lafa manca'e aanaa Horroo, Horroo Guduruu keessatti haaromfame"
+      },
+      {
+        "num": "1,270",
+        "label": "dargaggoota dubaraa fi dhiiraa ogummaa hojiitiin leenji'an"
+      },
+      {
+        "num": "602",
+        "label": "maatiiwwan kanniisa horsiisuu fooyya'een jireenya isaanii gaggeessan"
+      }
+    ],
+    "aboutLabel": "(01) Kan nuti dhaabbannuuf",
+    "statementA": "Hojiin keenya kan safaramu, nu booda hawaasni ",
+    "statementB": "dandeettii, beekumsaa fi qabeenya mataa isaatiin",
+    "statementC": " itti fufuu danda'uu isaatiini.",
+    "vmg": [
+      {
+        "label": "Mul'ata",
+        "num": "01",
+        "text": "Hawaasa barate, of danda'ee fi oomishtummaa qabu, kan rakkoo diinagdee, hawaasummaa fi naannoo isaa furuu danda'u."
+      },
+      {
+        "label": "Ergama",
+        "num": "02",
+        "text": "Misooma hawaasa irratti hundaa'een, adeemsa jijjiirama itti fufiinsa qabu hiyyeeyyiif fayyadu mijeessuu, jajjabeessuu fi irratti dhiibbaa uumuu."
+      },
+      {
+        "label": "Kaayyoo waliigalaa",
+        "num": "03",
+        "text": "Hawaasni rakkoo diinagdee, hawaasummaa, naannoo fi fayyaa isaa dandeettii, beekumsaa fi qabeenya mataa isaa irratti hirkatee, deeggarsa alaa xiqqaa qofaan akka to'atu dandeessisuu."
+      }
+    ],
+    "progLabel": "(02) Karaa walitti qindaa'e tokko",
+    "progH2a": "Sagantaalee shan.",
+    "progH2b": "Hawaasa tokko.",
+    "progP": "Mucaa dubbisuu danda'u, gaara biyyoo isaa qabatu, gaagura galii argamsiisu, haadha fayyaa qabdu fi ganda nagaa qabu — hundi isaanii qaama jireenya tokkooti. EFDA dhaabbilee hawaasichaa mataa isaatiin hunda isaanii walitti qindeessee hojjeta.",
+    "photoTbd": "[SUURAAN EFDA'n NI DHIYAATA]",
+    "programs": [
+      {
+        "title": "Barnoota sadarkaa duraa fi uumama hojii",
+        "short": "Barnoota bakka buusaa irraa hanga ogummaa hojiitti",
+        "region": "Walisoo · Sibuu Siree · Asoosaa · manneen barnootaa mootummaa 181",
+        "text": "Barnoota Bu'uuraa Filannoo, barnoota bakka buusaa Speed School ijoollee mana barumsaa alaa jiraniif, fi deeggarsa qulqullinaa manneen barnootaa sadarkaa duraa mootummaa keessatti — itti aansee leenjii ogummaa, akka barnoonni madda jireenyaa ta'uuf.",
+        "statNum": "75,000+",
+        "statLabel": "ijoollee manneen barnootaa 181 godinaalee shan keessatti — 44% isaanii shamarran",
+        "alt": "Mana kitaabaa mana barnootaa kan kitaabota guutuu qabu",
+        "quote": ""
+      },
+      {
+        "title": "Itti fufiinsa naannoo",
+        "short": "Daangaa biyyoo, bosonaa fi eelee qoraan qusatu",
+        "region": "Aanaa Horroo · Godina Horroo Guduruu",
+        "text": "Hawaasni gaarran manca'an irratti daangaa biyyoo ijaara, lafa qonnaa fi bosona eega, akkasumas suphee naannoo irraa eelee qoraan qusatu hojjeta — mukkeen hafan irratti dhiibbaa hir'isuuf.",
+        "statNum": "2,400 ha",
+        "statLabel": "lafa manca'e haaromfame; lafa qonnaa hektaara 5,000 ol eegame",
+        "alt": "Miseensota hawaasaa gaara qilee irratti daangaa biyyoo qotan",
+        "quote": ""
+      },
+      {
+        "title": "Misooma jireenya hawaasaa",
+        "short": "Damma, appilii, warqee fi daldala",
+        "region": "Horroo Guduruu · Walisoo",
+        "text": "Kanniisa horsiisuu fooyya'e, oyiruu appilii, waldaalee dargaggootaa horii gabbisuu xiqqaa irratti bobba'an, fi qophii warqee dubartootaaf gabaa banu — galii maatii jiraachisu, bosona dabalataa osoo hin ciranne.",
+        "statNum": "602",
+        "statLabel": "maatiiwwan kanniisa horsiisuu fooyya'e irratti; qonnaan bultoonni 465 immoo appilii misoomsaa jiru",
+        "alt": "Qodaa damma naannoo keessatti oomishame",
+        "quote": ""
+      },
+      {
+        "title": "Fayyaa hawaasaa babal'isuu",
+        "short": "Maanguddootaa fi aadaa wajjin hojjechuu",
+        "region": "Arsii Bahaa · Aanaalee Martii fi Gunaa",
+        "text": "Aadaa hawaasaa wajjin walsimsiisnee hojjenna — maanguddoota, dubartoota fi bulchiinsa naannoo karaa — fayyaa wal-hormaataa babal'isuu irraa hanga seera hawaasaa kan aadaa miidhaa qabu dhaabsisuutti.",
+        "statNum": "Seera",
+        "statLabel": "seera dhaqna qabaa dubartootaa dhorku, hawaasaa fi bulchiinsa naannootiin labsame",
+        "alt": "Jaartolee uffata aadaa adii uffatan sirna labsii hawaasaa irratti",
+        "quote": ""
+      },
+      {
+        "title": "Walitti bu'iinsa ittisuu fi nagaa ijaaruu",
+        "short": "Dargaggoota, marii fi haqa ce'umsaa",
+        "region": "Wallagga Lixaa · Gimbii, Najjoo, Qiltuu Kaaraa",
+        "text": "Dargaggoonni ijaarsa nagaa naannoo keessatti hirmaannaa cimaa godhu; qaamoleen hawaasa siviilii godinaalee Wallaggaa keessaa immoo marii biyyaalessaa fi haqa ce'umsaa irratti hirmaachuuf leenji'u.",
+        "statNum": "Godinaalee 4",
+        "statLabel": "Wallagga Bahaa, Lixaa, Horroo Guduruu fi Qeellam — ijaarsa dandeettii marii biyyaalessaaf",
+        "alt": "",
+        "quote": "Hirmaannaa cimaa dargaggootaa ijaarsa nagaa naannoo keessatti."
+      }
+    ],
+    "storyLabel": "(03) Seenaa keenya",
+    "storyH2": "Gaaddisa muka jalaa hanga manneen barnootaa 181tti.",
+    "storyP": "Bara 2000tti, kutaaleen Barnoota Bu'uuraa Filannoo EFDA jalqabaa mana alaa, mukkeen jala gaggeeffamaniiru. Sana booda hawaasni, mootummaa fi EFDA kutaalee barnootaa, manneen kitaabaa fi meeshaalee ijaaranii guutaniiru — barnoonnis foo'ii pirojektoota keenya hunda keessa darbu ta'eera.",
+    "timeline": [
+      {
+        "year": "1999",
+        "text": "EFDA hundeeffame"
+      },
+      {
+        "year": "2000",
+        "text": "Kutaalee Barnoota Bu'uuraa Filannoo jalqabaa, mukkeen jala"
+      },
+      {
+        "year": "2019",
+        "text": "Dhaabbata Hawaasa Siviilii Itoophiyaa Lak. 0035 ta'ee irra deebiin galmaa'e"
+      },
+      {
+        "year": "Har'a",
+        "text": "Pirojektoota torba Oromiyaa fi Beenishaangul Gumuz keessatti"
+      }
+    ],
+    "beforeTag": "2000 · Muka jala",
+    "afterTag": "Booda · Kutaa barnootaa keessa",
+    "beforeAlt": "2000: ijoolleen muka guddaa jala, gabatee gurraacha fuulduratti tarree taa'an",
+    "afterAlt": "Booda: ijoolleen kutaa barnootaa keessa deeskii irra taa'an",
+    "compareAria": "Kutaalee EFDA bara 2000 kutaalee barnootaa har'aa wajjin wal bira qabaa",
+    "compareCaption": "Wal bira qabuuf harkisaa — ibsa dhaabbataa EFDA bara 2024 irraa",
+    "whereLabel": "(04) Bakka itti hojjennu",
+    "whereH2a": "Naannolee lama.",
+    "whereH2b": "Pirojektoota torba.",
+    "whereP": "Waajjiraaleen dirree Walisoo, Shaambuu fi Asoosaa jiran hojjettoota keenya hawaasa tajaajilan biratti dhiyeessu. Tarreen kun ibsa dhaabbataa EFDA Amajjii 2024 irratti hundaa'a.",
+    "btnAllProjects": "Pirojektoota hunda ilaalaa",
+    "projects": [
+      {
+        "region": "Oromiyaa",
+        "zone": "Shawaa Kibba Lixaa",
+        "place": "Walisoo",
+        "rowTitle": "Speed School (ALFA) ijoollee mana barumsaa alaa jiraniif",
+        "funder": "Geneva Global Ethiopia"
+      },
+      {
+        "region": "Oromiyaa",
+        "zone": "Wallagga Bahaa",
+        "place": "Sibuu Siree",
+        "rowTitle": "Speed School (ALFA) ijoollee mana barumsaa alaa jiraniif",
+        "funder": "Geneva Global"
+      },
+      {
+        "region": "Oromiyaa",
+        "zone": "Shawaa Kibba Lixaa",
+        "place": "Walisoo",
+        "rowTitle": "Qophii fi gabaa warqeetiin diinagdee dubartootaa cimsuu",
+        "funder": "SCD"
+      },
+      {
+        "region": "Oromiyaa",
+        "zone": "Wallagga Lixaa",
+        "place": "Gimbii, Najjoo fi Qiltuu Kaaraa",
+        "rowTitle": "Dargaggoota wajjin walitti bu'iinsa ittisuu fi nagaa ijaaruu",
+        "funder": "[DEEGGARAAN HIN MIRKANOOFNE]"
+      },
+      {
+        "region": "Oromiyaa",
+        "zone": "Godinaalee Wallaggaa",
+        "place": "Bahaa, Lixaa, Horroo Guduruu fi Qeellam",
+        "rowTitle": "Ijaarsa dandeettii marii biyyaalessaa fi haqa ce'umsaaf",
+        "funder": "CSSP2"
+      },
+      {
+        "region": "Oromiyaa",
+        "zone": "Arsii Bahaa",
+        "place": "Martii fi Gunaa",
+        "rowTitle": "Fayyaa wal-hormaataa dubartootaa babal'isuu",
+        "funder": "Packard Foundation fi CCRDA"
+      },
+      {
+        "region": "Beenishaangul Gumuz",
+        "zone": "Waajjira Asoosaa",
+        "place": "Mootummaa Naannoo",
+        "rowTitle": "Deeggarsa qulqullinaa fi haqummaa barnootaa sirna keessaa",
+        "funder": "Education Development Trust"
+      }
+    ],
+    "fundersLabel": "Hojii keenya kan deeggaran",
+    "ctaH2": "Mana barnootaa, gaaraa fi gaagura itti aanu waliin haa ijaarru.",
+    "ctaP": "Deeggartoota, waajjiraalee mootummaa fi dhaabbilee biroo: Oromiyaa ykn Beenishaangul Gumuz keessatti waliin hojjechuuf garee sagantaa keenyaa qunnamaa.",
+    "orgName": "Waldaa Barnoota Misoomaaf (EFDA)",
+    "footContact": "Teessoo",
+    "footOffices": "Waajjiraalee dirree",
+    "footExplore": "Daawwadhaa",
+    "address1": "S.P. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "officeWoliso": "Walisoo — Shawaa Kibba Lixaa",
+    "officeShambu": "Shaambuu — Horroo Guduruu",
+    "officeAsosa": "Asoosaa — Beenishaangul Gumuz",
+    "exploreAbout": "Waa'ee keenyaa fi hooggansa",
+    "rights": "© 2026 Waldaa Barnoota Misoomaaf",
+    "reg": "Dhaabbata Hawaasa Siviilii Itoophiyaa galmaa'e Lak. 0035"
+  },
+  "about": {
+    "btnProjects": "Pirojektoota keenya ilaalaa",
+    "pageLabel": "Waa'ee EFDA",
+    "h1": "Bara 1999 irraa kaasee hawaasa keessatti hundee kan godhate.",
+    "facts": [
+      {
+        "k": "Kan hundeeffame",
+        "v": "1999"
+      },
+      {
+        "k": "Haala seeraa",
+        "v": "Dhaabbata Hawaasa Siviilii Itoophiyaa Lak. 0035, Labsii Lak. 1113/2019 jalatti irra deebiin galmaa'e"
+      },
+      {
+        "k": "Bakka itti hojjennu",
+        "v": "Naannolee Oromiyaa fi Beenishaangul Gumuz"
+      },
+      {
+        "k": "Waajjira muummee",
+        "v": "Finfinnee — S.P. 25725, Koodii 1000"
+      }
+    ],
+    "heroAlt": "Waajjira pirojektii fi giddugala qabeenyaa EFDA Walisoo: manneen marsaa citaan haguugaman mukkeen gidduu",
+    "heroCaption": "Waajjira pirojektii fi giddugala qabeenyaa Walisoo — giddugala leenjii hawaasaa fi kuusaa meeshaalee aadaa ta'ee tajaajila",
+    "whoLabel": "(01) Eenyu akka taane",
+    "whoH2": "Barnoota akka meeshaa jijjiiramaatti — waan hojjennu hunda keessatti.",
+    "whoParas": [
+      {
+        "text": "Waldaan Barnoota Misoomaaf (EFDA) dhaabbata hawaasa siviilii Itoophiyaa kan Oromiyaa fi Beenishaangul Gumuz keessatti misooma hawaasa irratti hundaa'e hojjetuudha."
+      },
+      {
+        "text": "Pirojektoota barnoota bu'uuraa adda ta'an kan hundeeffama keenya irraa kaasee hojjechaa turre dabalatee, EFDA sagantaalee biroo hunda keessatti — eegumsa naannoo, jireenya, fayyaa hawaasaa fi ijaarsa nagaa — barnoota akka meeshaa jijjiiramaatti fayyadama; kunis beekumsi pirojektiin erga xumuramee booda illee hawaasa keessa akka turu godha."
+      },
+      {
+        "text": "Hojiin barnootaa keenya Barnoota Bu'uuraa Filannoo, fooyya'iinsa qulqullinaa manneen barnootaa sadarkaa duraa mootummaa keessatti, fi sagantaa Speed School ijoollee sababa hawaas-diinagdeetiin mana barumsaa ala ta'aniif ni hammata."
+      }
+    ],
+    "philLabel": "(02) Falaasama misoomaa",
+    "vmg": [
+      {
+        "label": "Mul'ata",
+        "text": "Hawaasa barate, of danda'ee fi oomishtummaa qabu, kan rakkoo diinagdee, hawaasummaa fi naannoo isaa furuu danda'u."
+      },
+      {
+        "label": "Ergama",
+        "text": "Misooma hawaasa irratti hundaa'een, adeemsa jijjiirama itti fufiinsa qabu hiyyeeyyiif fayyadu mijeessuu, jajjabeessuu fi irratti dhiibbaa uumuu."
+      },
+      {
+        "label": "Kaayyoo waliigalaa",
+        "text": "Hawaasni rakkoo diinagdee, hawaasummaa, naannoo fi fayyaa isaa dandeettii, beekumsaa fi qabeenya mataa isaa irratti hirkatee, deeggarsa alaa xiqqaa qofaan akka to'atu dandeessisuu."
+      }
+    ],
+    "orgLabel": "(03) Caasaa dhaabbatichaa",
+    "orgH2": "EFDA akkamitti akka qindaa'e.",
+    "orgP": "EFDA kan bulfamu Boordii Daayreektarootaatiin, odiitara alaa walabaa wajjin. Daayrektarri Hoji Raawwachiisaa damee lama hogganu: Bulchiinsa Sagantaa, kan waajjiraalee pirojektii keenyaa bulchu, fi Faayinaansii fi Bulchiinsa.",
+    "chart": {
+      "board": "Boordii Daayreektarootaa",
+      "boardSub": "Dura taa'aa: Ililli Hordofa",
+      "md": "Daayrektara Hoji Raawwachiisaa",
+      "auditor": "Odiitara Alaa",
+      "auditorSub": "Walaba",
+      "pm": "Bulchiinsa Sagantaa",
+      "fa": "Faayinaansii fi Bulchiinsa",
+      "pi": "Karoora fi Raawwii",
+      "piSub": "Waajjiraalee pirojektii",
+      "me": "Hordoffii fi Madaallii",
+      "fin": "Faayinaansii",
+      "hr": "Humna Namaa fi Qabeenya"
+    },
+    "leadLabel": "(04) Hooggansa",
+    "leadH2": "Boordii Daayreektarootaa.",
+    "portraitsNote": "[SUURAAN NI DHIYAATA — HANGA SANAATTI QUBEE JALQABAA MAQAA]",
+    "roles": [
+      "Dura taa'aa Boordii",
+      "Barreessaa fi Daayrektara Hoji Raawwachiisaa",
+      "Barreessituu Boordii",
+      "Miseensa Boordii fi Gorsaa Qabeenya Walitti Qabuu",
+      "Miseensa Boordii",
+      "Miseensa Boordii"
+    ],
+    "officesLabel": "(05) Waajjiraalee keenya",
+    "officesH2": "Hojii biratti dhiyoo.",
+    "asosaPhoto": "[SUURAA WAAJJIRA ASOOSAA]",
+    "offices": [
+      {
+        "region": "Oromiyaa · Shawaa Kibba Lixaa",
+        "name": "Walisoo",
+        "text": "Waajjira pirojektii fi giddugala qabeenyaa — giddugala leenjii hawaasaa fi kuusaa meeshaalee aadaa.",
+        "alt": "Waajjira pirojektii fi giddugala qabeenyaa Walisoo"
+      },
+      {
+        "region": "Oromiyaa · Horroo Guduruu Wallaggaa",
+        "name": "Shaambuu",
+        "text": "Waajjira, giddugala leenjii hawaasaa fi kuusaa meeshaalee aadaa pirojektoota Horroo Guduruutiif.",
+        "alt": "Gamoo waajjira EFDA Shaambuu"
+      },
+      {
+        "region": "Beenishaangul Gumuz",
+        "name": "Asoosaa",
+        "text": "Waajjira naannoo hojii keenya Beenishaangul Gumuz keessaatiif, deeggarsa qulqullinaa fi haqummaa barnootaa sirna keessaa dabalatee.",
+        "alt": ""
+      }
+    ],
+    "footH2": "Oromiyaa fi Beenishaangul Gumuz keessatti nu wajjin hojjedhaa.",
+    "address1": "S.P. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "rights": "© 2026 EFDA",
+    "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
+  },
+  "projects": {
+    "btnAbout": "Waa'ee EFDA",
+    "pageLabel": "Pirojektoota",
+    "h1a": "Pirojektoota torba.",
+    "h1b": "Naannolee lama.",
+    "intro": "Pirojektiin hundi barnoota dursa hawaasichaa mataa isaa wajjin walitti fida — kan bulfamus waajjira dirree namoota tajaajilu biratti dhiyoo jiru irraati. Tarreen kun ibsa dhaabbataa EFDA Amajjii 2024 irratti hundaa'a.",
+    "themeAria": "Dameen calali",
+    "regionAria": "Naannoon calali",
+    "themes": {
+      "all": "Damee hunda",
+      "edu": "Barnoota",
+      "live": "Jireenya",
+      "health": "Fayyaa",
+      "peace": "Ijaarsa nagaa"
+    },
+    "regions": {
+      "all": "Naannolee hunda",
+      "or": "Oromiyaa",
+      "bg": "Beenishaangul Gumuz"
+    },
+    "showing": "Pirojektoota 7 keessaa {n} mul'ataa jira",
+    "fundedBy": "Kan deeggare",
+    "empty": "Pirojektiin calaltuu lamaanuu guutu hin jiru.",
+    "emptyHint": "“Damee hunda” ykn naannoo biraa yaalaa.",
+    "projects": [
+      {
+        "zone": "Shawaa Kibba Lixaa",
+        "place": "Walisoo",
+        "title": "Speed School (ALFA)",
+        "desc": "Ijoollee mana barumsaa alaa jiraniif sagantaa Speed School-tiin carraa barnoota sadarkaa duraa uumuu.",
+        "funder": "Geneva Global Ethiopia"
+      },
+      {
+        "zone": "Wallagga Bahaa",
+        "place": "Sibuu Siree",
+        "title": "Speed School (ALFA)",
+        "desc": "Sagantaa Speed School-tiin ijoollee mana barumsaa alaa jiraniif barnoota dhaqqabamaa gochuu.",
+        "funder": "Geneva Global"
+      },
+      {
+        "zone": "Shawaa Kibba Lixaa",
+        "place": "Walisoo",
+        "title": "Diinagdee dubartootaa cimsuu",
+        "desc": "Qophii warqee fooyya'ee fi gabaa oomishaatiin karaa dandeessisuu diinagdee dubartootaa uumuu.",
+        "funder": "SCD"
+      },
+      {
+        "zone": "Wallagga Lixaa",
+        "place": "Aanaalee Gimbii, Najjoo fi Qiltuu Kaaraa",
+        "title": "Walitti bu'iinsa ittisuu fi nagaa ijaaruu",
+        "desc": "Adeemsa ijaarsa nagaa naannoo keessatti hirmaannaa cimaa dargaggootaa guddisuu.",
+        "funder": "[DEEGGARAAN HIN MIRKANOOFNE]"
+      },
+      {
+        "zone": "Godinaalee Wallaggaa",
+        "place": "Wallagga Bahaa, Lixaa, Horroo Guduruu fi Qeellam",
+        "title": "Marii biyyaalessaa fi haqa ce'umsaa",
+        "desc": "Qaamolee naannoo marii biyyaalessaa fi jalqabbii haqa ce'umsaa irratti akka hirmaatan dandeettii isaanii ijaaruu.",
+        "funder": "CSSP2"
+      },
+      {
+        "zone": "Arsii Bahaa",
+        "place": "Aanaalee Martii fi Gunaa",
+        "title": "Fayyaa wal-hormaataa dubartootaa",
+        "desc": "Aanaalee Martii fi Gunaa keessatti fayyaa wal-hormaataa dubartootaa babal'isuu.",
+        "funder": "Packard Foundation fi CCRDA"
+      },
+      {
+        "zone": "Waajjira Asoosaa",
+        "place": "Naannoo Beenishaangul Gumuz",
+        "title": "Qulqullinaa fi haqummaa barnootaa",
+        "desc": "Manneen barnootaa mootummaa keessatti qulqullinaa fi haqummaa barnootaa fooyyessuuf deeggarsa sirna keessaa.",
+        "funder": "Education Development Trust"
+      }
+    ],
+    "trackLabel": "Galmee hojii",
+    "trackH2": "Waan waggoonni ijaaran.",
+    "trackP": "Bu'aa pirojektoota EFDA xumuramanii fi itti fufaa jiran Oromiyaa fi Beenishaangul Gumuz keessaa.",
+    "tiles": [
+      {
+        "big": "2000",
+        "text": "Barnoonni Bu'uuraa Filannoo jalqabe — osoo kutaaleen barnootaa hin jiraatin, gaaddisa mukkeenii jalatti.",
+        "alt": "Ijoollee muka jala gabatee gurraacha fuulduratti tarree taa'an"
+      },
+      {
+        "big": "75,000+",
+        "text": "ijoollee manneen barnootaa 181, godinaalee shan keessatti — 44% shamarran",
+        "alt": "Mana kitaabaa mana barnootaa kan kitaabota guutuu qabu"
+      },
+      {
+        "big": "2,400 ha",
+        "text": "lafa manca'e haaromfame; lafa qonnaa hektaara 5,000 ol eegame",
+        "alt": "Maasii gaaraa daangaa biyyoo qabu"
+      },
+      {
+        "big": "602",
+        "text": "maatiiwwan kanniisa horsiisuu fooyya'e irratti",
+        "alt": "Gaagura fooyya'aa keelloo bosona keessa jiru"
+      },
+      {
+        "big": "465",
+        "text": "qonnaan bultoota Horroo Guduruu keessatti appilii misoomsan",
+        "alt": "Qonnaan bulaa muka appilii firii baay'ee qabu qaqqabu"
+      },
+      {
+        "big": "1,270",
+        "text": "dargaggoota dubaraa fi dhiiraa ogummaa hojiitiin leenji'an",
+        "alt": "Dubartoota dargaggoo lama maashinii hodhaa fayyadamuu baratan"
+      },
+      {
+        "big": "120",
+        "text": "maatiiwwan Beenishaangul Gumuz keessatti humna bishaanii xiqqaa (pico-hydro) irraa fayyadaman",
+        "alt": "Miseensota hawaasaa ujummoo guddaa humna bishaaniitiif diriirsan"
+      },
+      {
+        "big": "Eelee supheetiin",
+        "text": "eelee qoraan qusatu suphee naannootiin hojjetame, bosona eeguuf",
+        "alt": "Miseensota hawaasaa suphee irraa eelee qusannaa hojjetan"
+      },
+      {
+        "big": "Seera hawaasaa",
+        "text": "dhaqna qabaa dubartootaa dhorku, bulchiinsa naannoo wajjin labsame",
+        "alt": "Jaartolee uffata aadaa adii uffatan"
+      },
+      {
+        "big": "Suphee fi ogummaa harkaa",
+        "text": "leenjii ogummaa kennaman keessaa, hodhaa fi hojii gogaa wajjin",
+        "alt": "Dubartoota qodaa suphee harkaan hojjetame duuba taa'an"
+      }
+    ],
+    "footH2": "Pirojektii itti aanu garee lafa sana beeku wajjin deeggaraa.",
+    "address1": "S.P. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "rights": "© 2026 EFDA",
+    "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
+  },
+  "contact": {
+    "pageLabel": "Nu qunnamaa",
+    "h1": "EFDA waliin haasa'aa.",
+    "intro": "Michummaa, gaaffii sagantaa ykn daawwannaa waajjiraalee dirree keenyaatiif — nama sirrii kallattiin qunnamaa, ykn ergaa nuuf ergaa.",
+    "people": [
+      {
+        "dept": "Waajjira Daayrektara Hoji Raawwachiisaa",
+        "role": "Barreessaa fi Daayrektara Hoji Raawwachiisaa"
+      },
+      {
+        "dept": "Sagantaalee fi michummaa",
+        "role": "Hoji Gaggeessaa Sagantaa"
+      },
+      {
+        "dept": "[GAHEE — MIRKANEESSAA]",
+        "role": "Akkasumas +251 922 491 481"
+      }
+    ],
+    "headOffice": "Waajjira muummee",
+    "streetTbd": "[TEESSOO KARAA — MIRKANEESSAA]",
+    "fieldOffices": "Waajjiraalee dirree",
+    "address1": "S.P. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "officeWoliso": "Walisoo — Shawaa Kibba Lixaa",
+    "officeShambu": "Shaambuu — Horroo Guduruu Wallaggaa",
+    "officeAsosa": "Asoosaa — Beenishaangul Gumuz",
+    "formH2": "Ergaa nuuf ergaa",
+    "topicQ": "Waa'ee maaliiti?",
+    "topics": {
+      "partner": "Michummaa ykn deeggarsa maallaqaa",
+      "program": "Sagantaalee keenya",
+      "visit": "Daawwannaa dirree",
+      "other": "Dhimma biraa"
+    },
+    "fName": "Maqaa guutuu",
+    "fOrg": "Dhaabbata",
+    "fEmail": "Imeelii",
+    "fPhone": "Bilbila (dirqama miti)",
+    "fMsg": "Ergaa",
+    "replyNote": "Yeroo baay'ee guyyoota hojii [X] keessatti deebii kennina.",
+    "send": "Ergaa ergaa",
+    "sentH2": "Galatoomaa. Ergaan keessan karaa irra jira.",
+    "sentP": "Waajjira keenya Finfinnee irraa namni tokko imeeliidhaan deebii isiniif kenna.",
+    "another": "Ergaa biraa ergaa",
+    "orgName": "Waldaa Barnoota Misoomaaf (EFDA)",
+    "rights": "© 2026 EFDA",
+    "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
+  }
+}
