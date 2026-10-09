@@ -24,8 +24,6 @@ export function ScrollEffects() {
   useEffect(() => {
     const root = document.documentElement;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const header = document.querySelector<HTMLElement>('.site-header');
-    const progress = document.querySelector<HTMLElement>('.progress');
 
     const all = Array.from(
       document.querySelectorAll<HTMLElement>('[data-reveal], [data-reveal-group]')
@@ -50,12 +48,16 @@ export function ScrollEffects() {
       ticking = false;
       const y = window.scrollY;
 
-      header?.classList.toggle('is-stuck', y > 24);
+      // Both of these are written to <html>, never to the header or the
+      // progress span. Those are React-owned nodes, and a scroll frame can
+      // land in the middle of a client-side navigation hydrating them - React
+      // then finds an attribute it did not render and reports a hydration
+      // mismatch, after which it stops patching that tree. <html> is rendered
+      // once and never re-hydrated, so writing there cannot collide.
+      root.classList.toggle('is-scrolled', y > 24);
 
-      if (progress) {
-        const max = root.scrollHeight - window.innerHeight;
-        progress.style.setProperty('--p', max > 0 ? String(Math.min(y / max, 1)) : '0');
-      }
+      const max = root.scrollHeight - window.innerHeight;
+      root.style.setProperty('--p', max > 0 ? String(Math.min(y / max, 1)) : '0');
 
       if (pending.length) {
         const limit = window.innerHeight * 0.92;
@@ -105,6 +107,7 @@ export function ScrollEffects() {
       window.removeEventListener('hashchange', onScroll);
       reduced.removeEventListener('change', onPreferenceChange);
       root.classList.remove('js-motion');
+      root.classList.remove('is-scrolled');
     };
   }, []);
 

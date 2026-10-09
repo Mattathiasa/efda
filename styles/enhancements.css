@@ -110,31 +110,40 @@ html.js-motion [data-reveal-group].is-in > *:nth-child(n + 6) { transition-delay
 .site-header__inner {
   transition: padding .4s var(--ease);
 }
-.site-header.is-stuck .site-header__inner {
+html.is-scrolled .site-header__inner {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.site-header.is-stuck .brand__mark {
+html.is-scrolled .brand__mark {
   width: 38px; height: 38px;
   transition: width .4s var(--ease), height .4s var(--ease);
 }
 .brand__mark { transition: width .4s var(--ease), height .4s var(--ease); }
 
-.site-header--light.is-stuck {
-  background: rgba(242, 241, 236, .82);
-  backdrop-filter: saturate(1.6) blur(14px);
-  -webkit-backdrop-filter: saturate(1.6) blur(14px);
+/* Solid, not frosted.
+
+   This started translucent with a backdrop blur. At any alpha low enough for
+   the blur to be worth having, section labels and the Amharic lockup ghosted
+   through the bar as it passed over them - which reads as a rendering fault,
+   not as glass. And the effect depends on backdrop-filter, so wherever that
+   is unavailable there is nothing diffusing them at all.
+
+   A soft shadow carries the same sense of a layer above the page, costs
+   nothing, and cannot ghost. */
+html.is-scrolled .site-header {
+  box-shadow: 0 10px 30px -24px rgba(14, 43, 34, .55);
+}
+html.is-scrolled .site-header--light {
+  background: var(--chalk);
   border-bottom-color: var(--line);
 }
-.site-header--dark.is-stuck {
-  background: rgba(14, 43, 34, .78);
-  backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+html.is-scrolled .site-header--dark {
+  background: var(--forest);
   border-bottom-color: var(--line-dark);
 }
 /* The grain is painted into the hero already; once stuck the header has its
    own translucent ground and the second layer muddies it. */
-.site-header.is-stuck .hero__grain { opacity: 0; transition: opacity .4s ease; }
+html.is-scrolled .hero__grain { opacity: 0; transition: opacity .4s ease; }
 
 /* ---------- 3. Reading progress ----------
    A hairline along the bottom edge of the header. Decorative, so it is
@@ -151,7 +160,7 @@ html.js-motion [data-reveal-group].is-in > *:nth-child(n + 6) { transition-delay
   pointer-events: none;
 }
 .site-header--dark .progress { background: var(--honey); }
-.site-header.is-stuck .progress { opacity: 1; }
+html.is-scrolled .progress { opacity: 1; }
 
 /* While a tapped link is still fetching, the same hairline runs an
    indeterminate sweep. The 120ms delay means a prefetched transition - which
