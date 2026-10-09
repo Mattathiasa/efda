@@ -66,9 +66,11 @@ text. Regenerate with `node scripts/subset-lockup-font.mjs`.
 
 ### Contact form
 
-`POST /api/contact`. Validation, the honeypot and Turnstile all run server-side,
-and the thank-you state only appears on a 2xx; on failure the visitor keeps what
-they typed and gets the phone number. Delivery is chosen by environment:
+`POST /api/contact`. Validation and the honeypot run server-side, and the
+thank-you state only appears on a 2xx. A 400 surfaces the rejected fields next
+to each input; any other failure keeps what was typed and offers both the phone
+number and a pre-filled `mailto:`, so a dropped connection never costs someone
+their message. Delivery is chosen by environment:
 
 | Set this | Messages go to |
 |---|---|
@@ -76,9 +78,29 @@ they typed and gets the phone number. Delivery is chosen by environment:
 | `FORMSPREE_ENDPOINT` | Formspree |
 | neither | logged in development; **503 in production**, so nothing is silently lost |
 
-Turnstile verification is skipped when `TURNSTILE_SECRET_KEY` is unset, so the
-form works before EFDA has keys. See `.env.example`. Firestore needs
-`npm install firebase-admin`.
+**Turnstile is one switch, not two.** `NEXT_PUBLIC_TURNSTILE_SITE_KEY` makes the
+browser render the widget and produce a token; `TURNSTILE_SECRET_KEY` lets the
+server check it. Set both or neither — setting only the secret leaves protection
+off and logs an error on every submission, rather than rejecting enquiries the
+browser had no way to get a token for. Cloudflare's test pair is in
+`.env.example`. Firestore needs `npm install firebase-admin`.
+
+### Platform
+
+Icons and the web manifest are generated at build from the same Globe E paths
+the site uses (`app/icon.tsx`, `app/apple-icon.tsx`, `app/manifest.ts`), so the
+SVG stays the single source and the site installs to an Android home screen.
+
+Security headers are in `next.config.ts`. The CSP deliberately has **no nonce**:
+a nonce must be unique per request, which Next can only do while rendering on
+the server, and that would turn all twelve prerendered pages into per-request
+renders and make them uncacheable. For a site with no login, no database and
+nothing reflected from a URL into the page, that is a bad trade. The directives
+that matter without a nonce — `frame-ancestors`, `form-action`, `base-uri`,
+`object-src` — are all set. Revisit if the site ever grows a login or a CMS.
+
+Analytics are cookie-free and chosen by env var (Cloudflare or Vercel); nothing
+loads when unset, so there is no consent banner.
 
 ## Before launch
 
