@@ -62,7 +62,7 @@ export default function ProjectsPage() {
         {/* Track record */}
         <section className="section section--dark on-dark" aria-labelledby="track-title">
           <div className="container">
-            <div className="split split--wide">
+            <div className="split split--wide" data-reveal>
               <div>
                 <p className="label">{t('trackLabel')}</p>
                 <h2 className="h-section h-section--xl" id="track-title">
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
               <p className="lead">{t('trackP')}</p>
             </div>
 
-            <div className="bento">
+            <div className="bento" data-reveal-group>
               {tiles.map((tile, i) => (
                 <TrackTile key={i} tile={tile} copy={tileCopy[i]} />
               ))}

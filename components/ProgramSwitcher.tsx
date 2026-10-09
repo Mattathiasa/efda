@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 import {useTranslations} from 'next-intl';
-import {DuotonePhoto} from './DuotonePhoto';
+import {Photo} from './Photo';
 import {ArrowRight} from './icons';
 import {programs} from '@/content/programs';
 
@@ -48,9 +48,12 @@ export function ProgramSwitcher({copy}: {copy: ProgramCopy[]}) {
         ))}
       </div>
 
-      <div className="prog-detail" aria-live="polite">
+      {/* key={active} remounts the panel on every switch, so the crossfade in
+          enhancements.css actually replays. Without it React reuses the same
+          elements and the animation only ever runs once, on mount. */}
+      <div className="prog-detail" aria-live="polite" key={active}>
         {photo ? (
-          <DuotonePhoto
+          <Photo
             photo={photo}
             alt={current.alt}
             arch="arch--card"

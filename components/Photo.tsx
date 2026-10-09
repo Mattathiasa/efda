@@ -1,27 +1,31 @@
 import Image from 'next/image';
 import {photos, type PhotoKey} from '@/content/photos';
 
-/* Greyscale photo multiplied onto paper with forest lighten-blended on top,
-   plus the hover viewfinder frame. All of that lives in .duo in styles.css -
-   this component only supplies the box and the image.
+/* A graded colour photo in one of the design's arch crops.
 
-   The source scans are 748-1586px wide, so the image is laid out with `fill`
+   The grade, vignette and grain live in `.duo` in styles.css. The hover
+   viewfinder frame is a real element rather than a pseudo-element, because
+   ::before and ::after are both spoken for (grain and vignette).
+
+   Source scans run 748-1586px wide, so the image is laid out with `fill`
    inside the aspect-ratio box the CSS defines and cropped with object-fit,
-   rather than being stretched to a declared size. */
-export function DuotonePhoto({
+   never stretched past its intrinsic size. */
+export function Photo({
   photo,
   alt,
   arch,
   sizes = '(max-width: 720px) 100vw, 50vw',
   priority = false,
+  /** Shifts the crop window, e.g. to keep a blemish out of frame. */
+  objectPosition,
   className
 }: {
   photo: PhotoKey;
   alt: string;
-  /** Arch crop preset from the design. */
   arch?: 'arch' | 'arch--wide' | 'arch--card' | 'arch--office';
   sizes?: string;
   priority?: boolean;
+  objectPosition?: string;
   className?: string;
 }) {
   return (
@@ -33,7 +37,10 @@ export function DuotonePhoto({
         sizes={sizes}
         priority={priority}
         loading={priority ? undefined : 'lazy'}
+        quality={82}
+        style={objectPosition ? {objectPosition} : undefined}
       />
+      <span className="duo__frame" aria-hidden="true" />
     </div>
   );
 }

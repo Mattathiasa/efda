@@ -204,13 +204,56 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .mobile-menu .lang-switch { align-self: flex-start; margin-top: 16px; border-color: rgba(242, 241, 236, .2); }
 .mobile-menu .btn { margin-top: 16px; }
 
-/* ---------- 7. Photos: duotone, arch, hover viewfinder ---------- */
-.duo { position: relative; overflow: hidden; background: var(--photo-ground); isolation: isolate; }
-.duo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.15) brightness(1.06); mix-blend-mode: multiply; transition: transform 1.4s var(--ease); }
-.duo::after { content: ""; position: absolute; inset: 0; background: var(--forest); mix-blend-mode: lighten; pointer-events: none; }
-.duo::before { content: ""; position: absolute; inset: 14px; z-index: 2; border-radius: inherit; border: 1.5px solid rgba(242, 241, 236, .75); opacity: 0; transform: scale(1.05); transition: opacity .5s ease, transform .7s var(--ease); pointer-events: none; }
-.duo:hover img { transform: scale(1.07); }
-.duo:hover::before { opacity: 1; transform: none; }
+/* ---------- 7. Photos: colour grade, arch, hover viewfinder ---------- */
+/* The photos are 2000s-era scans, upscaled. Shown raw they read as flat and
+   washed, with a green cast and JPEG mush. This grade lifts them without
+   draining the colour: a contrast and saturation lift, a warm wash to counter
+   the cast, and a vignette that pushes the edges down so the subject carries
+   the frame. The grain is what does the real work - it gives the eye a
+   consistent texture to read instead of compression artefacts. */
+.duo {
+  position: relative; overflow: hidden; isolation: isolate;
+  background: var(--photo-ground);
+  --duo-vignette: .30;
+  --duo-grain: .16;
+}
+.duo img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(1.12) contrast(1.09) brightness(1.02);
+  transform: scale(1.001); /* hides sub-pixel edges during the zoom */
+  transition: transform 1.4s var(--ease), filter .7s var(--ease);
+}
+/* Warm wash + vignette. Multiply keeps it in the shadows, so midtones and
+   skin stay where they are. */
+.duo::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    radial-gradient(118% 88% at 50% 32%, transparent 42%,
+      rgba(14, 43, 34, var(--duo-vignette)) 100%),
+    linear-gradient(to top, rgba(14, 43, 34, .20), transparent 46%),
+    linear-gradient(to bottom, rgba(240, 180, 60, .07), rgba(181, 73, 31, .05));
+  mix-blend-mode: multiply;
+}
+/* Grain, as a tiled SVG so it costs nothing to download. */
+.duo::before {
+  content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: var(--duo-grain);
+  mix-blend-mode: overlay;
+}
+/* Hover: the photo breathes and a chalk viewfinder frame settles in. */
+.duo__frame {
+  position: absolute; inset: 14px; z-index: 3; border-radius: inherit;
+  border: 1.5px solid rgba(242, 241, 236, .75);
+  opacity: 0; transform: scale(1.04); pointer-events: none;
+  transition: opacity .5s ease, transform .7s var(--ease);
+}
+.duo:hover img { transform: scale(1.06); filter: saturate(1.18) contrast(1.12) brightness(1.04); }
+.duo:hover .duo__frame { opacity: 1; transform: none; }
+
+/* Dark sections carry a deeper vignette so photos sit into the forest ground. */
+.section--dark .duo, .tile .duo, .hero .duo { --duo-vignette: .38; }
+
 .arch { border-radius: 999px 999px 28px 28px; }
 .arch--wide { border-radius: 600px 600px 28px 28px / 260px 260px 28px 28px; }
 .arch--card { border-radius: 300px 300px 24px 24px; }
@@ -225,9 +268,18 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .hero__eyebrow { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; font-family: var(--font-mono); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--honey); }
 .hero__intro { max-width: 560px; margin-top: 36px; font-size: 20px; line-height: 1.6; color: var(--mist); text-wrap: pretty; }
 .hero .btn-row { margin-top: 40px; }
-.hero__media { position: relative; justify-self: end; width: 100%; max-width: 540px; }
-.hero__media .duo { aspect-ratio: 4 / 5; }
-.hero__media .duo img { object-position: 55% center; }
+/* 520px square, not 540x675. girls-reading.jpg is 866x560 and the 4/5 crop
+   showed ~52% of its width, so the old box upscaled it about 1.2x before
+   device pixel ratio even applied. A square renders inside the source. These
+   numbers should be revisited when EFDA supplies a modern shoot. */
+.hero__media { position: relative; justify-self: end; width: 100%; max-width: 520px; }
+.hero__media .duo { aspect-ratio: 1 / 1; }
+/* 22%, not centre. girls-reading.jpg carries a burned-in camcorder timestamp
+   across roughly the last quarter of its width, so the crop window is biased
+   left to exclude it. At a 1:1 box the visible fraction is the same at every
+   size - (0.22 x 0.546 + 1) / 1.546 = 72.4% - so this holds on a phone as
+   well as on a desktop. Revisit when EFDA supplies a clean frame. */
+.hero__media .duo img { object-position: 22% center; }
 .hero__caption { display: flex; justify-content: space-between; gap: 16px; }
 .accent { color: var(--honey); }
 
@@ -444,8 +496,8 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .bento { margin-top: 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); grid-auto-rows: 300px; grid-auto-flow: dense; gap: 16px; }
 .tile { position: relative; overflow: hidden; border-radius: 24px; background: var(--canopy); }
 .tile .duo { position: absolute; inset: 0; border-radius: inherit; }
-.tile:hover .duo img { transform: scale(1.07); }
-.tile:hover .duo::before { opacity: 1; transform: none; }
+.tile:hover .duo img { transform: scale(1.06); filter: saturate(1.18) contrast(1.12) brightness(1.04); }
+.tile:hover .duo__frame { opacity: 1; transform: none; }
 .tile--wide { grid-column: span 2; }
 .tile--tall { grid-row: span 2; }
 .tile figcaption { position: absolute; left: 12px; right: 12px; bottom: 12px; max-width: 420px; padding: 16px 18px; border-radius: 16px; background: var(--forest); transition: transform .6s var(--ease); }
@@ -542,5 +594,5 @@ textarea.input { min-height: 160px; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal-line > span, .badge__ring, .marquee { animation: none; }
-  .duo img, .duo::before, .tile figcaption, .pcard, .person, .btn { transition: none; }
+  .duo img, .duo__frame, .tile figcaption, .pcard, .person, .btn { transition: none; }
 }

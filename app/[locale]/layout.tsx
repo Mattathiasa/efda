@@ -4,11 +4,13 @@ import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import {site} from '@/content/site';
+import {ScrollEffects} from '@/components/ScrollEffects';
 
 /* Design CSS first, Tailwind last. tailwind.css deliberately omits preflight -
    styles.css carries the design's own reset. */
 import '@/styles/fonts.css';
 import '@/styles/styles.css';
+import '@/styles/enhancements.css';
 import '@/styles/tailwind.css';
 
 export function generateStaticParams() {
@@ -49,6 +51,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <ScrollEffects />
       </body>
     </html>
   );

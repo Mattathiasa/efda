@@ -43,7 +43,7 @@ export default function ContactPage() {
               <p className="lead">{t('intro')}</p>
             </div>
 
-            <div className="contact-grid">
+            <div className="contact-grid" data-reveal-group>
               <div>
                 <div className="contacts">
                   {contacts.map((person, i) => (

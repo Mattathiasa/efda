@@ -4,7 +4,7 @@ import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
-import {DuotonePhoto} from '@/components/DuotonePhoto';
+import {Photo} from '@/components/Photo';
 import {Grain} from '@/components/Grain';
 import {HeadlineReveal, type HeroLine} from '@/components/HeadlineReveal';
 import {RotatingBadge} from '@/components/RotatingBadge';
@@ -90,7 +90,7 @@ export default function HomePage() {
 
             <div className="hero__media">
               <figure>
-                <DuotonePhoto
+                <Photo
                   photo="girlsReading"
                   alt={t('heroAlt')}
                   arch="arch"
@@ -115,7 +115,7 @@ export default function HomePage() {
         {/* 4. What we stand for */}
         <section className="section" id="about" aria-labelledby="about-label">
           <div className="container">
-            <div className="about-grid">
+            <div className="about-grid" data-reveal>
               <p className="label" id="about-label">
                 {t('aboutLabel')}
               </p>
@@ -126,7 +126,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="auto-grid vmg-cards">
+            <div className="auto-grid vmg-cards" data-reveal-group>
               {vmg.map((item, i) => (
                 <article className="vmg-card" key={i}>
                   <div className="vmg-card__head">
@@ -147,7 +147,7 @@ export default function HomePage() {
           aria-labelledby="programs-title"
         >
           <div className="container">
-            <div className="split">
+            <div className="split" data-reveal>
               <div>
                 <p className="label">{t('progLabel')}</p>
                 <h2 className="h-section h-section--xl" id="programs-title">
@@ -164,7 +164,7 @@ export default function HomePage() {
 
         {/* 6. Our story */}
         <section className="section" id="story" aria-labelledby="story-title">
-          <div className="container split split--center split--wide">
+          <div className="container split split--center split--wide" data-reveal>
             <div>
               <p className="label">{t('storyLabel')}</p>
               <h2 className="h-section" id="story-title">
@@ -199,7 +199,7 @@ export default function HomePage() {
         {/* 7. Where we work */}
         <section className="section section--dust" aria-labelledby="where-title">
           <div className="container">
-            <div className="split">
+            <div className="split" data-reveal>
               <div>
                 <p className="label">{t('whereLabel')}</p>
                 <h2 className="h-section" id="where-title">
@@ -210,7 +210,7 @@ export default function HomePage() {
               <p className="lead">{t('whereP')}</p>
             </div>
 
-            <div className="rows">
+            <div className="rows" data-reveal-group>
               {rows.map((row, i) => (
                 <ProjectIndexRow row={row} key={i} />
               ))}
@@ -231,7 +231,7 @@ export default function HomePage() {
         {/* 9. Call to action */}
         <section className="section--cta">
           <div className="container">
-            <div className="cta">
+            <div className="cta" data-reveal>
               <CtaWatermark />
               <h2>{t('ctaH2')}</h2>
               <div className="cta__body">

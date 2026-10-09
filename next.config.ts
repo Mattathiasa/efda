@@ -13,7 +13,10 @@ const nextConfig: NextConfig = {
     // the sources actually contain so next/image never upscales.
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [360, 414, 640, 828, 1080, 1320, 1600],
-    imageSizes: [96, 160, 240, 320, 480, 640]
+    imageSizes: [96, 160, 240, 320, 480, 640],
+    // The sources are already soft, upscaled scans. Re-encoding them at the
+    // default 75 compounds the artefacts; 82 costs a few KB and holds detail.
+    qualities: [82]
   }
 };
 

@@ -74,7 +74,7 @@ export function ProjectFilters({copy, labels}: {copy: ProjectCopy[]; labels: Lab
         {labels.showing.replace('{n}', String(visible))}
       </p>
 
-      <div className="auto-grid cards">
+      <div className="auto-grid cards" data-reveal-group>
         {projects.map((project, i) => (
           <ProjectCard
             key={project.id}

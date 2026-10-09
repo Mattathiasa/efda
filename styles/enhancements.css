@@ -1,0 +1,237 @@
+/* =========================================================
+   EFDA - motion and interaction layer
+
+   Loaded after styles.css. Everything here is additive: with JavaScript off,
+   or under prefers-reduced-motion, the page renders exactly as the base
+   stylesheet draws it. Nothing is hidden behind an animation that might not
+   run.
+   ========================================================= */
+
+/* ---------- 0. Anchors clear the sticky header ----------
+   #programs and #story are in the nav, so a jump must not land under the bar. */
+html { scroll-padding-top: 96px; }
+@media (max-width: 900px) { html { scroll-padding-top: 80px; } }
+
+/* ---------- 1. Scroll reveal ----------
+   Two implementations, and the choice of which matters.
+
+   Where the browser supports scroll-driven animations, the reveal is tied
+   directly to the element's position in the scrollport. Nothing has to fire
+   for content to appear: scroll position IS the animation's clock, so an
+   anchor jump, a restored scroll position or a slow main thread cannot strand
+   a block at opacity 0. It also runs off the main thread.
+
+   Everywhere else, ScrollEffects adds html.js-motion and toggles .is-in from
+   the scroll handler. That path carries its own safety timeout.
+
+   Either way, nothing is hidden unless something is in a position to show it
+   again - which is the whole risk with a reveal effect. */
+
+@keyframes reveal-rise {
+  from { opacity: 0; transform: translate3d(0, 20px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-reveal],
+    [data-reveal-group] > * {
+      animation: reveal-rise linear both;
+      animation-timeline: view();
+      /* Finished a little over a third of the way up the viewport, so a block
+         is settled by the time it is properly being read. */
+      animation-range: entry 0% entry 42%;
+    }
+    /* Children of a group sweep rather than landing together. */
+    [data-reveal-group] > *:nth-child(2) { animation-range: entry 4% entry 46%; }
+    [data-reveal-group] > *:nth-child(3) { animation-range: entry 8% entry 50%; }
+    [data-reveal-group] > *:nth-child(4) { animation-range: entry 12% entry 54%; }
+    [data-reveal-group] > *:nth-child(n + 5) { animation-range: entry 14% entry 56%; }
+  }
+}
+
+/* The two lead photos settle into place as they come up, rather than simply
+   being there. Applied to the containers, not the images, so the hover zoom
+   on .duo img keeps its transform to itself - an animation with `both` would
+   otherwise win over the hover transition and kill the zoom. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero__media .duo,
+    .panorama .duo {
+      animation: photo-settle linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+  }
+}
+@keyframes photo-settle {
+  from { opacity: .45; transform: translate3d(0, 18px, 0) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Fallback path: class-toggled, used only where the above is unsupported. */
+html.js-motion [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+}
+html.js-motion [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity .75s var(--ease), transform .75s var(--ease);
+}
+html.js-motion [data-reveal-group] > * {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+}
+html.js-motion [data-reveal-group].is-in > * {
+  opacity: 1;
+  transform: none;
+  transition: opacity .6s var(--ease), transform .6s var(--ease);
+}
+html.js-motion [data-reveal-group].is-in > *:nth-child(1) { transition-delay: .02s; }
+html.js-motion [data-reveal-group].is-in > *:nth-child(2) { transition-delay: .08s; }
+html.js-motion [data-reveal-group].is-in > *:nth-child(3) { transition-delay: .14s; }
+html.js-motion [data-reveal-group].is-in > *:nth-child(4) { transition-delay: .20s; }
+html.js-motion [data-reveal-group].is-in > *:nth-child(5) { transition-delay: .26s; }
+html.js-motion [data-reveal-group].is-in > *:nth-child(n + 6) { transition-delay: .30s; }
+
+/* ---------- 2. Sticky header ----------
+   The header follows the page down and condenses once you leave the top.
+   On Home it starts transparent over the forest hero and gains a ground of
+   its own; on light pages it fades chalk in behind itself. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  transition: background .4s var(--ease), box-shadow .4s var(--ease),
+    border-color .4s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.site-header__inner {
+  transition: padding .4s var(--ease);
+}
+.site-header.is-stuck .site-header__inner {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.site-header.is-stuck .brand__mark {
+  width: 38px; height: 38px;
+  transition: width .4s var(--ease), height .4s var(--ease);
+}
+.brand__mark { transition: width .4s var(--ease), height .4s var(--ease); }
+
+.site-header--light.is-stuck {
+  background: rgba(242, 241, 236, .82);
+  backdrop-filter: saturate(1.6) blur(14px);
+  -webkit-backdrop-filter: saturate(1.6) blur(14px);
+  border-bottom-color: var(--line);
+}
+.site-header--dark.is-stuck {
+  background: rgba(14, 43, 34, .78);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom-color: var(--line-dark);
+}
+/* The grain is painted into the hero already; once stuck the header has its
+   own translucent ground and the second layer muddies it. */
+.site-header.is-stuck .hero__grain { opacity: 0; transition: opacity .4s ease; }
+
+/* ---------- 3. Reading progress ----------
+   A hairline along the bottom edge of the header. Decorative, so it is
+   aria-hidden and never the only signal for anything. */
+.progress {
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px; width: 100%;
+  transform: scaleX(var(--p, 0));
+  transform-origin: 0 50%;
+  background: var(--laterite);
+  opacity: 0;
+  transition: opacity .4s ease;
+  pointer-events: none;
+}
+.site-header--dark .progress { background: var(--honey); }
+.site-header.is-stuck .progress { opacity: 1; }
+
+/* ---------- 4. Buttons ----------
+   The arrow leads the way out of the button on hover. */
+.btn svg { transition: transform .35s var(--ease); }
+.btn--primary:hover svg, .btn--dark:hover svg, .btn--ghost:hover svg { transform: translateX(4px); }
+.btn:active { transform: translateY(0); }
+
+/* A laterite button picks up a soft cast shadow so it reads as the primary
+   action without getting louder in colour. */
+.btn--primary {
+  box-shadow: 0 1px 2px rgba(142, 55, 20, .18);
+  transition: transform .25s var(--ease), background .25s ease, box-shadow .35s var(--ease);
+}
+.btn--primary:hover { box-shadow: 0 12px 24px -10px rgba(142, 55, 20, .55); }
+
+/* ---------- 5. Navigation ----------
+   The underline already grows from the left. Give the label itself a touch of
+   lift so the whole link feels live. */
+.navlink { transition: opacity .25s ease; }
+.nav:hover .navlink:not(:hover) { opacity: .62; }
+.nav .navlink { transition: opacity .3s var(--ease); }
+
+/* ---------- 6. Programs ----------
+   Switching program crossfades the panel instead of swapping it outright. */
+.prog-detail > * { animation: panel-in .5s var(--ease) both; }
+@keyframes panel-in {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to { opacity: 1; transform: none; }
+}
+.prog { transition: color .3s ease, padding-left .35s var(--ease); }
+.prog:hover { padding-left: 8px; }
+.prog__num { transition: color .3s ease; }
+
+/* ---------- 7. Cards and tiles ---------- */
+.pcard { will-change: transform; }
+.pcard__num { transition: transform .35s var(--ease); }
+.pcard:hover .pcard__num { transform: translateY(-2px); }
+
+.tile figcaption { backdrop-filter: blur(2px); }
+.tile .duo img { transition: transform 1.2s var(--ease), filter .7s var(--ease); }
+
+/* ---------- 8. Funders ----------
+   Hovering the marquee pauses it, so a name can actually be read. */
+.funders:hover .marquee { animation-play-state: paused; }
+.marquee__group span { transition: color .3s ease; }
+
+/* ---------- 9. Chips and controls ---------- */
+.chip, .topic, .lang-btn { transition: background .25s ease, color .25s ease,
+  border-color .25s ease, transform .25s var(--ease); }
+.chip:active, .topic:active { transform: scale(.97); }
+
+/* ---------- 10. Form ---------- */
+.input { transition: border-color .25s ease, background .25s ease, box-shadow .25s ease; }
+.input:focus { box-shadow: 0 0 0 3px rgba(240, 180, 60, .16); }
+.act { transition: background .25s ease, color .25s ease, border-color .25s ease,
+  transform .25s var(--ease); }
+.act:hover { transform: translateY(-2px); }
+
+/* ---------- 11. Rows ---------- */
+.row__title { transition: transform .35s var(--ease); }
+.row:hover .row__title { transform: translateX(4px); }
+
+/* ---------- 12. Reduced motion ----------
+   Everything above is either switched off or reduced to a plain state. The
+   reveal rules are dropped entirely so no content can be left invisible. */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  [data-reveal-group] > *,
+  html.js-motion [data-reveal],
+  html.js-motion [data-reveal].is-in,
+  html.js-motion [data-reveal-group] > *,
+  html.js-motion [data-reveal-group].is-in > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  .prog-detail > *, .hero__media .duo, .panorama .duo { animation: none; }
+  .site-header, .site-header__inner, .brand__mark, .btn svg, .row__title,
+  .pcard__num, .act, .chip, .topic, .lang-btn, .input { transition: none; }
+  .prog:hover { padding-left: 0; }
+  .progress { display: none; }
+}

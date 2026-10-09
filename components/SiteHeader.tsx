@@ -21,6 +21,8 @@ export function SiteHeader({
   return (
     <header className={`site-header site-header--${variant}${dark ? ' on-dark' : ''}`}>
       {dark ? <Grain /> : null}
+      {/* Reading progress. Decorative - never the only signal for anything. */}
+      <span className="progress" aria-hidden="true" />
 
       <div className="container site-header__inner">
         <Link className="brand" href="/" aria-label={t('homeAria')}>

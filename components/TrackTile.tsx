@@ -1,4 +1,4 @@
-import {DuotonePhoto} from './DuotonePhoto';
+import {Photo} from './Photo';
 import type {Tile} from '@/content/tiles';
 
 export interface TileCopy {
@@ -17,7 +17,7 @@ export function TrackTile({tile, copy}: {tile: Tile; copy: TileCopy}) {
         .filter(Boolean)
         .join(' ')}
     >
-      <DuotonePhoto
+      <Photo
         photo={tile.photo}
         alt={copy.alt}
         sizes="(max-width: 720px) 100vw, (max-width: 1320px) 50vw, 440px"

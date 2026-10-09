@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import {useTranslations} from 'next-intl';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
-import {DuotonePhoto} from '@/components/DuotonePhoto';
+import {Photo} from '@/components/Photo';
 import {OrgChart} from '@/components/OrgChart';
 import {PersonCard} from '@/components/PersonCard';
 import {board} from '@/content/people';
@@ -70,8 +70,8 @@ export default function AboutPage() {
               </dl>
             </div>
 
-            <figure className="panorama">
-              <DuotonePhoto
+            <figure className="panorama" data-reveal>
+              <Photo
                 photo="officeWoliso"
                 alt={t('heroAlt')}
                 arch="arch--wide"
@@ -85,7 +85,7 @@ export default function AboutPage() {
 
         {/* 3. Who we are */}
         <section className="section">
-          <div className="container split split--top split--wide">
+          <div className="container split split--top split--wide" data-reveal>
             <div>
               <p className="label">{t('whoLabel')}</p>
               <h2 className="h-section h-section--who">{t('whoH2')}</h2>
@@ -102,7 +102,7 @@ export default function AboutPage() {
         <section className="section section--dark on-dark">
           <div className="container">
             <p className="label phil-label">{t('philLabel')}</p>
-            <div className="phil-rows">
+            <div className="phil-rows" data-reveal-group>
               {vmg.map((item, i) => (
                 <div className="phil-row" key={i}>
                   <h3>{item.label}</h3>
@@ -123,7 +123,9 @@ export default function AboutPage() {
               </div>
               <p className="lead">{t('orgP')}</p>
             </div>
-            <OrgChart label={t('orgH2')} />
+            <div data-reveal>
+              <OrgChart label={t('orgH2')} />
+            </div>
           </div>
         </section>
 
@@ -138,7 +140,7 @@ export default function AboutPage() {
               <p className="note">{t('portraitsNote')}</p>
             </div>
 
-            <div className="auto-grid people">
+            <div className="auto-grid people" data-reveal-group>
               {board.map((person, i) => (
                 <PersonCard key={person.name} person={person} role={roles[i]} />
               ))}
@@ -152,11 +154,11 @@ export default function AboutPage() {
             <p className="label">{t('officesLabel')}</p>
             <h2 className="h-section">{t('officesH2')}</h2>
 
-            <div className="auto-grid offices">
+            <div className="auto-grid offices" data-reveal-group>
               {offices.map((office, i) => (
                 <article className="office" key={office.id}>
                   {office.photo ? (
-                    <DuotonePhoto
+                    <Photo
                       photo={office.photo}
                       alt={officeCopy[i].alt}
                       arch="arch--office"
