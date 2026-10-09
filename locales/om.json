@@ -16,7 +16,13 @@
     "ctaPartner": "Michuu keenya ta'aa",
     "menu": "Baafata",
     "langLabel": "Afaan",
-    "skip": "Gara qabiyyee ijootti darbi"
+    "skip": "Gara qabiyyee ijootti darbi",
+    "notFoundTitle": "Fuulli hin argamne.",
+    "notFoundBody": "Fuulli isin barbaaddan iddoo jijjiirameera, yookaan takkaa hin turre.",
+    "backHome": "Gara fuula jalqabaatti deebi’aa",
+    "errorTitle": "Wanti tokko dogoggoreera.",
+    "errorBody": "Fuulli kun fe’amuu hin dandeenye. Maaloo irra deebi’aa yaalaa, yookaan kallattiin nu qunnamaa.",
+    "errorRetry": "Irra deebi’aa yaalaa"
   },
   "home": {
     "meta": {
@@ -549,6 +555,13 @@
     "another": "Ergaa biraa ergaa",
     "orgName": "Waldaa Barnoota Misoomaaf (EFDA)",
     "rights": "© 2026 EFDA",
-    "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
+    "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035",
+    "errName": "Maaloo maqaa qubee lamaa ol qabu galchaa.",
+    "errOrganization": "Kun hamma fudhachuu dandeenyu caala dheeraadha.",
+    "errEmail": "Maaloo teessoo imeelii kana mirkaneessaa.",
+    "errPhone": "Kun hamma fudhachuu dandeenyu caala dheeraadha.",
+    "errMessage": "Maaloo qubee kudhan ol barreessaa.",
+    "errFix": "Maaloo saanduqoota mallattoo qabaniif ilaalaa.",
+    "mailto": "Qooda kanaa imeeliidhaan ergaa"
   }
 }

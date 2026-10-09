@@ -5,6 +5,7 @@ import {useLocale, useTranslations} from 'next-intl';
 import {GlobeMark} from './GlobeMark';
 import {ArrowRight} from './icons';
 import {TOPICS, type Topic} from '@/lib/contact-shared';
+import {Turnstile} from './Turnstile';
 import {site} from '@/content/site';
 
 type State = 'idle' | 'sending' | 'sent' | 'error';
@@ -32,11 +33,15 @@ export function ContactForm() {
     setState('sending');
     const data = Object.fromEntries(new FormData(form).entries());
 
+    // Turnstile's implicit mode injects this input into the form. Absent when
+    // the widget is not configured, which the server treats as "off".
+    const turnstileToken = String(data['cf-turnstile-response'] ?? '');
+
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({...data, topic, locale})
+        body: JSON.stringify({...data, topic, locale, turnstileToken})
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setState('sent');
@@ -120,6 +125,8 @@ export function ContactForm() {
           autoComplete="off"
           aria-hidden="true"
         />
+
+        <Turnstile />
 
         <div className="form__foot">
           <span>

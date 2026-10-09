@@ -16,7 +16,13 @@
     "ctaPartner": "Partner with us",
     "menu": "Menu",
     "langLabel": "Language",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "notFoundTitle": "Page not found.",
+    "notFoundBody": "The page you were looking for has moved, or never existed.",
+    "backHome": "Back to home",
+    "errorTitle": "Something went wrong.",
+    "errorBody": "This page could not be loaded. Please try again, or reach us directly.",
+    "errorRetry": "Try again"
   },
   "home": {
     "meta": {
@@ -549,6 +555,13 @@
     "another": "Send another message",
     "orgName": "Education For Development Association",
     "rights": "© 2026 EFDA",
-    "reg": "Ethiopian CSO No. 0035"
+    "reg": "Ethiopian CSO No. 0035",
+    "errName": "Please give a name of at least two characters.",
+    "errOrganization": "This is longer than we can accept.",
+    "errEmail": "Please check this email address.",
+    "errPhone": "This is longer than we can accept.",
+    "errMessage": "Please write at least ten characters.",
+    "errFix": "Please check the highlighted fields.",
+    "mailto": "Send it by email instead"
   }
 }

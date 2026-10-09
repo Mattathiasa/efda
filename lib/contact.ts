@@ -66,12 +66,41 @@ export function subjectFor(m: ContactMessage, topicLabel: string) {
   return `[EFDA site] ${topicLabel} — ${who}`;
 }
 
-/* Cloudflare Turnstile. Skipped when no secret is configured, so the form
-   works locally and in review before EFDA has keys. */
-export async function verifyTurnstile(token: string, ip?: string): Promise<boolean> {
+/* Cloudflare Turnstile.
+
+   The two keys are one switch. Verification runs only when BOTH the public
+   site key (which makes the browser render the widget and produce a token)
+   and the secret are set. Checking the secret alone would reject every
+   submission the moment someone configured half of it - the browser would
+   have no widget to get a token from - and for an organisation whose funding
+   conversations begin through this form, silently dropping genuine enquiries
+   is a worse failure than briefly accepting spam. So a half-configured
+   install fails open, loudly, rather than closed and silently. */
+export function turnstileStatus(): 'off' | 'on' | 'misconfigured' {
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return true;
+  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  if (secret && siteKey) return 'on';
+  if (secret || siteKey) return 'misconfigured';
+  return 'off';
+}
+
+export async function verifyTurnstile(token: string, ip?: string): Promise<boolean> {
+  const status = turnstileStatus();
+
+  if (status === 'off') return true;
+
+  if (status === 'misconfigured') {
+    console.error(
+      '[contact] Turnstile is half-configured: TURNSTILE_SECRET_KEY and ' +
+        'NEXT_PUBLIC_TURNSTILE_SITE_KEY must BOTH be set. Spam protection is ' +
+        'OFF until they are - messages are still being accepted.'
+    );
+    return true;
+  }
+
   if (!token) return false;
+
+  const secret = process.env.TURNSTILE_SECRET_KEY as string;
 
   const body = new URLSearchParams({secret, response: token});
   if (ip) body.set('remoteip', ip);
