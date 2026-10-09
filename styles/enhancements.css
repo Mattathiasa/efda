@@ -255,3 +255,20 @@ html.js-motion [data-reveal-group].is-in > *:nth-child(n + 6) { transition-delay
   .progress { display: none; }
   .progress.is-navigating { animation: none; }
 }
+
+/* ---------- 13. Form validation ----------
+   The server returns which fields it rejected; these surface that next to the
+   field rather than as one generic failure. Colour is never the only signal -
+   the message is text, tied to the input with aria-describedby. */
+.field__error {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--honey);
+}
+.field--invalid .input {
+  border-color: var(--honey);
+}
+.field--invalid .input:focus {
+  box-shadow: 0 0 0 3px rgba(240, 180, 60, .22);
+}

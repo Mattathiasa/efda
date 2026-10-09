@@ -48,6 +48,54 @@ export async function buildMetadata(
   };
 }
 
+/* The site itself, so search engines can tie the three language trees
+   together as one property. */
+export function WebSiteJsonLd({locale}: {locale: string}) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'EFDA',
+    alternateName: 'Education For Development Association',
+    url: site.url,
+    inLanguage: routing.locales,
+    publisher: {'@type': 'NGO', name: 'Education For Development Association'}
+  };
+  return <JsonLd data={data} />;
+}
+
+/* Breadcrumbs. Home is the only ancestor on this site - it is four pages
+   deep-less - but stating it lets search results show the trail rather than a
+   bare URL. */
+export function BreadcrumbJsonLd({
+  locale,
+  page,
+  label
+}: {
+  locale: string;
+  page: 'about' | 'projects' | 'contact';
+  label: string;
+}) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {'@type': 'ListItem', position: 1, name: 'EFDA', item: urlFor(locale, '/')},
+      {'@type': 'ListItem', position: 2, name: label, item: urlFor(locale, `/${page}`)}
+    ]
+  };
+  return <JsonLd data={data} />;
+}
+
+function JsonLd({data}: {data: unknown}) {
+  return (
+    <script
+      type="application/ld+json"
+      // Values are our own constants, not user input.
+      dangerouslySetInnerHTML={{__html: JSON.stringify(data)}}
+    />
+  );
+}
+
 /* Organization structured data. `sameAs` is deliberately absent until EFDA
    has social accounts to point at. */
 export function OrganizationJsonLd() {

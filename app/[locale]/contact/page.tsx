@@ -1,12 +1,12 @@
 import type {Metadata} from 'next';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
 import {ContactForm} from '@/components/ContactForm';
 import {FormWatermark} from '@/components/Watermarks';
 import {PhoneIcon, MailIcon} from '@/components/icons';
 import {contacts} from '@/content/contacts';
-import {buildMetadata} from '@/lib/seo';
+import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
 
 export async function generateMetadata({
   params
@@ -25,6 +25,7 @@ interface PersonCopy {
 export default function ContactPage() {
   const t = useTranslations('contact');
   const c = useTranslations('common');
+  const locale = useLocale();
   const people = t.raw('people') as PersonCopy[];
 
   return (
@@ -100,6 +101,7 @@ export default function ContactPage() {
         </section>
       </main>
 
+      <BreadcrumbJsonLd locale={locale} page="contact" label={c('navContact')} />
       <SiteFooter variant="simple" ns="contact" />
     </>
   );

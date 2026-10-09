@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
 import {Photo} from '@/components/Photo';
@@ -7,7 +7,7 @@ import {OrgChart} from '@/components/OrgChart';
 import {PersonCard} from '@/components/PersonCard';
 import {board} from '@/content/people';
 import {offices} from '@/content/offices';
-import {buildMetadata} from '@/lib/seo';
+import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
 
 export async function generateMetadata({
   params
@@ -39,6 +39,7 @@ interface OfficeCopy {
 export default function AboutPage() {
   const t = useTranslations('about');
   const c = useTranslations('common');
+  const locale = useLocale();
 
   const facts = t.raw('facts') as Fact[];
   const paras = t.raw('whoParas') as Para[];
@@ -179,6 +180,7 @@ export default function AboutPage() {
         </section>
       </main>
 
+      <BreadcrumbJsonLd locale={locale} page="about" label={c('navAbout')} />
       <SiteFooter variant="cta" ns="about" />
     </>
   );

@@ -1,12 +1,12 @@
 import type {Metadata} from 'next';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
 import {ProjectFilters} from '@/components/ProjectFilters';
 import {TrackTile, type TileCopy} from '@/components/TrackTile';
 import type {ProjectCopy} from '@/components/ProjectCard';
 import {tiles} from '@/content/tiles';
-import {buildMetadata} from '@/lib/seo';
+import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
 
 export async function generateMetadata({
   params
@@ -20,6 +20,7 @@ export async function generateMetadata({
 export default function ProjectsPage() {
   const t = useTranslations('projects');
   const c = useTranslations('common');
+  const locale = useLocale();
 
   const projectCopy = t.raw('projects') as ProjectCopy[];
   const tileCopy = t.raw('tiles') as TileCopy[];
@@ -81,6 +82,7 @@ export default function ProjectsPage() {
         </section>
       </main>
 
+      <BreadcrumbJsonLd locale={locale} page="projects" label={c('navProjects')} />
       <SiteFooter variant="cta" ns="projects" bordered />
     </>
   );

@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {SiteHeader} from '@/components/SiteHeader';
@@ -15,7 +15,7 @@ import {FunderMarquee} from '@/components/FunderMarquee';
 import {ProjectIndexRow, type IndexRowCopy} from '@/components/ProjectIndexRow';
 import {HeroWatermark, CtaWatermark} from '@/components/Watermarks';
 import {ArrowRight} from '@/components/icons';
-import {buildMetadata, OrganizationJsonLd} from '@/lib/seo';
+import {buildMetadata, OrganizationJsonLd, WebSiteJsonLd} from '@/lib/seo';
 import {site} from '@/content/site';
 
 export async function generateMetadata({
@@ -40,6 +40,7 @@ interface TimelineEntry {
 export default function HomePage() {
   const t = useTranslations('home');
   const c = useTranslations('common');
+  const locale = useLocale();
 
   const heroLines = t.raw('heroLines') as HeroLine[];
   const stats = t.raw('stats') as Stat[];
@@ -252,6 +253,7 @@ export default function HomePage() {
 
       <SiteFooter variant="full" ns="home" />
       <OrganizationJsonLd />
+      <WebSiteJsonLd locale={locale} />
     </>
   );
 }
