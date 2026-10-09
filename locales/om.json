@@ -19,6 +19,10 @@
     "skip": "Gara qabiyyee ijootti darbi"
   },
   "home": {
+    "meta": {
+      "title": "Waldaa Barnoota Misoomaaf (EFDA)",
+      "description": "Bara 1999 irraa eegalee, EFDA hawaasa baadiyyaa wajjin — kutaa barnootaa keessatti, gaarran irratti, gaagura fi oyiruu muka firii keessatti — rakkoo isaanii dandeettii, beekumsaa fi qabeenya mataa isaaniitiin akka furatan hojjeteera."
+    },
     "eyebrowYear": "Bara 1999 irraa kaasee",
     "eyebrowRegions": "Oromiyaa · Beenishaangul Gumuz",
     "heroLines": [
@@ -241,6 +245,10 @@
     "reg": "Dhaabbata Hawaasa Siviilii Itoophiyaa galmaa'e Lak. 0035"
   },
   "about": {
+    "meta": {
+      "title": "Waa'ee keenya",
+      "description": "Waldaan Barnoota Misoomaaf (EFDA) dhaabbata hawaasa siviilii Itoophiyaa kan Oromiyaa fi Beenishaangul Gumuz keessatti misooma hawaasa irratti hundaa'e hojjetuudha."
+    },
     "btnProjects": "Pirojektoota keenya ilaalaa",
     "pageLabel": "Waa'ee EFDA",
     "h1": "Bara 1999 irraa kaasee hawaasa keessatti hundee kan godhate.",
@@ -350,6 +358,10 @@
     "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
   },
   "projects": {
+    "meta": {
+      "title": "Pirojektoota",
+      "description": "Pirojektiin hundi barnoota dursa hawaasichaa mataa isaa wajjin walitti fida — kan bulfamus waajjira dirree namoota tajaajilu biratti dhiyoo jiru irraati. Tarreen kun ibsa dhaabbataa EFDA Amajjii 2024 irratti hundaa'a."
+    },
     "btnAbout": "Waa'ee EFDA",
     "pageLabel": "Pirojektoota",
     "h1a": "Pirojektoota torba.",
@@ -486,6 +498,10 @@
     "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
   },
   "contact": {
+    "meta": {
+      "title": "Nu qunnamaa",
+      "description": "Michummaa, gaaffii sagantaa ykn daawwannaa waajjiraalee dirree keenyaatiif — nama sirrii kallattiin qunnamaa, ykn ergaa nuuf ergaa."
+    },
     "pageLabel": "Nu qunnamaa",
     "h1": "EFDA waliin haasa'aa.",
     "intro": "Michummaa, gaaffii sagantaa ykn daawwannaa waajjiraalee dirree keenyaatiif — nama sirrii kallattiin qunnamaa, ykn ergaa nuuf ergaa.",

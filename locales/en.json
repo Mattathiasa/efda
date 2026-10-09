@@ -19,6 +19,10 @@
     "skip": "Skip to content"
   },
   "home": {
+    "meta": {
+      "title": "EFDA — Education For Development Association",
+      "description": "Since 1999, EFDA has worked alongside rural communities — in classrooms, on hillsides, in hives and orchards — so they can solve their own problems with their own skills, knowledge and resources."
+    },
     "eyebrowYear": "Est. 1999",
     "eyebrowRegions": "Oromia · Benishangul Gumuz",
     "heroLines": [
@@ -241,6 +245,10 @@
     "reg": "Registered Ethiopian Civil Society Organization No. 0035"
   },
   "about": {
+    "meta": {
+      "title": "About",
+      "description": "Education For Development Association (EFDA) is an Ethiopian civil society organization working through community-based development in Oromia and Benishangul Gumuz."
+    },
     "btnProjects": "See our projects",
     "pageLabel": "About EFDA",
     "h1": "Rooted in community since 1999.",
@@ -350,6 +358,10 @@
     "reg": "Ethiopian CSO No. 0035"
   },
   "projects": {
+    "meta": {
+      "title": "Projects",
+      "description": "Every project combines education with the community’s own priorities — and is run from a field office near the people it serves. Current portfolio as of EFDA’s January 2024 profile."
+    },
     "btnAbout": "About EFDA",
     "pageLabel": "Projects",
     "h1a": "Seven projects.",
@@ -486,6 +498,10 @@
     "reg": "Ethiopian CSO No. 0035"
   },
   "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Partnerships, program questions or a visit to one of our field offices — reach the right person directly, or send us a message."
+    },
     "pageLabel": "Contact",
     "h1": "Talk to EFDA.",
     "intro": "Partnerships, program questions or a visit to one of our field offices — reach the right person directly, or send us a message.",

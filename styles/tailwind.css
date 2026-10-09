@@ -1,0 +1,35 @@
+/* Tailwind v4, utilities only.
+
+   Preflight is deliberately NOT imported. styles.css carries the design's own
+   reset (box-sizing, zeroed heading margins, `button { font: inherit }`,
+   list resets), and Tailwind's preflight would undo those deliberate choices.
+   Import the layers by hand so preflight.css stays out. */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/* Bridge the design tokens into Tailwind's namespaces so utilities written for
+   new markup resolve to the same values: bg-forest, text-honey, ease-efda. */
+@theme inline {
+  --color-forest: var(--forest);
+  --color-canopy: var(--canopy);
+  --color-laterite: var(--laterite);
+  --color-honey: var(--honey);
+  --color-chalk: var(--chalk);
+  --color-paper: var(--paper);
+  --color-dust: var(--dust);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-mist: var(--mist);
+  --color-sage: var(--sage);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  --ease-efda: var(--ease);
+
+  /* Breakpoints matching the design's own: nav collapse and phone spacing. */
+  --breakpoint-nav: 900px;
+  --breakpoint-tiles: 720px;
+}
