@@ -30,7 +30,7 @@
   --font-display: 'Bricolage Grotesque', 'Noto Sans Ethiopic', ui-sans-serif, system-ui, sans-serif;
   --font-body: 'Instrument Sans', 'Noto Sans Ethiopic', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'DM Mono', 'Noto Sans Ethiopic', ui-monospace, Menlo, monospace;
-  --font-ethiopic: 'Noto Sans Ethiopic', sans-serif;
+  --font-ethiopic: 'Noto Sans Ethiopic Lockup', 'Noto Sans Ethiopic', sans-serif;
 
   --ease: cubic-bezier(.2, .7, .2, 1);
   --container: 1320px;
