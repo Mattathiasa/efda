@@ -11,6 +11,19 @@ npm run build && npm run start
 npm run check      # types + locale key parity + open content items
 ```
 
+> **Do not run `npm run build` while `npm run dev` is up.** They share `.next`
+> by default, so the build overwrites what the dev server is serving and
+> leaves it handing out chunks that no longer match what the browser cached —
+> the page then loads with pieces missing. To verify a production build
+> alongside a running dev server, send it somewhere else:
+>
+> ```bash
+> NEXT_DIST_DIR=.next-verify npm run build
+> ```
+>
+> If a dev server does get into that state: stop it, `rm -rf .next`, start it
+> again, and hard-reload the browser.
+
 ## How it is put together
 
 | Layer | Choice |

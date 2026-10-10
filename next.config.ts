@@ -49,6 +49,12 @@ const csp = [
 ].join('; ');
 
 const nextConfig: NextConfig = {
+  /* `next build` and `next dev` share .next by default, so running a build
+     while a dev server is up overwrites what that server is serving and
+     leaves it handing out chunks that no longer match what the browser has
+     cached. Set NEXT_DIST_DIR to verify a production build without touching a
+     running dev server:  NEXT_DIST_DIR=.next-verify npm run build  */
+  distDir: process.env.NEXT_DIST_DIR || '.next',
   // No `output` or adapter pinned: the default build runs on Vercel or on
   // Cloudflare via @opennextjs/cloudflare. Static export is deliberately NOT
   // used - proxy.ts would not run, and the site needs it for locale

@@ -29,3 +29,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# verification builds (see distDir in next.config.ts)
+/.next-verify/
