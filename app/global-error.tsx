@@ -1,13 +1,17 @@
 'use client';
 
+import {site} from '@/content/site';
+
 /* Last line of defence: catches an error in the root layout itself, which
    means it must render its own <html> and <body>.
 
    Deliberately English-only and self-contained. If the layout failed, the
-   locale may never have resolved and the message bundle may not have loaded,
-   so reaching for useTranslations here could throw a second time inside the
-   handler for the first. Styles are inline for the same reason - the
-   stylesheet is imported by the layout that just failed. */
+   locale may never have resolved and the translation bundle may not have
+   loaded, so reaching for useTranslations here could throw a second time
+   inside the handler for the first. Styles are inline for the same reason -
+   the stylesheet is imported by the layout that just failed. The contact
+   details come from the shared site config rather than being repeated here,
+   so this fallback and the live site can never disagree. */
 export default function GlobalError({
   error,
   reset
@@ -47,8 +51,8 @@ export default function GlobalError({
           </h1>
           <p style={{margin: 0, lineHeight: 1.6, color: '#C9D6CE'}}>
             This page could not be loaded. Please try again, or call EFDA on{' '}
-            <a href="tel:+251911218169" style={{color: '#F0B43C'}}>
-              +251 911 218 169
+            <a href={`tel:${site.phone.tel}`} style={{color: '#F0B43C'}}>
+              {site.phone.display}
             </a>
             .
           </p>

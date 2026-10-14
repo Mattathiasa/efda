@@ -13,6 +13,7 @@
     "check": "npm run typecheck && npm run check:locales && npm run check:placeholders"
   },
   "dependencies": {
+    "firebase-admin": "^14.5.0",
     "next": "16.4.0",
     "next-intl": "4.14.9",
     "react": "19.2.0",
