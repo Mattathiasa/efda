@@ -8,7 +8,7 @@ Amharic and Afaan Oromoo — twelve statically generated URLs.
 npm install
 npm run dev        # http://localhost:3000
 npm run build && npm run start
-npm run check      # types + locale key parity + open content items
+npm run check      # types + locale key parity + open content items + unit tests
 ```
 
 > **Do not run `npm run build` while `npm run dev` is up.** They share `.next`
