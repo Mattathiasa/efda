@@ -2,10 +2,28 @@ import {NextResponse} from 'next/server';
 import {getTranslations} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import {validate, verifyTurnstile, subjectFor, dispatch} from '@/lib/contact';
+import {checkRateLimit} from '@/lib/rate-limit';
 
 export const runtime = 'nodejs';
 
 export async function POST(request: Request) {
+  const ip =
+    request.headers.get('cf-connecting-ip') ??
+    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
+    undefined;
+
+  // Underneath the honeypot and Turnstile: both can be bypassed or left
+  // unconfigured, this cannot. Keyed on "unknown" when no IP header is
+  // present at all, so every such request shares one bucket rather than
+  // each getting its own unlimited one.
+  const {limited, retryAfterSeconds} = checkRateLimit(ip ?? 'unknown');
+  if (limited) {
+    return NextResponse.json(
+      {error: 'rate-limited'},
+      {status: 429, headers: {'Retry-After': String(retryAfterSeconds)}}
+    );
+  }
+
   let body: unknown;
   try {
     body = await request.json();
@@ -25,11 +43,6 @@ export async function POST(request: Request) {
   if (!result.ok) {
     return NextResponse.json({error: 'invalid', fields: result.errors}, {status: 400});
   }
-
-  const ip =
-    request.headers.get('cf-connecting-ip') ??
-    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
-    undefined;
 
   const passed = await verifyTurnstile(String(payload.turnstileToken ?? ''), ip);
   if (!passed) {
