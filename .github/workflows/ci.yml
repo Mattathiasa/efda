@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 'lts/*'
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      # Types, locale key parity, open [BRACKET] placeholders, and the unit
+      # tests - see README.md for what each of these catches.
+      - run: npm run check
+
+      # Dev-only tooling (eslint-config-next's glob dependency, currently) can
+      # carry an unfixed advisory without that reaching production - this
+      # repo ships no server/runtime code in devDependencies. --omit=dev is
+      # the signal that actually matters for this site.
+      - run: npm audit --omit=dev
