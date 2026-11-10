@@ -307,7 +307,9 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 
 .mobile-menu { margin: 0 16px 24px; padding: 24px; border-radius: 24px; background: var(--canopy); display: flex; flex-direction: column; gap: 4px; position: relative; z-index: 3; }
 .site-header--light .mobile-menu { background: var(--panel); }
-@media (min-width: 901px) { .mobile-menu { display: none !important; } }
+/* The panel only exists below the burger breakpoint - keep this in step
+   with the header rules in section 13. */
+@media (min-width: 1281px) { .mobile-menu { display: none !important; } }
 .mobile-menu[hidden] { display: none; }
 .mobile-menu a.mm-link { font-family: var(--font-display); color: var(--chalk); text-decoration: none; font-size: 32px; font-weight: 600; padding: 8px 0; }
 .mobile-menu a.mm-link[aria-current="page"] { color: var(--honey); }
@@ -682,9 +684,22 @@ textarea.input { min-height: 160px; resize: vertical; }
 .funders .container { margin-bottom: 0; }
 
 /* ---------- 13. Responsive ---------- */
-@media (max-width: 900px) {
-  .nav, .hide-sm { display: none !important; }
+/* The header row is the widest thing on the page: brand + six links + the
+   theme/language/CTA cluster needs ~1160px in English, and ~1210px in
+   Afaan Oromoo once its labels are tightened below. At the old 900px
+   breakpoint the row was already wrapping onto two lines anywhere between
+   901 and ~1280px, so the burger takes over there instead - before the
+   links can cramp. Scoped to .site-header so .hide-sm keeps hiding the
+   decorative hero badge at its own 900px breakpoint. */
+@media (max-width: 1280px) {
+  .site-header .nav, .site-header .hide-sm { display: none !important; }
   .burger { display: inline-flex; }
+}
+/* Afaan Oromoo's nav labels run about a fifth longer than the English
+   ones; at the default size and gap the full row only fit above 1320px. */
+html[lang="om"] .nav { gap: 14px; font-size: 14px; }
+@media (max-width: 900px) {
+  .hide-sm { display: none !important; }
   :root { --section-y: 88px; }
 }
 @media (max-width: 860px) {
