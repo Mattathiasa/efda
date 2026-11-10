@@ -134,11 +134,11 @@ html.is-scrolled .site-header {
   box-shadow: 0 10px 30px -24px rgba(14, 43, 34, .55);
 }
 html.is-scrolled .site-header--light {
-  background: var(--chalk);
-  border-bottom-color: var(--line);
+  background: var(--bg);
+  border-bottom-color: var(--border);
 }
 html.is-scrolled .site-header--dark {
-  background: var(--forest);
+  background: var(--panel);
   border-bottom-color: var(--line-dark);
 }
 /* The grain is painted into the hero already; once stuck the header has its

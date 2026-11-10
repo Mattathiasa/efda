@@ -5,8 +5,10 @@ import {SiteFooter} from '@/components/SiteFooter';
 import {ContactForm} from '@/components/ContactForm';
 import {FormWatermark} from '@/components/Watermarks';
 import {PhoneIcon, MailIcon} from '@/components/icons';
-import {contacts} from '@/content/contacts';
 import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
+import {getSiteConfig} from '@/lib/site-config';
+import type {SiteConfig} from '@/lib/site-config-shared';
+import type {Locale} from '@/i18n/routing';
 
 export async function generateMetadata({
   params
@@ -22,11 +24,18 @@ interface PersonCopy {
   role: string;
 }
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const config = await getSiteConfig();
+  return <ContactPageContent config={config} />;
+}
+
+/* See app/[locale]/page.tsx for why this is a separate sync component. */
+function ContactPageContent({config}: {config: SiteConfig}) {
   const t = useTranslations('contact');
   const c = useTranslations('common');
   const locale = useLocale();
   const people = t.raw('people') as PersonCopy[];
+  const dept2Override = config.dept2[locale as Locale];
 
   return (
     <>
@@ -47,10 +56,12 @@ export default function ContactPage() {
             <div className="contact-grid" data-reveal-group>
               <div>
                 <div className="contacts">
-                  {contacts.map((person, i) => (
+                  {config.contacts.map((person, i) => (
                     <div className="contact" key={person.email}>
                       <div>
-                        <p className="contact__dept">{people[i].dept}</p>
+                        <p className="contact__dept">
+                          {i === 2 && dept2Override ? dept2Override : people[i].dept}
+                        </p>
                         <h2 lang="en">{person.name}</h2>
                         <p className="contact__role">{people[i].role}</p>
                       </div>
@@ -76,7 +87,11 @@ export default function ContactPage() {
                       <br />
                       <span>{t('address2')}</span>
                       <br />
-                      <span className="tbd">{t('streetTbd')}</span>
+                      {config.street ? (
+                        <span>{config.street}</span>
+                      ) : (
+                        <span className="tbd">{t('streetTbd')}</span>
+                      )}
                     </p>
                   </div>
                   <div>
@@ -94,7 +109,7 @@ export default function ContactPage() {
 
               <div className="form-card on-dark">
                 <FormWatermark />
-                <ContactForm />
+                <ContactForm replyDays={config.replyDays} />
               </div>
             </div>
           </div>

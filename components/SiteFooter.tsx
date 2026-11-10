@@ -1,7 +1,7 @@
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {GlobeMark} from './GlobeMark';
-import {site} from '@/content/site';
+import {defaultSiteConfig} from '@/lib/site-config-shared';
 
 type Variant = 'full' | 'cta' | 'simple';
 
@@ -21,13 +21,20 @@ function Brand() {
 export function SiteFooter({
   variant,
   ns,
-  bordered = false
+  bordered = false,
+  phone = defaultSiteConfig.phone,
+  email = defaultSiteConfig.email
 }: {
   variant: Variant;
   /** Namespace holding this page's footer copy. */
   ns: 'home' | 'about' | 'projects' | 'contact';
   /** Adds a top rule - needed when the footer abuts a dark section. */
   bordered?: boolean;
+  /* Default to the build-time placeholders so a caller that renders this
+     from a client boundary (app/[locale]/error.tsx) never needs to reach
+     into the server-only config - see lib/site-config.ts. */
+  phone?: {display: string; tel: string};
+  email?: string;
 }) {
   const t = useTranslations(ns);
   const c = useTranslations('common');
@@ -89,9 +96,9 @@ export function SiteFooter({
             </div>
             <div className="footer-col">
               <p>
-                <a href={`tel:${site.phone.tel}`}>{site.phone.display}</a>
+                <a href={`tel:${phone.tel}`}>{phone.display}</a>
                 <br />
-                <a href={`mailto:${site.email}`}>{site.email}</a>
+                <a href={`mailto:${email}`}>{email}</a>
               </p>
             </div>
             <p className="footer-fine">
@@ -127,9 +134,9 @@ export function SiteFooter({
               <br />
               <span>{t('address2')}</span>
               <br />
-              <a href={`tel:${site.phone.tel}`}>{site.phone.display}</a>
+              <a href={`tel:${phone.tel}`}>{phone.display}</a>
               <br />
-              <a href={`mailto:${site.email}`}>{site.email}</a>
+              <a href={`mailto:${email}`}>{email}</a>
             </p>
           </div>
 

@@ -7,6 +7,8 @@
    bundle, no Firestore security rules to get wrong, and no App Check. */
 
 import {TOPICS, type Topic} from './contact-shared';
+import {hasDb} from './db';
+import {hashIp} from './ip';
 
 export {TOPICS};
 export type {Topic};
@@ -120,14 +122,45 @@ export async function verifyTurnstile(token: string, ip?: string): Promise<boole
 export type DispatchResult = {delivered: boolean; via: string};
 
 /* Where the message goes. The adapter is chosen by which environment
-   variables are set, so the site can launch on either backend - or neither,
-   while the domain and inbox are still being sorted out. */
+   variables are set, so the site can launch on any of these backends - or
+   neither, while the domain and inbox are still being sorted out. Neon is
+   checked first: it is what the admin inbox reads from, so once a database
+   is provisioned it is the backend, not one of several. */
 export async function dispatch(
   m: ContactMessage,
-  subject: string
+  subject: string,
+  ip?: string
 ): Promise<DispatchResult> {
   const formspree = process.env.FORMSPREE_ENDPOINT;
   const firebaseProject = process.env.FIREBASE_PROJECT_ID;
+
+  if (hasDb()) {
+    const {insertMessage, markNotified} = await import('./messages');
+    const id = await insertMessage(m, hashIp(ip));
+
+    // A failed notification email never means a lost enquiry - the insert
+    // above already happened. Record the outcome for the admin inbox to
+    // show rather than letting it fail the request.
+    try {
+      const {sendNotification} = await import('./notify');
+      const text = [
+        `Topic: ${m.topic}`,
+        `Name: ${m.name}`,
+        `Organization: ${m.organization || '-'}`,
+        `Email: ${m.email}`,
+        `Phone: ${m.phone || '-'}`,
+        `Language: ${m.locale}`,
+        '',
+        m.message
+      ].join('\n');
+      const {sent} = await sendNotification(subject, text, m.email);
+      await markNotified(id, sent);
+    } catch (error) {
+      await markNotified(id, false, error instanceof Error ? error.message : String(error));
+    }
+
+    return {delivered: true, via: 'db'};
+  }
 
   if (firebaseProject) {
     // Firestore + the Trigger Email extension. Imported lazily so the

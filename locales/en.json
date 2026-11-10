@@ -8,6 +8,7 @@
   "common": {
     "homeAria": "EFDA — Education For Development Association, home",
     "navAria": "Main",
+    "navHome": "Home",
     "navAbout": "About",
     "navPrograms": "Programs",
     "navProjects": "Projects",
@@ -16,6 +17,7 @@
     "ctaPartner": "Partner with us",
     "menu": "Menu",
     "langLabel": "Language",
+    "themeToggle": "Switch theme",
     "skip": "Skip to content",
     "notFoundTitle": "Page not found.",
     "notFoundBody": "The page you were looking for has moved, or never existed.",

@@ -6,6 +6,7 @@ import {LanguageSwitcher} from './LanguageSwitcher';
 import {Progress} from './Progress';
 import {NavLink} from './NavLink';
 import {MobileMenu} from './MobileMenu';
+import {ThemeToggle} from './ThemeToggle';
 import {navItems, mobileNavItems} from './nav';
 
 /* Dark on Home, light elsewhere. The nav underline grows from the left on
@@ -53,6 +54,7 @@ export function SiteHeader({
         </nav>
 
         <div className="header-actions">
+          <ThemeToggle className="hide-sm" />
           <LanguageSwitcher className="hide-sm" />
           <Link className="btn btn--primary hide-sm" href="/contact">
             {t('ctaPartner')}

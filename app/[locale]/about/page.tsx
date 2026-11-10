@@ -8,6 +8,8 @@ import {PersonCard} from '@/components/PersonCard';
 import {board} from '@/content/people';
 import {offices} from '@/content/offices';
 import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
+import {getSiteConfig} from '@/lib/site-config';
+import type {SiteConfig} from '@/lib/site-config-shared';
 
 export async function generateMetadata({
   params
@@ -36,7 +38,13 @@ interface OfficeCopy {
   alt: string;
 }
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const config = await getSiteConfig();
+  return <AboutPageContent config={config} />;
+}
+
+/* See app/[locale]/page.tsx for why this is a separate sync component. */
+function AboutPageContent({config}: {config: SiteConfig}) {
   const t = useTranslations('about');
   const c = useTranslations('common');
   const locale = useLocale();
@@ -181,7 +189,7 @@ export default function AboutPage() {
       </main>
 
       <BreadcrumbJsonLd locale={locale} page="about" label={c('navAbout')} />
-      <SiteFooter variant="cta" ns="about" />
+      <SiteFooter variant="cta" ns="about" phone={config.phone} email={config.email} />
     </>
   );
 }

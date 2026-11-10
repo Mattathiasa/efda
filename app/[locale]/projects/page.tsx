@@ -7,6 +7,8 @@ import {TrackTile, type TileCopy} from '@/components/TrackTile';
 import type {ProjectCopy} from '@/components/ProjectCard';
 import {tiles} from '@/content/tiles';
 import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
+import {getSiteConfig} from '@/lib/site-config';
+import type {SiteConfig} from '@/lib/site-config-shared';
 
 export async function generateMetadata({
   params
@@ -17,7 +19,13 @@ export async function generateMetadata({
   return buildMetadata(locale, 'projects', '/projects');
 }
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const config = await getSiteConfig();
+  return <ProjectsPageContent config={config} />;
+}
+
+/* See app/[locale]/page.tsx for why this is a separate sync component. */
+function ProjectsPageContent({config}: {config: SiteConfig}) {
   const t = useTranslations('projects');
   const c = useTranslations('common');
   const locale = useLocale();
@@ -83,7 +91,7 @@ export default function ProjectsPage() {
       </main>
 
       <BreadcrumbJsonLd locale={locale} page="projects" label={c('navProjects')} />
-      <SiteFooter variant="cta" ns="projects" bordered />
+      <SiteFooter variant="cta" ns="projects" bordered phone={config.phone} email={config.email} />
     </>
   );
 }

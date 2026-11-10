@@ -4,6 +4,7 @@ import {useEffect, useRef, useState} from 'react';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {LanguageSwitcher} from './LanguageSwitcher';
+import {ThemeToggle} from './ThemeToggle';
 import {MenuIcon, CloseIcon} from './icons';
 import type {NavItem} from './nav';
 
@@ -64,7 +65,10 @@ export function MobileMenu({nav, current}: {nav: NavItem[]; current?: string}) {
             {t(item.key)}
           </Link>
         ))}
-        <LanguageSwitcher />
+        <div className="mobile-menu__controls">
+          <ThemeToggle />
+          <LanguageSwitcher />
+        </div>
         <Link className="btn btn--primary" href="/contact" onClick={() => setOpen(false)}>
           {t('ctaPartner')}
         </Link>

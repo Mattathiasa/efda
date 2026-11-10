@@ -16,7 +16,8 @@ import {ProjectIndexRow, type IndexRowCopy} from '@/components/ProjectIndexRow';
 import {HeroWatermark, CtaWatermark} from '@/components/Watermarks';
 import {ArrowRight} from '@/components/icons';
 import {buildMetadata, OrganizationJsonLd, WebSiteJsonLd} from '@/lib/seo';
-import {site} from '@/content/site';
+import {getSiteConfig} from '@/lib/site-config';
+import type {SiteConfig} from '@/lib/site-config-shared';
 
 export async function generateMetadata({
   params
@@ -37,7 +38,17 @@ interface TimelineEntry {
   text: string;
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  const config = await getSiteConfig();
+  return <HomePageContent config={config} />;
+}
+
+/* A thin async wrapper around this, rather than calling getSiteConfig()
+   in-line, because useTranslations/useLocale are plain functions in a
+   Server Component (next-intl's RSC support), not real hooks - but
+   eslint-plugin-react-hooks matches on the `use` prefix regardless and
+   flags any such call inside an async function. */
+function HomePageContent({config}: {config: SiteConfig}) {
   const t = useTranslations('home');
   const c = useTranslations('common');
   const locale = useLocale();
@@ -56,7 +67,7 @@ export default function HomePage() {
       <a className="skip-link" href="#main">
         {c('skip')}
       </a>
-      <SiteHeader variant="dark" />
+      <SiteHeader variant="dark" current="navHome" />
 
       <main id="main">
         {/* 2. Hero */}
@@ -230,19 +241,19 @@ export default function HomePage() {
         <FunderMarquee label={t('fundersLabel')} />
 
         {/* 9. Call to action */}
-        <section className="section--cta">
+        <section className="section--cta" aria-labelledby="cta-title">
           <div className="container">
             <div className="cta" data-reveal>
               <CtaWatermark />
-              <h2>{t('ctaH2')}</h2>
+              <h2 id="cta-title">{t('ctaH2')}</h2>
               <div className="cta__body">
                 <p>{t('ctaP')}</p>
                 <div className="btn-row">
                   <Link className="btn btn--dark" href="/contact">
                     {c('ctaPartner')}
                   </Link>
-                  <a className="btn btn--outline-light" href={`tel:${site.phone.tel}`}>
-                    {site.phone.display}
+                  <a className="btn btn--outline-light" href={`tel:${config.phone.tel}`}>
+                    {config.phone.display}
                   </a>
                 </div>
               </div>
@@ -251,7 +262,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      <SiteFooter variant="full" ns="home" />
+      <SiteFooter variant="full" ns="home" phone={config.phone} email={config.email} />
       <OrganizationJsonLd />
       <WebSiteJsonLd locale={locale} />
     </>

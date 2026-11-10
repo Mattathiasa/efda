@@ -151,10 +151,14 @@ describe('dispatch', () => {
   beforeEach(() => {
     delete process.env.FIREBASE_PROJECT_ID;
     delete process.env.FORMSPREE_ENDPOINT;
+    delete process.env.DATABASE_URL;
   });
 
   afterEach(() => {
     process.env = {...ORIGINAL_ENV};
+    vi.restoreAllMocks();
+    vi.doUnmock('./messages');
+    vi.doUnmock('./notify');
   });
 
   it('logs and reports un-delivered when no backend is configured', async () => {
@@ -162,5 +166,38 @@ describe('dispatch', () => {
     const result = await dispatch(validInput as never, 'subject');
     expect(result).toEqual({delivered: false, via: 'log'});
     expect(warnSpy).toHaveBeenCalled();
+  });
+
+  it('prefers the database when DATABASE_URL is set, and reports delivered on the insert alone', async () => {
+    process.env.DATABASE_URL = 'postgres://example';
+
+    const insertMessage = vi.fn().mockResolvedValue(42);
+    const markNotified = vi.fn().mockResolvedValue(undefined);
+    vi.doMock('./messages', () => ({insertMessage, markNotified}));
+    vi.doMock('./notify', () => ({
+      sendNotification: vi.fn().mockResolvedValue({sent: true})
+    }));
+
+    const result = await dispatch(validInput as never, 'subject', '203.0.113.1');
+
+    expect(result).toEqual({delivered: true, via: 'db'});
+    expect(insertMessage).toHaveBeenCalledWith(validInput, expect.any(String));
+    expect(markNotified).toHaveBeenCalledWith(42, true);
+  });
+
+  it('still reports delivered when the notification email fails', async () => {
+    process.env.DATABASE_URL = 'postgres://example';
+
+    const insertMessage = vi.fn().mockResolvedValue(7);
+    const markNotified = vi.fn().mockResolvedValue(undefined);
+    vi.doMock('./messages', () => ({insertMessage, markNotified}));
+    vi.doMock('./notify', () => ({
+      sendNotification: vi.fn().mockRejectedValue(new Error('Resend responded 500'))
+    }));
+
+    const result = await dispatch(validInput as never, 'subject');
+
+    expect(result).toEqual({delivered: true, via: 'db'});
+    expect(markNotified).toHaveBeenCalledWith(7, false, 'Resend responded 500');
   });
 });

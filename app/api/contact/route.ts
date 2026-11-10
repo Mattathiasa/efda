@@ -57,7 +57,7 @@ export async function POST(request: Request) {
   const subject = subjectFor(result.data, t(result.data.topic));
 
   try {
-    const {delivered, via} = await dispatch(result.data, subject);
+    const {delivered, via} = await dispatch(result.data, subject, ip);
 
     // Never tell a visitor their message is on its way when it is not. If a
     // production deploy has no delivery backend configured, fail loudly so

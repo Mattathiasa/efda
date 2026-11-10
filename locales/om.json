@@ -8,6 +8,7 @@
   "common": {
     "homeAria": "EFDA — Waldaa Barnoota Misoomaaf, fuula jalqabaa",
     "navAria": "Baafata ijoo",
+    "navHome": "Mana",
     "navAbout": "Waa'ee keenya",
     "navPrograms": "Sagantaalee",
     "navProjects": "Pirojektoota",
@@ -16,6 +17,7 @@
     "ctaPartner": "Michuu keenya ta'aa",
     "menu": "Baafata",
     "langLabel": "Afaan",
+    "themeToggle": "Bifa jijjiiri",
     "skip": "Gara qabiyyee ijootti darbi",
     "notFoundTitle": "Fuulli hin argamne.",
     "notFoundBody": "Fuulli isin barbaaddan iddoo jijjiirameera, yookaan takkaa hin turre.",

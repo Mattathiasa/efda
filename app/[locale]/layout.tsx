@@ -1,5 +1,6 @@
 import type {Metadata, Viewport} from 'next';
 import {notFound} from 'next/navigation';
+import Script from 'next/script';
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
@@ -19,8 +20,19 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0E2B22'
+  themeColor: [
+    {media: '(prefers-color-scheme: light)', color: '#0E2B22'},
+    {media: '(prefers-color-scheme: dark)', color: '#0A1512'}
+  ]
 };
+
+/* Sets data-theme on <html> before paint, so there is no flash between the
+   OS-default and a remembered explicit choice, and no mismatch between what
+   the server rendered and what the client then corrects it to. Content is
+   a fixed string, not user input - same safety profile as the JSON-LD
+   blocks in lib/seo.tsx. See ThemeToggle.tsx for why this can't instead be
+   decided in React state. */
+const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}})();`;
 
 export async function generateMetadata({
   params
@@ -59,7 +71,23 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        {/* beforeInteractive, not a bare <script>: a plain <script> in JSX is
+            only ever executed by the browser's OWN parse of the initial HTML
+            - React warns (and will not re-run it) the moment it has to
+            render that node itself, which Fast Refresh does on every edit in
+            dev. beforeInteractive is Next's own mechanism for exactly this
+            case: injected outside React's normal reconciliation, guaranteed
+            to run before hydration either way. It sets data-theme on <html>
+            before React hydrates, so the server-rendered markup and the live
+            DOM legitimately differ on that one attribute every time -
+            suppressHydrationWarning above is the sanctioned way to tell
+            React that's expected, scoped to just this element. */}
+        <Script id="theme-init" strategy="beforeInteractive">
+          {THEME_INIT_SCRIPT}
+        </Script>
+      </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <ScrollEffects />

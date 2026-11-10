@@ -47,7 +47,7 @@ export default function Error({
               <Link className="btn btn--dark" href="/">
                 {c('backHome')}
               </Link>
-              <a className="btn btn--ghost" href={`tel:${site.phone.tel}`} style={{borderColor: 'var(--line)', color: 'var(--ink)'}}>
+              <a className="btn btn--ghost" href={`tel:${site.phone.tel}`} style={{borderColor: 'var(--border)', color: 'var(--text)'}}>
                 {site.phone.display}
               </a>
             </div>

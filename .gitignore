@@ -32,3 +32,4 @@ yarn-error.log*
 
 # verification builds (see distDir in next.config.ts)
 /.next-verify/
+.env*

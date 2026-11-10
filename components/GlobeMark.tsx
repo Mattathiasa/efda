@@ -5,8 +5,12 @@
 type Variant = 'forest' | 'reversed' | 'white' | 'badge';
 
 const palettes: Record<Variant, {disc: string; tile: string; grid: string}> = {
-  // Primary, on chalk / paper / white.
-  forest: {disc: '#0E2B22', tile: '#B5491F', grid: '#F2F1EC'},
+  // Primary, on chalk / paper / white - i.e. on the page background, which
+  // is the one thing here that changes under dark mode. Routed through the
+  // --mark-* tokens (styles.css) rather than these same literal hex values,
+  // so it inverts along with the page; every other variant sits on a fixed
+  // panel colour and stays a literal value on purpose.
+  forest: {disc: 'var(--mark-disc)', tile: 'var(--mark-tile)', grid: 'var(--mark-grid)'},
   // On forest or other dark grounds.
   reversed: {disc: '#F2F1EC', tile: '#F0B43C', grid: '#0E2B22'},
   // One colour, on laterite or photos.
@@ -25,7 +29,7 @@ export function GlobeMark({
   className?: string;
 }) {
   const {disc, tile, grid} = palettes[variant];
-  const ring = variant === 'forest' ? '#0E2B22' : '#F2F1EC';
+  const ring = variant === 'forest' ? 'var(--mark-disc)' : '#F2F1EC';
 
   return (
     <svg

@@ -7,6 +7,7 @@ import {ArrowRight} from './icons';
 import {TOPICS, type Topic} from '@/lib/contact-shared';
 import {Turnstile} from './Turnstile';
 import {site} from '@/content/site';
+import {applyReplyDays} from '@/lib/site-config-shared';
 
 type State = 'idle' | 'sending' | 'sent' | 'error' | 'invalid';
 
@@ -68,7 +69,7 @@ function Field({
   );
 }
 
-export function ContactForm() {
+export function ContactForm({replyDays = null}: {replyDays?: string | null}) {
   const t = useTranslations('contact');
   const locale = useLocale();
   const [topic, setTopic] = useState<Topic>('partner');
@@ -234,7 +235,7 @@ export function ContactForm() {
             ) : state === 'invalid' ? (
               t('errFix')
             ) : (
-              t('replyNote')
+              applyReplyDays(t('replyNote'), replyDays)
             )}
           </span>
           <button className="btn btn--primary" type="submit" disabled={state === 'sending'}>

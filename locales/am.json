@@ -8,6 +8,7 @@
   "common": {
     "homeAria": "EFDA — ትምህርት ለልማት ማህበር፣ መነሻ ገጽ",
     "navAria": "ዋና ማውጫ",
+    "navHome": "መነሻ",
     "navAbout": "ስለ እኛ",
     "navPrograms": "ፕሮግራሞች",
     "navProjects": "ፕሮጀክቶች",
@@ -16,6 +17,7 @@
     "ctaPartner": "አጋራችን ይሁኑ",
     "menu": "ማውጫ",
     "langLabel": "ቋንቋ",
+    "themeToggle": "ገጽታ ይቀይሩ",
     "skip": "ወደ ዋናው ይዘት ይሂዱ",
     "notFoundTitle": "ገጹ አልተገኘም።",
     "notFoundBody": "የፈለጉት ገጽ ተዛውሯል ወይም ኖሮ አያውቅም።",
