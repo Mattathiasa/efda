@@ -5,7 +5,7 @@ import {Grain} from './Grain';
 import {LanguageSwitcher} from './LanguageSwitcher';
 import {Progress} from './Progress';
 import {NavLink} from './NavLink';
-import {MobileMenu} from './MobileMenu';
+import {MobileMenuButton, MobileMenuPanel, MobileMenuProvider} from './MobileMenu';
 import {ThemeToggle} from './ThemeToggle';
 import {navItems, mobileNavItems} from './nav';
 
@@ -22,46 +22,51 @@ export function SiteHeader({
   const dark = variant === 'dark';
 
   return (
-    <header className={`site-header site-header--${variant}${dark ? ' on-dark' : ''}`}>
-      {dark ? <Grain /> : null}
-      {/* Reading progress, and an indeterminate sweep while a navigation is
-          still fetching. Decorative either way. */}
-      <Progress />
+    <MobileMenuProvider>
+      <header className={`site-header site-header--${variant}${dark ? ' on-dark' : ''}`}>
+        {dark ? <Grain /> : null}
+        {/* Reading progress, and an indeterminate sweep while a navigation is
+            still fetching. Decorative either way. */}
+        <Progress />
 
-      <div className="container site-header__inner">
-        <Link className="brand" href="/" aria-label={t('homeAria')}>
-          <GlobeMark className="brand__mark" variant={dark ? 'reversed' : 'forest'} />
-          <span className="brand__text">
-            <span className="brand__word">efda</span>
-            {/* The Amharic name stays in every language. */}
-            <span className="brand__am" lang="am">
-              ትምህርት ለልማት ማህበር
+        <div className="container site-header__inner">
+          <Link className="brand" href="/" aria-label={t('homeAria')}>
+            <GlobeMark className="brand__mark" variant={dark ? 'reversed' : 'forest'} />
+            <span className="brand__text">
+              <span className="brand__word">efda</span>
+              {/* The Amharic name stays in every language. */}
+              <span className="brand__am" lang="am">
+                ትምህርት ለልማት ማህበር
+              </span>
             </span>
-          </span>
-        </Link>
-
-        <nav className="nav" aria-label={t('navAria')}>
-          {navItems.map((item) => (
-            <NavLink
-              key={item.key}
-              className="navlink"
-              href={item.href}
-              aria-current={current === item.key ? 'page' : undefined}
-            >
-              {t(item.key)}
-            </NavLink>
-          ))}
-        </nav>
-
-        <div className="header-actions">
-          <ThemeToggle className="hide-sm" />
-          <LanguageSwitcher className="hide-sm" />
-          <Link className="btn btn--primary hide-sm" href="/contact">
-            {t('ctaPartner')}
           </Link>
-          <MobileMenu nav={mobileNavItems} current={current} />
+
+          <nav className="nav" aria-label={t('navAria')}>
+            {navItems.map((item) => (
+              <NavLink
+                key={item.key}
+                className="navlink"
+                href={item.href}
+                aria-current={current === item.key ? 'page' : undefined}
+              >
+                {t(item.key)}
+              </NavLink>
+            ))}
+          </nav>
+
+          <div className="header-actions">
+            <ThemeToggle className="hide-sm" />
+            <LanguageSwitcher className="hide-sm" />
+            <Link className="btn btn--primary hide-sm" href="/contact">
+              {t('ctaPartner')}
+            </Link>
+            <MobileMenuButton />
+          </div>
         </div>
-      </div>
-    </header>
+
+        {/* A sibling of the row above, not a child of it - see MobileMenu. */}
+        <MobileMenuPanel nav={mobileNavItems} current={current} />
+      </header>
+    </MobileMenuProvider>
   );
 }
