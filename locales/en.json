@@ -297,6 +297,43 @@
         "text": "Our education work spans Alternative Basic Education, quality improvement inside government primary schools, and the Speed School programme for children out of school for socioeconomic reasons."
       }
     ],
+    "areasLabel": "(03) Areas of experience",
+    "areasH2": "Eight fields, twenty-six years.",
+    "areasP": "The work EFDA has done since 1999, beyond the five programs it runs today. Each of these began because a community asked for it.",
+    "areas": [
+      {
+        "title": "Livelihood",
+        "alt": "Trays of kocho bread and fried kocho laid out on a table in Woliso"
+      },
+      {
+        "title": "Education",
+        "alt": "An elder seated outdoors teaching a semicircle of children"
+      },
+      {
+        "title": "Environmental protection",
+        "alt": "A farmer ploughing a terraced field behind a pair of oxen"
+      },
+      {
+        "title": "Conflict resolution and peaceful coexistence",
+        "alt": "Women elders standing in a row holding ceremonial staffs"
+      },
+      {
+        "title": "Health",
+        "alt": "Four girls and a health worker smiling towards the camera"
+      },
+      {
+        "title": "Rural development",
+        "alt": "A dugout canoe carrying passengers and a donkey across the water to Chitu Island"
+      },
+      {
+        "title": "Skill training and job creation",
+        "alt": "Trainees in a workshop stitching footballs and shoes"
+      },
+      {
+        "title": "Women's empowerment",
+        "alt": "A woman working a hand pump beside a clay water jar"
+      }
+    ],
     "philLabel": "(02) Development philosophy",
     "vmg": [
       {
@@ -331,7 +368,7 @@
         "text": "The community owns the project — we are there to make its own plan work."
       }
     ],
-    "orgLabel": "(03) Organization",
+    "orgLabel": "(04) Organization",
     "orgH2": "How EFDA is organized.",
     "orgP": "A Board of Directors governs EFDA, alongside an independent external auditor. The Managing Director leads two arms: Program Management, which runs our project offices, and Finance & Administration.",
     "chart": {
@@ -348,7 +385,7 @@
       "fin": "Finance",
       "hr": "Human Resources & Property"
     },
-    "leadLabel": "(04) Leadership",
+    "leadLabel": "(05) Leadership",
     "leadH2": "Board of Directors.",
     "portraitsNote": "[PORTRAITS TO BE SUPPLIED — INITIALS SHOWN UNTIL THEN]",
     "roles": [
@@ -359,7 +396,7 @@
       "Board Member",
       "Board Member"
     ],
-    "officesLabel": "(05) Our offices",
+    "officesLabel": "(06) Our offices",
     "officesH2": "Close to the work.",
     "asosaPhoto": "[ASOSA OFFICE PHOTO]",
     "offices": [

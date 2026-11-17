@@ -4,6 +4,8 @@ import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
 import {Photo} from '@/components/Photo';
 import {OrgChart} from '@/components/OrgChart';
+import {ExperienceGrid} from '@/components/ExperienceGrid';
+import type {AreaCopy} from '@/components/ExperienceGrid';
 import {PersonCard} from '@/components/PersonCard';
 import {board} from '@/content/people';
 import {offices} from '@/content/offices';
@@ -57,6 +59,7 @@ function AboutPageContent({config}: {config: SiteConfig}) {
   const paras = t.raw('whoParas') as Para[];
   const vmg = t.raw('vmg') as Vmg[];
   const values = t.raw('values') as Value[];
+  const areaCopy = t.raw('areas') as AreaCopy[];
   const roles = t.raw('roles') as string[];
   const officeCopy = t.raw('offices') as OfficeCopy[];
 
@@ -144,7 +147,23 @@ function AboutPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 5. Organization */}
+        {/* 5. Areas of experience */}
+        <section className="section section--dust">
+          <div className="container">
+            <div className="split split--wide" data-reveal>
+              <div>
+                <p className="label">{t('areasLabel')}</p>
+                <h2 className="h-section">{t('areasH2')}</h2>
+              </div>
+              <p className="lead">{t('areasP')}</p>
+            </div>
+            <div data-reveal>
+              <ExperienceGrid copy={areaCopy} />
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Organization */}
         <section className="section" id="structure" style={{paddingBottom: 96}}>
           <div className="container">
             <div className="split split--wide">
@@ -160,7 +179,7 @@ function AboutPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 6. Leadership */}
+        {/* 7. Leadership */}
         <section className="section" id="leadership" style={{paddingTop: 32}}>
           <div className="container">
             <div className="split split--wide">
@@ -179,7 +198,7 @@ function AboutPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 7. Our offices */}
+        {/* 8. Our offices */}
         <section className="section section--dust">
           <div className="container">
             <p className="label">{t('officesLabel')}</p>

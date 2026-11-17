@@ -297,6 +297,43 @@
         "text": "Hojiin barnootaa keenya Barnoota Bu'uuraa Filannoo, fooyya'iinsa qulqullinaa manneen barnootaa sadarkaa duraa mootummaa keessatti, fi sagantaa Speed School ijoollee sababa hawaas-diinagdeetiin mana barumsaa ala ta'aniif ni hammata."
       }
     ],
+    "areasLabel": "(03) Dameewwan muuxannoo",
+    "areasH2": "Dameewwan saddeet, waggaa digdamii ja'a.",
+    "areasP": "Hojii EFDA bara 1999 irraa kaasee hojjete — sagantaalee shanan har'a geggeessu bira darbee. Tokkoon tokkoon isaanii kan jalqabame waan hawaasni gaafateef.",
+    "areas": [
+      {
+        "title": "Jireenya",
+        "alt": "Buddeenaafi qocoo waadame gabatee irratti Waliisootti dhiyaate"
+      },
+      {
+        "title": "Barnoota",
+        "alt": "Jaarsi alatti taa'ee ijoollee barsiisu"
+      },
+      {
+        "title": "Eegumsa naannoo",
+        "alt": "Qonnaan bulaan sangoota lamaan lafa cirracha qotu"
+      },
+      {
+        "title": "Furmaata walitti bu'iinsaafi waliin jireenya nagaa",
+        "alt": "Dubartoonni jaarsolii ulee aadaa qabatanii sarara irra dhaabatan"
+      },
+      {
+        "title": "Fayyaa",
+        "alt": "Shamarran afurfi hojjetaan fayyaa gara kaameeraatti seeqatan"
+      },
+      {
+        "title": "Misooma baadiyyaa",
+        "alt": "Bidiruun namootaafi harree baattee gara Odola Chituutti ceetu"
+      },
+      {
+        "title": "Leenjii dandeettiifi uumuu carraa hojii",
+        "alt": "Leenjifamtoonni mana hojii keessatti kubbaafi kophee hodhan"
+      },
+      {
+        "title": "Dandeettii dubartootaa cimsuu",
+        "alt": "Dubartiin okkotee bishaanii supheetiin cinatti pompii harkaa hojjetu"
+      }
+    ],
     "philLabel": "(02) Falaasama misoomaa",
     "vmg": [
       {
@@ -331,7 +368,7 @@
         "text": "Pirojektiin kan hawaasaati — nuti kan jirru karoorri isaa mataa isaa akka milkaa'u gargaaruuf."
       }
     ],
-    "orgLabel": "(03) Caasaa dhaabbatichaa",
+    "orgLabel": "(04) Caasaa dhaabbatichaa",
     "orgH2": "EFDA akkamitti akka qindaa'e.",
     "orgP": "EFDA kan bulfamu Boordii Daayreektarootaatiin, odiitara alaa walabaa wajjin. Daayrektarri Hoji Raawwachiisaa damee lama hogganu: Bulchiinsa Sagantaa, kan waajjiraalee pirojektii keenyaa bulchu, fi Faayinaansii fi Bulchiinsa.",
     "chart": {
@@ -348,7 +385,7 @@
       "fin": "Faayinaansii",
       "hr": "Humna Namaa fi Qabeenya"
     },
-    "leadLabel": "(04) Hooggansa",
+    "leadLabel": "(05) Hooggansa",
     "leadH2": "Boordii Daayreektarootaa.",
     "portraitsNote": "[SUURAAN NI DHIYAATA — HANGA SANAATTI QUBEE JALQABAA MAQAA]",
     "roles": [
@@ -359,7 +396,7 @@
       "Miseensa Boordii",
       "Miseensa Boordii"
     ],
-    "officesLabel": "(05) Waajjiraalee keenya",
+    "officesLabel": "(06) Waajjiraalee keenya",
     "officesH2": "Hojii biratti dhiyoo.",
     "asosaPhoto": "[SUURAA WAAJJIRA ASOOSAA]",
     "offices": [
