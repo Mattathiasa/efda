@@ -419,6 +419,38 @@
         "alt": ""
       }
     ],
+    "accLabel": "(07) Accountability",
+    "accH2": "What holds the work together.",
+    "accP": "EFDA is governed by a Board of Directors and audited annually by an independent external auditor. The policies and manuals below are in place and applied across every project office.",
+    "capacity": [
+      {
+        "k": "Staff",
+        "v": "22 — six women and sixteen men"
+      },
+      {
+        "k": "Vehicles",
+        "v": "5"
+      },
+      {
+        "k": "Premises",
+        "v": "2 offices owned by EFDA"
+      },
+      {
+        "k": "External audit",
+        "v": "Independent, annual"
+      }
+    ],
+    "policiesLabel": "Policies and manuals",
+    "policies": [
+      "Financial policies",
+      "Code of conduct",
+      "Safeguarding policy manual",
+      "Child policy",
+      "Human rights manual",
+      "Procurement policy",
+      "Self-help group training manual",
+      "Strategic plan"
+    ],
     "footH2": "Work with us in Oromia and Benishangul Gumuz.",
     "address1": "P.O. Box 25725, Code 1000",
     "address2": "Addis Ababa, Ethiopia",

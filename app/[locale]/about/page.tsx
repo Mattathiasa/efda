@@ -9,6 +9,7 @@ import type {AreaCopy} from '@/components/ExperienceGrid';
 import {PersonCard} from '@/components/PersonCard';
 import {board} from '@/content/people';
 import {offices} from '@/content/offices';
+import {policies} from '@/content/policies';
 import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
 import {getSiteConfig} from '@/lib/site-config';
 import type {SiteConfig} from '@/lib/site-config-shared';
@@ -62,6 +63,8 @@ function AboutPageContent({config}: {config: SiteConfig}) {
   const areaCopy = t.raw('areas') as AreaCopy[];
   const roles = t.raw('roles') as string[];
   const officeCopy = t.raw('offices') as OfficeCopy[];
+  const capacity = t.raw('capacity') as Fact[];
+  const policyCopy = t.raw('policies') as string[];
 
   return (
     <>
@@ -225,6 +228,37 @@ function AboutPageContent({config}: {config: SiteConfig}) {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* 9. Accountability */}
+        <section className="section">
+          <div className="container">
+            <div className="split split--wide" data-reveal>
+              <div>
+                <p className="label">{t('accLabel')}</p>
+                <h2 className="h-section">{t('accH2')}</h2>
+              </div>
+              <p className="lead">{t('accP')}</p>
+            </div>
+
+            <dl className="facts" style={{marginTop: 56}} data-reveal>
+              {capacity.map((item, i) => (
+                <div key={i}>
+                  <dt>{item.k}</dt>
+                  <dd>{item.v}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <p className="label" style={{marginTop: 72}}>
+              {t('policiesLabel')}
+            </p>
+            <ul className="policy-list" data-reveal-group>
+              {policies.map((id, i) => (
+                <li key={id}>{policyCopy[i]}</li>
+              ))}
+            </ul>
           </div>
         </section>
       </main>

@@ -574,6 +574,12 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .areas { margin-top: 56px; --gap: 28px; }
 .area figcaption { margin-top: 14px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; line-height: 1.5; color: var(--text-soft); }
 
+/* The policy roster. Same rule-above-each-item rhythm as .facts, two or three
+   columns wide depending on room. No checkmark glyph: it does not translate
+   and a screen reader reads it as noise. */
+.policy-list { list-style: none; margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 0 48px; }
+.policy-list li { padding: 18px 0; border-top: 1px solid var(--border); font-size: 17px; line-height: 1.5; }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }

@@ -419,6 +419,38 @@
         "alt": ""
       }
     ],
+    "accLabel": "(07) Itti gaafatamummaa",
+    "accH2": "Wanti hojii walitti qabu.",
+    "accP": "EFDA'n Boordii Daayrektarootaan geggeeffama; waggaa waggaadhaan oditara alaa walabaan qoratama. Imaammannotaafi qajeelfamni armaan gadii qophaa'anii waajjiraalee pirojektii hunda keessatti hojii irra oolu.",
+    "capacity": [
+      {
+        "k": "Hojjettoota",
+        "v": "22 — dubartoota ja'aafi dhiirota kudha ja'a"
+      },
+      {
+        "k": "Konkolaattota",
+        "v": "5"
+      },
+      {
+        "k": "Qabeenya",
+        "v": "Waajjiraalee 2 kan EFDA'n qabu"
+      },
+      {
+        "k": "Odiitii alaa",
+        "v": "Walaba, waggaa waggaan"
+      }
+    ],
+    "policiesLabel": "Imaammataafi qajeelfama",
+    "policies": [
+      "Imaammata faayinaansii",
+      "Qajeelfama naamusaa",
+      "Qajeelfama imaammata eegumsaa",
+      "Imaammata daa'immanii",
+      "Qajeelfama mirga namoomaa",
+      "Imaammata bittaa",
+      "Qajeelfama leenjii garee of-gargaarsaa",
+      "Karoora tarsiimoo"
+    ],
     "footH2": "Oromiyaa fi Beenishaangul Gumuz keessatti nu wajjin hojjedhaa.",
     "address1": "S.P. 25725, Koodii 1000",
     "address2": "Finfinnee, Itoophiyaa",
