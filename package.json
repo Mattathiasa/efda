@@ -19,7 +19,7 @@
   "dependencies": {
     "@neondatabase/serverless": "^1.2.0",
     "firebase-admin": "^14.5.0",
-    "next": "16.4.0",
+    "next": "16.4.6",
     "next-intl": "4.14.9",
     "react": "19.2.0",
     "react-dom": "19.2.0"
@@ -30,7 +30,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^16.4.0",
+    "eslint-config-next": "^16.4.6",
     "subset-font": "^2.9.0",
     "tailwindcss": "4.3.3",
     "typescript": "5.9.3",
