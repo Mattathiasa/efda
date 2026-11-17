@@ -21,5 +21,6 @@ export const site = {
   poBox: 'P.O. Box 25725, Code 1000',
   city: 'Addis Ababa, Ethiopia',
   csoNumber: '0035',
+  tin: '0004826138',
   founded: '1999'
 };

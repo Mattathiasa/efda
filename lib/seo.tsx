@@ -116,7 +116,7 @@ export function OrganizationJsonLd() {
       addressCountry: 'ET'
     },
     areaServed: ['Oromia', 'Benishangul Gumuz'],
-    identifier: `Ethiopian CSO No. ${site.csoNumber}`
+    identifier: [`Ethiopian CSO No. ${site.csoNumber}`, `Ethiopian TIN ${site.tin}`]
   };
 
   return (
