@@ -1,8 +1,8 @@
 # EFDA website
 
 The website of Education For Development Association, an Ethiopian civil society
-organization working in Oromia and Benishangul Gumuz. Four pages in English,
-Amharic and Afaan Oromoo — twelve statically generated URLs.
+organization working in Oromia and Benishangul Gumuz. Five pages in English,
+Amharic and Afaan Oromoo — fifteen statically generated URLs.
 
 ```bash
 npm install
@@ -36,7 +36,7 @@ npm run check      # types + locale key parity + open content items + unit tests
 | Hosting | host-agnostic: runs on Vercel, or Cloudflare via `@opennextjs/cloudflare` |
 
 ```
-app/[locale]/        home, about, projects, contact
+app/[locale]/        home, about, projects, partners, contact
 app/api/contact/     form endpoint
 components/          one file per piece of the design
 content/             typed data that does not change by language
@@ -161,17 +161,45 @@ loads when unset, so there is no consent banner.
 Run `npm run check:placeholders` — everything still missing appears on the site
 in visible `[BRACKETS]`, never silently blank.
 
-- [ ] Native-speaker review of `am.json` and `om.json`
+- [ ] Native-speaker review of `am.json` and `om.json` — now including the
+      Partners page, the core values, the areas of experience and the policy
+      list, all added from the 2025 profile
 - [ ] EFDA's official Afaan Oromoo name, and Ge'ez spellings of people's names
-- [ ] Funder of the West Wollega peacebuilding project
-- [ ] Tucho Enkossa's role, and the head-office street address
+- [ ] Funder of the West Wollega peacebuilding project. The 2025 profile shows
+      a USAID/Ethiopia banner at the Gimbi workshop, which is suggestive but
+      not a statement — `[FUNDER — CONFIRM]` stays until EFDA says so
+- [ ] Whether USAID belongs on the funder roster — same evidence, same
+      `[USAID — CONFIRM]` placeholder in `content/funders.ts`
+- [ ] Whether `SCD` in the 2024 profile and `SDC` in the 2025 one are the same
+      body, and `CSSP2` and `CSSP` the same programme. Listed once each
+- [ ] Tucho Enkossa's role
+- [ ] Paste the head-office street address — Gullele Sub City, Woreda 9, House
+      No. 430 — into `/admin/settings`. It is settings-table only, with no
+      environment fallback
 - [ ] Reply time for the form's "[X] working days"
-- [ ] Board portraits, an Asosa office photo, a peacebuilding photo
-- [ ] Confirm the seven projects and the 2024 impact figures are current
+- [ ] Board portraits, and an Asosa office photo
+- [ ] Whether Asosa should still be listed in `content/offices.ts`. The 2025
+      profile says two EFDA-owned offices and names only Shambu and Woliso
+- [ ] Which building is Shambu and which is Woliso. The 2025 profile's caption
+      order is ambiguous; the site keeps the 2024 profile's labels
+- [ ] Confirm the seven projects and the impact figures are current. Capacity
+      (22 staff, 5 vehicles, 2 owned offices) is as published in 2025
 - [ ] Domain, HTTPS, and role addresses replacing the personal ones in
       `content/contacts.ts` and `content/site.ts`
 - [ ] Set `NEXT_PUBLIC_SITE_URL`, then submit `sitemap.xml` to Search Console
 - [ ] Board approval of the Globe E logo
 - [ ] **Confirm EFDA has consent to publish the photographs of children on the
-      web.** They come from a printed profile, and web publication is a
-      different use.
+      web.** They come from printed profiles, and web publication is a
+      different use. The 2025 profile added more of them, so this matters more
+      than it did, not less — classrooms, a health group portrait, and the
+      Roger Federer photographs on the Partners page
+- [ ] **Confirm the Roger Federer Foundation is content for the February 2010
+      visit photographs to be republished on the web**, and that EFDA may use
+      its name and the RFF/EFDA jerseys as it does on the Partners page
+- [ ] Establish provenance and licence for `Play for peace.jpg` before it is
+      used anywhere. It is a professionally shot image of an Ethiopian girl on
+      a Swiss alpine pasture carrying a Play for Peace logo — a partner
+      foundation's campaign photograph, not EFDA field work. It is in the
+      source material but deliberately not in `public/photos/`
+- [ ] A PDF of the 2025 profile, if EFDA wants one offered as a download. The
+      `.docx` is 21 MB and is not shipped; no converter is installed here
