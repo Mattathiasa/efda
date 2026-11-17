@@ -1,7 +1,7 @@
 import {Fragment} from 'react';
 import {funders} from '@/content/funders';
 
-/* Two copies of the list scrolling left in 40s; the second is aria-hidden so
+/* Two copies of the list scrolling left; the second is aria-hidden so
    screen readers hear the names once. Stops under prefers-reduced-motion.
    Names and dots are direct children of .marquee__group so its flex gap
    applies to each. */
