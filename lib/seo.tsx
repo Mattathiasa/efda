@@ -98,8 +98,23 @@ function JsonLd({data}: {data: unknown}) {
 }
 
 /* Organization structured data. `sameAs` is deliberately absent until EFDA
-   has social accounts to point at. */
-export function OrganizationJsonLd() {
+   has social accounts to point at.
+
+   Contact details come in as a prop rather than from content/site.ts, which
+   only sees the environment. The settings table overrides the environment, so
+   reading site.phone here published "[PHONE - CONFIRM]" to search engines
+   while the page beside it showed the real number. A placeholder is meant to
+   be visible on the page, not ingested as fact. A street address is still
+   omitted: EFDA's is a house number, not a public counter.
+
+   The caller passes its own already-awaited config, so this stays sync. */
+export function OrganizationJsonLd({
+  phone,
+  email
+}: {
+  phone: {display: string; tel: string};
+  email: string;
+}) {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'NGO',
@@ -108,8 +123,8 @@ export function OrganizationJsonLd() {
     url: site.url,
     logo: `${site.url}/logo/efda-globe-forest.svg`,
     foundingDate: site.founded,
-    telephone: site.phone.display,
-    email: site.email,
+    telephone: phone.display,
+    email: email,
     address: {
       '@type': 'PostalAddress',
       postOfficeBoxNumber: '25725',

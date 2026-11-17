@@ -263,7 +263,7 @@ function HomePageContent({config}: {config: SiteConfig}) {
       </main>
 
       <SiteFooter variant="full" ns="home" phone={config.phone} email={config.email} />
-      <OrganizationJsonLd />
+      <OrganizationJsonLd phone={config.phone} email={config.email} />
       <WebSiteJsonLd locale={locale} />
     </>
   );
