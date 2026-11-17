@@ -1,7 +1,6 @@
 'use client';
 
 import {useState} from 'react';
-import {useTranslations} from 'next-intl';
 import {Photo} from './Photo';
 import {ArrowRight} from './icons';
 import {programs} from '@/content/programs';
@@ -18,9 +17,10 @@ interface ProgramCopy {
 }
 
 /* List of five programs; the picked one shows its photo, region, text and
-   stat. Program 5 has no photo yet, so it shows a pull quote instead. */
+   stat. A program with no photo falls back to its pull quote - nothing does
+   today, but the panel is kept so a missing photo degrades rather than
+   breaks. */
 export function ProgramSwitcher({copy}: {copy: ProgramCopy[]}) {
-  const t = useTranslations('home');
   const [active, setActive] = useState(0);
   const current = copy[active];
   const photo = programs[active]?.photo;
@@ -62,7 +62,6 @@ export function ProgramSwitcher({copy}: {copy: ProgramCopy[]}) {
         ) : (
           <div className="prog-detail__quote arch--card">
             <p>“{current.quote}”</p>
-            <span>{t('photoTbd')}</span>
           </div>
         )}
 
