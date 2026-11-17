@@ -631,6 +631,38 @@
     "rights": "© 2026 EFDA",
     "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
   },
+  "partners": {
+    "meta": {
+      "title": "Michoota",
+      "description": "Bara 1999 irraa kaasee deeggartoonniifi michoonni kudha ja'a hojii EFDA deeggaraniiru — isaan keessaa Roger Federer Foundation, Pestalozzi Children's Foundation, Swiss Church Aid fi UNICEF."
+    },
+    "pageLabel": "Michoota",
+    "h1a": "Waggaa digdamii ja'a",
+    "h1b": "michummaa.",
+    "intro": "EFDA'n takkaa kophaa hin hojjenne. Gamoon mana barumsaa, tabbi fi bakki bishaanii marsariitii kana irratti mul'atu hundi kan ijaarame, nama hawaasni baadiyyaa Itoophiyaa deeggarsa qaba jedhee murteessee hanga xumuramutti turen.",
+    "rosterLabel": "(01) Warra hojii deeggaran",
+    "rosterH2": "Deeggartootaafi michoota keenya.",
+    "rosterP": "Hundeewwan, dhaabbilee biyyoota lamaa, dhaabbilee mit-mootummaa addunyaa fi marsaalee Itoophiyaa — waggoota EFDA jalqabaa irraa hanga har'aatti. Maqaan akkuma dhaabbanni tokkoon tokkoon isaanii barreessutti tarreeffame.",
+    "federerLabel": "(02) Daawwannaa hin irraanfatamne",
+    "federerH2": "Roger Federer hojii ilaaluuf dhufee ture.",
+    "federerP": "Guyyaa 2 Guraandhala 2010 Roger Federer bakkeewwan pirojektii EFDA keessatti guyyaa tokko dabarse — pompii harkaa hawaasni gaafate bira, akkasumas dargaggoota qamadii maqaa keenya lamaan qabu uffatan waliin. Roger Federer Foundation yeroo sanaa kaasee hojii barnootaa EFDA ni deeggara; daawwannaan sunis amma illee waan namoonni asii jalqaba dubbatanidha.",
+    "federerAlt1": "Roger Federer hojjettoota EFDA fi miseensota hawaasaa waliin pompii harkaa bira haasa'aa jira; gaazexeessitoonnis yaadannoo qabachaa jiru",
+    "federerCap1": "Pompii harkaa hawaasaa irratti — 2 Guraandhala 2010",
+    "federerAlt2": "Roger Federer dargaggoota qamadii “Roger Federer Foundation” fi “Education For Development Association” jedhu uffatan gidduu dhaabate",
+    "federerCap2": "Qamadii maqaa lamaanuu qabu, jecha “Ani abdii boruuti” qabatu",
+    "quoteLabel": "(03) Akkaataa michoota waliin itti hojjennu",
+    "quoteA": "Nama hunda gargaaruu hin dandeenyu,",
+    "quoteB": "garuu namni hundi nama tokko gargaaruu ni danda'a",
+    "quoteC": ".",
+    "quoteP": "EFDA'n boordiidhaan geggeeffama, waggaa waggaadhaan oditara alaa walabaan qoratama, imaammataafi qajeelfama waajjiraalee pirojektii hunda keessatti hojii irra oolaniin hojjeta — faayinaansii, bittaa, eegumsa, eegumsa daa'immaniifi mirga namoomaa isaan keessaa.",
+    "btnAbout": "EFDA'n akkamitti akka bulfamu ilaali",
+    "footH2": "Garee lafa beeku waliin mana barumsaa, tabbaafi gaaga'ee itti aanu deeggari.",
+    "btnProjects": "Pirojektoota keenya ilaali",
+    "address1": "S.P.N. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "rights": "© 2026 EFDA",
+    "reg": "Lakk. DHM Itoophiyaa 0035"
+  },
   "contact": {
     "meta": {
       "title": "Nu qunnamaa",
