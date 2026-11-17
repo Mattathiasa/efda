@@ -33,3 +33,9 @@ yarn-error.log*
 # verification builds (see distDir in next.config.ts)
 /.next-verify/
 .env*
+
+# source material
+# EFDA's originals - printed profiles, unprocessed photographs, scans. Kept out
+# of git because they are large, and out of public/ because anything under
+# public/ is served. Processed copies live in public/photos/.
+/source-material/

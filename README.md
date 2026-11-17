@@ -46,7 +46,17 @@ proxy.ts             locale negotiation
 public/              fonts, logo, photos
 styles/              styles.css and fonts.css from the design, plus tailwind.css
 efda-website-design/ the original static design, kept as reference
+source-material/     EFDA's originals, gitignored (see below)
 ```
+
+### Source material
+
+EFDA's own documents and unprocessed photographs live in `source-material/`,
+which is **gitignored and outside `public/`**. Both matter: the files are large
+(the 2025 profile alone is 21 MB), and anything under `public/` is served, so a
+`.docx` left there would be downloadable from the live site at a guessable URL.
+Photographs are resized into `public/photos/` and registered in
+`content/photos.ts` before they can be used.
 
 ### Styling
 
