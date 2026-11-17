@@ -182,7 +182,7 @@
     "whereLabel": "(04) Bakka itti hojjennu",
     "whereH2a": "Naannolee lama.",
     "whereH2b": "Pirojektoota torba.",
-    "whereP": "Waajjiraaleen dirree Walisoo, Shaambuu fi Asoosaa jiran hojjettoota keenya hawaasa tajaajilan biratti dhiyeessu. Tarreen kun ibsa dhaabbataa EFDA Amajjii 2024 irratti hundaa'a.",
+    "whereP": "Waajjiraaleen dirree Walisoo, Shaambuu fi Asoosaa jiran hojjettoota keenya hawaasa tajaajilan biratti dhiyeessu. Tarreen kun ibsa dhaabbataa EFDA bara 2025 irratti hundaa'a.",
     "btnAllProjects": "Pirojektoota hunda ilaalaa",
     "projects": [
       {
@@ -459,13 +459,13 @@
   "projects": {
     "meta": {
       "title": "Pirojektoota",
-      "description": "Pirojektiin hundi barnoota dursa hawaasichaa mataa isaa wajjin walitti fida — kan bulfamus waajjira dirree namoota tajaajilu biratti dhiyoo jiru irraati. Tarreen kun ibsa dhaabbataa EFDA Amajjii 2024 irratti hundaa'a."
+      "description": "Pirojektiin hundi barnoota dursa hawaasichaa mataa isaa wajjin walitti fida — kan bulfamus waajjira dirree namoota tajaajilu biratti dhiyoo jiru irraati. Tarreen kun ibsa dhaabbataa EFDA bara 2025 irratti hundaa'a."
     },
     "btnAbout": "Waa'ee EFDA",
     "pageLabel": "Pirojektoota",
     "h1a": "Pirojektoota torba.",
     "h1b": "Naannolee lama.",
-    "intro": "Pirojektiin hundi barnoota dursa hawaasichaa mataa isaa wajjin walitti fida — kan bulfamus waajjira dirree namoota tajaajilu biratti dhiyoo jiru irraati. Tarreen kun ibsa dhaabbataa EFDA Amajjii 2024 irratti hundaa'a.",
+    "intro": "Pirojektiin hundi barnoota dursa hawaasichaa mataa isaa wajjin walitti fida — kan bulfamus waajjira dirree namoota tajaajilu biratti dhiyoo jiru irraati. Tarreen kun ibsa dhaabbataa EFDA bara 2025 irratti hundaa'a.",
     "themeAria": "Dameen calali",
     "regionAria": "Naannoon calali",
     "themes": {
