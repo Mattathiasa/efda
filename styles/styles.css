@@ -198,6 +198,11 @@ button { font: inherit; }
 .on-dark .lead { color: var(--mist); }
 .caption { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; color: var(--text-muted); margin-top: 16px; }
 .on-dark .caption { color: var(--sage); }
+/* .vmg-card was written for a light ground: a --text rule is all but invisible
+   on forest, and --text-muted numerals fail contrast there. Same shape as the
+   .label / .lead / .caption overrides above. */
+.on-dark .vmg-card { border-top-color: rgba(242, 241, 236, .3); }
+.on-dark .vmg-card__num { color: var(--sage); }
 
 /* Amharic and Afaan Oromoo adjustments */
 html[lang="am"] .disp,

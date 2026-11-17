@@ -312,6 +312,25 @@
         "text": "To empower communities to manage their own economic, social, environmental and health problems — relying on their own skills, knowledge and resources, with minimum dependence on external support."
       }
     ],
+    "valuesLabel": "Core values",
+    "values": [
+      {
+        "label": "Accountability",
+        "text": "Answerable to the communities we work with, and to everyone who funds the work."
+      },
+      {
+        "label": "Transparency",
+        "text": "Plans, budgets and results are open to the people they concern."
+      },
+      {
+        "label": "Gender sensitivity",
+        "text": "Every project is weighed by what it changes for women and girls."
+      },
+      {
+        "label": "Community ownership",
+        "text": "The community owns the project — we are there to make its own plan work."
+      }
+    ],
     "orgLabel": "(03) Organization",
     "orgH2": "How EFDA is organized.",
     "orgP": "A Board of Directors governs EFDA, alongside an independent external auditor. The Managing Director leads two arms: Program Management, which runs our project offices, and Finance & Administration.",

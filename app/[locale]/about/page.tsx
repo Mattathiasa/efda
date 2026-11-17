@@ -31,6 +31,10 @@ interface Vmg {
   label: string;
   text: string;
 }
+interface Value {
+  label: string;
+  text: string;
+}
 interface OfficeCopy {
   region: string;
   name: string;
@@ -52,6 +56,7 @@ function AboutPageContent({config}: {config: SiteConfig}) {
   const facts = t.raw('facts') as Fact[];
   const paras = t.raw('whoParas') as Para[];
   const vmg = t.raw('vmg') as Vmg[];
+  const values = t.raw('values') as Value[];
   const roles = t.raw('roles') as string[];
   const officeCopy = t.raw('offices') as OfficeCopy[];
 
@@ -116,6 +121,23 @@ function AboutPageContent({config}: {config: SiteConfig}) {
                 <div className="phil-row" key={i}>
                   <h3>{item.label}</h3>
                   <p>{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="label" style={{marginTop: 72}}>
+              {t('valuesLabel')}
+            </p>
+            <div className="auto-grid vmg-cards" data-reveal-group>
+              {values.map((value, i) => (
+                <div className="vmg-card" key={i}>
+                  <div className="vmg-card__head">
+                    <span className="vmg-card__label">{value.label}</span>
+                    <span className="vmg-card__num">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <p className="vmg-card__text">{value.text}</p>
                 </div>
               ))}
             </div>

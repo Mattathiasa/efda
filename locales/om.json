@@ -312,6 +312,25 @@
         "text": "Hawaasni rakkoo diinagdee, hawaasummaa, naannoo fi fayyaa isaa dandeettii, beekumsaa fi qabeenya mataa isaa irratti hirkatee, deeggarsa alaa xiqqaa qofaan akka to'atu dandeessisuu."
       }
     ],
+    "valuesLabel": "Gatiiwwan bu'uuraa",
+    "values": [
+      {
+        "label": "Itti gaafatamummaa",
+        "text": "Hawaasa waliin hojjennuuf, akkasumas warra hojii kana deeggaran hundaaf itti gaafatamoo dha."
+      },
+      {
+        "label": "Iftoomina",
+        "text": "Karoorri, baajanniifi bu'aan namoota ilaallatuuf banaa dha."
+      },
+      {
+        "label": "Saalaaf xiyyeeffannoo kennuu",
+        "text": "Pirojektiin hundi jijjiirama dubartootaafi shamarraniif fidu irratti madaalama."
+      },
+      {
+        "label": "Abbummaa hawaasaa",
+        "text": "Pirojektiin kan hawaasaati — nuti kan jirru karoorri isaa mataa isaa akka milkaa'u gargaaruuf."
+      }
+    ],
     "orgLabel": "(03) Caasaa dhaabbatichaa",
     "orgH2": "EFDA akkamitti akka qindaa'e.",
     "orgP": "EFDA kan bulfamu Boordii Daayreektarootaatiin, odiitara alaa walabaa wajjin. Daayrektarri Hoji Raawwachiisaa damee lama hogganu: Bulchiinsa Sagantaa, kan waajjiraalee pirojektii keenyaa bulchu, fi Faayinaansii fi Bulchiinsa.",
