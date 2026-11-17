@@ -135,7 +135,7 @@
         "title": "Community health promotion",
         "short": "Working with elders and traditions",
         "region": "East Arsi · Merti & Guna woredas",
-        "text": "We work in conformity with community traditions — through elders, women and local government — from reproductive health promotion to community bylaws that end harmful practices.",
+        "text": "We work in conformity with community traditions — through elders, women and local government — from reproductive health promotion to community bylaws that end harmful practices, including the bylaw abolishing female genital mutilation agreed with Pact Ethiopia in Horro.",
         "statNum": "Bylaw",
         "statLabel": "declared by the community and local government against female genital mutilation",
         "alt": "Women elders in white traditional dress at a community declaration event",
@@ -145,7 +145,7 @@
         "title": "Conflict prevention & peacebuilding",
         "short": "Youth, dialogue and transitional justice",
         "region": "West Wollega · Gimbi, Nedjo, K/Kara",
-        "text": "Young people take an active part in local peacebuilding, while civil society actors across the Wollega zones are trained for national dialogue and transitional justice initiatives.",
+        "text": "Young people take an active part in local peacebuilding, while civil society actors across the Wollega zones are trained for national dialogue and transitional justice initiatives. In August 2023 EFDA convened a trans-ethnic peace workshop at Gimbi with the USAID/Ethiopia support programme; EFDA has also led relief coordination and mediation between communities in Wollega.",
         "statNum": "4 zones",
         "statLabel": "East, West, Horro Guduru and Kelem Wollega — national dialogue capacity building",
         "alt": "Participants in EFDA’s trans-ethnic peace workshop standing behind the programme banner at Gimbi",
@@ -204,7 +204,7 @@
         "zone": "South West Shewa",
         "place": "Woliso",
         "rowTitle": "Women’s economic empowerment through enset processing and marketing",
-        "funder": "SCD"
+        "funder": "SDC"
       },
       {
         "region": "Oromia",
@@ -503,8 +503,8 @@
         "zone": "South West Shewa",
         "place": "Woliso",
         "title": "Women’s economic empowerment",
-        "desc": "Creating pathways to women’s economic empowerment through improved enset processing and product marketing.",
-        "funder": "SCD"
+        "desc": "Creating pathways to women’s economic empowerment through improved enset processing and product marketing. Roughly a fifth of Ethiopians live on kocho; EFDA changed how it is processed to cut the work that falls to women, introduced disease-resistant varieties, and trained households in fermenting and preparing it.",
+        "funder": "SDC"
       },
       {
         "zone": "West Wollega",

@@ -135,7 +135,7 @@
         "title": "Fayyaa hawaasaa babal'isuu",
         "short": "Maanguddootaa fi aadaa wajjin hojjechuu",
         "region": "Arsii Bahaa · Aanaalee Martii fi Gunaa",
-        "text": "Aadaa hawaasaa wajjin walsimsiisnee hojjenna — maanguddoota, dubartoota fi bulchiinsa naannoo karaa — fayyaa wal-hormaataa babal'isuu irraa hanga seera hawaasaa kan aadaa miidhaa qabu dhaabsisuutti.",
+        "text": "Aadaa hawaasaa waliin walsimsiisuun — jaarsolii, dubartootaafi bulchiinsa naannoo karaa — fayyaa walhormaataa beeksisuu irraa kaasee hanga dambiilee hawaasaa gochawwan miidhaa qaban dhaabanitti ni hojjenna; isaan keessaa dambiin Horrootti Pact Ethiopia waliin waliigalame kan kittaannaa dubartootaa dhaabu tokko.",
         "statNum": "Seera",
         "statLabel": "seera dhaqna qabaa dubartootaa dhorku, hawaasaa fi bulchiinsa naannootiin labsame",
         "alt": "Jaartolee uffata aadaa adii uffatan sirna labsii hawaasaa irratti",
@@ -145,7 +145,7 @@
         "title": "Walitti bu'iinsa ittisuu fi nagaa ijaaruu",
         "short": "Dargaggoota, marii fi haqa ce'umsaa",
         "region": "Wallagga Lixaa · Gimbii, Najjoo, Qiltuu Kaaraa",
-        "text": "Dargaggoonni ijaarsa nagaa naannoo keessatti hirmaannaa cimaa godhu; qaamoleen hawaasa siviilii godinaalee Wallaggaa keessaa immoo marii biyyaalessaa fi haqa ce'umsaa irratti hirmaachuuf leenji'u.",
+        "text": "Dargaggoonni nagaa naannootti ijaaruu keessatti hirmaannaa gochaa qabu; miseensonni hawaasa siiviilii godinaalee Wallaggaa keessaa marii biyyoolessaafi haqa ce'umsaatiif leenjifamu. Hagayya 2023 EFDA'n sagantaa deeggarsa USAID/Itoophiyaa waliin Gimbiitti walgahii nagaa sabaa qopheesse; Wallagga keessattis EFDA'n qindeessuu gargaarsaafi araara hawaasota gidduu geggeesseera.",
         "statNum": "Godinaalee 4",
         "statLabel": "Wallagga Bahaa, Lixaa, Horroo Guduruu fi Qeellam — ijaarsa dandeettii marii biyyaalessaaf",
         "alt": "Hirmaattonni walgahii nagaa sabaa EFDA'n Gimbiitti qopheesse beeksisa sagantichaa duuba dhaabatan",
@@ -204,7 +204,7 @@
         "zone": "Shawaa Kibba Lixaa",
         "place": "Walisoo",
         "rowTitle": "Qophii fi gabaa warqeetiin diinagdee dubartootaa cimsuu",
-        "funder": "SCD"
+        "funder": "SDC"
       },
       {
         "region": "Oromiyaa",
@@ -503,8 +503,8 @@
         "zone": "Shawaa Kibba Lixaa",
         "place": "Walisoo",
         "title": "Diinagdee dubartootaa cimsuu",
-        "desc": "Qophii warqee fooyya'ee fi gabaa oomishaatiin karaa dandeessisuu diinagdee dubartootaa uumuu.",
-        "funder": "SCD"
+        "desc": "Karaa qophii warqee fooyya'aafi gabaa oomishaatiin dubartootaaf karaa dandeettii diinagdee banuu. Ummata Itoophiyaa keessaa gara shan keessaa tokko qocoo irratti hirkata; EFDA'n dadhabbii dubartoota irra gahu hir'isuuf akkaataa qophii isaa jijjiire, sanyiiwwan dhukkuba dandaman galche, maatiis bullaa'uufi qopheessuu irratti leenjise.",
+        "funder": "SDC"
       },
       {
         "zone": "Wallagga Lixaa",
