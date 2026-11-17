@@ -69,6 +69,37 @@ Tailwind is installed for new markup, but **imported without preflight** —
 `styles.css` has its own reset, and preflight would undo it. `styles/tailwind.css`
 bridges the design tokens, so `bg-forest` resolves to `var(--forest)`.
 
+### Photos
+
+Sources go in `source-material/`; the web copies go in `public/photos/`, are
+kebab-case, and are registered as camelCase keys in `content/photos.ts` in
+alphabetical order. Two rules, both enforced by nothing but this paragraph:
+
+**Never wider than 1600px.** That is the top of `deviceSizes` in
+`next.config.ts`, so anything larger is bytes `next/image` will never serve.
+
+**Strip the camera metadata.** `sips` does not — it leaves EXIF, the MakerNote
+and an embedded thumbnail in place. Pillow does, because its JPEG writer reads
+`exif` and `icc_profile` only from the `save()` kwargs, never from the source:
+
+```python
+from PIL import Image, ImageOps
+
+im = ImageOps.exif_transpose(Image.open(src)).convert('RGB')
+if im.width > 1600:
+    im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+im.save(dst, 'JPEG', quality=85, optimize=True, progressive=True)
+```
+
+`quality=85` sits one rung above the serving quality of 82, so the source is
+not compressed twice at the same setting. Verify with:
+
+```python
+im = Image.open(dst)
+assert im.width <= 1600
+assert not im.info.get('exif') and not im.info.get('icc_profile')
+```
+
 ### Fonts
 
 Self-hosted and already subset by unicode-range. EFDA's Amharic name appears in
