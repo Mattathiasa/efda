@@ -3,7 +3,7 @@ import {getTranslations} from 'next-intl/server';
 import {routing, type Locale} from '@/i18n/routing';
 import {site} from '@/content/site';
 
-type Page = 'home' | 'about' | 'projects' | 'contact';
+type Page = 'home' | 'about' | 'projects' | 'partners' | 'contact';
 
 /** Absolute URL for a page in a given locale. */
 export function urlFor(locale: string, path: string) {
@@ -63,16 +63,17 @@ export function WebSiteJsonLd({locale}: {locale: string}) {
   return <JsonLd data={data} />;
 }
 
-/* Breadcrumbs. Home is the only ancestor on this site - it is four pages
+/* Breadcrumbs. Home is the only ancestor on this site - it is five pages
    deep-less - but stating it lets search results show the trail rather than a
-   bare URL. */
+   bare URL. Exclude<Page, 'home'> rather than a second hand-written union, so
+   the two cannot drift apart again. */
 export function BreadcrumbJsonLd({
   locale,
   page,
   label
 }: {
   locale: string;
-  page: 'about' | 'projects' | 'contact';
+  page: Exclude<Page, 'home'>;
   label: string;
 }) {
   const data = {

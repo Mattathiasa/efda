@@ -3,9 +3,9 @@ import {routing} from '@/i18n/routing';
 import {site} from '@/content/site';
 import {urlFor} from '@/lib/seo';
 
-const paths = ['/', '/about', '/projects', '/contact'];
+const paths = ['/', '/about', '/projects', '/partners', '/contact'];
 
-/* All 12 URLs, each listing its siblings as alternates so search engines can
+/* All 15 URLs, each listing its siblings as alternates so search engines can
    match a visitor to the right language. */
 export default function sitemap(): MetadataRoute.Sitemap {
   return routing.locales.flatMap((locale) =>
