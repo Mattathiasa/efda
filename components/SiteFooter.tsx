@@ -160,6 +160,9 @@ export function SiteFooter({
               <Link className="navlink" href="/projects">
                 {c('navProjects')}
               </Link>
+              <Link className="navlink" href="/partners">
+                {c('navPartners')}
+              </Link>
               <Link className="navlink" href="/#programs">
                 {c('navPrograms')}
               </Link>

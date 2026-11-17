@@ -314,7 +314,7 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .site-header--light .mobile-menu { background: var(--panel); }
 /* The panel only exists below the burger breakpoint - keep this in step
    with the header rules in section 13. */
-@media (min-width: 1281px) { .mobile-menu { display: none !important; } }
+@media (min-width: 1381px) { .mobile-menu { display: none !important; } }
 .mobile-menu[hidden] { display: none; }
 .mobile-menu a.mm-link { font-family: var(--font-display); color: var(--chalk); text-decoration: none; font-size: 32px; font-weight: 600; padding: 8px 0; }
 .mobile-menu a.mm-link[aria-current="page"] { color: var(--honey); }
@@ -708,14 +708,15 @@ textarea.input { min-height: 160px; resize: vertical; }
 .funders .container { margin-bottom: 0; }
 
 /* ---------- 13. Responsive ---------- */
-/* The header row is the widest thing on the page: brand + six links + the
-   theme/language/CTA cluster needs ~1160px in English, and ~1210px in
-   Afaan Oromoo once its labels are tightened below. At the old 900px
-   breakpoint the row was already wrapping onto two lines anywhere between
-   901 and ~1280px, so the burger takes over there instead - before the
-   links can cramp. Scoped to .site-header so .hide-sm keeps hiding the
-   decorative hero badge at its own 900px breakpoint. */
-@media (max-width: 1280px) {
+/* The header row is the widest thing on the page: brand + seven links + the
+   theme/language/CTA cluster. Six links needed ~1160px in English and
+   ~1210px in Afaan Oromoo; a seventh adds its label plus the 30px .nav gap,
+   roughly 90px, which puts Afaan Oromoo at ~1300px - past the old 1280
+   threshold. 1380 clears it with room, and keeps the break on the far side
+   of 1366, so a 1366-wide laptop gets the burger rather than six pixels of
+   slack. Scoped to .site-header so .hide-sm keeps hiding the decorative hero
+   badge at its own 900px breakpoint. */
+@media (max-width: 1380px) {
   .site-header .nav, .site-header .hide-sm { display: none !important; }
   .burger { display: inline-flex; }
 }
