@@ -8,7 +8,8 @@ export interface Tile {
   word?: boolean;
 }
 
-// Ten track-record tiles, matching projects.tiles[i] in the locale files.
+// Seventeen track-record tiles, matching projects.tiles[i] in the locale
+// files by position. The last seven come from EFDA's 2025 profile.
 export const tiles: Tile[] = [
   {photo: 'treeClass', wide: true, tall: true},
   {photo: 'library'},
@@ -19,5 +20,12 @@ export const tiles: Tile[] = [
   {photo: 'hydro'},
   {photo: 'stoves', wide: true, word: true},
   {photo: 'elders', word: true},
-  {photo: 'pottery', wide: true, word: true}
+  {photo: 'pottery', wide: true, word: true},
+  {photo: 'kochoProcessing', wide: true},
+  {photo: 'schoolBuilt'},
+  {photo: 'spring', tall: true},
+  {photo: 'stoveMaking', word: true},
+  {photo: 'reliefDistribution', wide: true},
+  {photo: 'boatBuilding'},
+  {photo: 'ensetPlantation', word: true}
 ];
