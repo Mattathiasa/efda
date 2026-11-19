@@ -6,12 +6,13 @@ export interface NavItem {
     | 'navPrograms'
     | 'navProjects'
     | 'navPartners'
+    | 'navStrategy'
     | 'navStory'
     | 'navContact';
   href: string;
 }
 
-/* The seven header links. Programs and Our story are anchors on Home, so from
+/* The eight header links. Programs and Our story are anchors on Home, so from
    any other page they point back at the home route. Home itself has no
    other entry here - the brand mark links there too, but that convention is
    easy to miss, so it gets a labelled link of its own as well. */
@@ -21,6 +22,7 @@ export const navItems: NavItem[] = [
   {key: 'navPrograms', href: '/#programs'},
   {key: 'navProjects', href: '/projects'},
   {key: 'navPartners', href: '/partners'},
+  {key: 'navStrategy', href: '/strategy'},
   {key: 'navStory', href: '/#story'},
   {key: 'navContact', href: '/contact'}
 ];

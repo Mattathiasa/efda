@@ -162,6 +162,12 @@ loads when unset, so there is no consent banner.
 Run `npm run check:placeholders` — everything still missing appears on the site
 in visible `[BRACKETS]`, never silently blank.
 
+- [ ] **Confirm the header does not wrap**, in Afaan Oromoo, just above the
+      1460px burger threshold. The threshold has been raised twice from
+      arithmetic rather than measurement — eight links at roughly 90px each on
+      top of the brand and the theme/language/CTA cluster. Eight is the
+      practical ceiling: a ninth link means rethinking the navigation, not
+      another breakpoint bump
 - [ ] Native-speaker review of `am.json` and `om.json` — now including the
       Partners page with its funding history and references, the enset case
       study, the core values, the areas of experience and the policy list
