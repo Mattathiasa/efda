@@ -16,16 +16,33 @@ describe('mergeSiteConfig', () => {
     const config = mergeSiteConfig(defaultSiteConfig, {});
     expect(config.phone.display).toBe(defaultSiteConfig.phone.display);
     expect(config.email).toBe(defaultSiteConfig.email);
-    expect(config.street).toBeNull();
+    expect(config.street).toBe(defaultSiteConfig.street);
     expect(config.replyDays).toBeNull();
   });
 
-  it('keeps the visible placeholder when a field has never been set', () => {
-    // No NEXT_PUBLIC_* vars are set in the test environment, so the defaults
-    // are the brackets the live site is showing today.
+  it('falls back to EFDA’s own details, not a placeholder', () => {
+    // No NEXT_PUBLIC_* vars are set in the test environment, so this is the
+    // bare source default. It used to be a visible [BRACKET]; now that EFDA
+    // has supplied organisational contact details it is the real thing, and
+    // an unconfigured deployment shows something that works.
     const config = mergeSiteConfig(defaultSiteConfig, {});
-    expect(config.email).toContain('CONFIRM');
-    expect(config.phone.tel).toBe('+251XXXXXXXXX');
+    expect(config.email).not.toContain('CONFIRM');
+    expect(config.email).toContain('@');
+    expect(config.phone.tel).toMatch(/^\+251\d+$/);
+    expect(config.street).toContain('Gullele');
+  });
+
+  it('gives every contact a reachable phone and mailbox', () => {
+    // The three people EFDA lists have no published role addresses, so each
+    // row falls through to the organisation's own channel rather than
+    // rendering a bracket or exposing a personal mobile.
+    const config = mergeSiteConfig(defaultSiteConfig, {});
+    expect(config.contacts).toHaveLength(3);
+    for (const contact of config.contacts) {
+      expect(contact.name).not.toContain('CONFIRM');
+      expect(contact.email).toBe(config.email);
+      expect(contact.phone.tel).toBe(config.phone.tel);
+    }
   });
 
   it('lets a stored value win over the default', () => {

@@ -26,7 +26,8 @@ export interface SiteConfig {
   email: string;
   /** Always three entries. Index is positional and matches contact.people[i]. */
   contacts: Contact[];
-  /** null means never set - the caller keeps the translated bracket text. */
+  /** Never null in practice - content/site.ts carries EFDA's registered
+      address. Stays nullable so a deployment can clear it. */
   street: string | null;
   /** A bare number of working days, substituted into the translated sentence. */
   replyDays: string | null;
@@ -41,7 +42,7 @@ export const defaultSiteConfig: SiteConfig = {
   phone: {display: site.phone.display, tel: site.phone.tel},
   email: site.email,
   contacts,
-  street: null,
+  street: site.street,
   replyDays: null,
   dept2: Object.fromEntries(locales.map((l) => [l, null])) as Record<
     Locale,
@@ -123,7 +124,7 @@ export function mergeSiteConfig(
     },
     email: v('site.email') ?? defaults.email,
     contacts: [contactRow(0), contactRow(1), contactRow(2)],
-    street: v('contact.street'),
+    street: v('contact.street') ?? defaults.street,
     replyDays: v('contact.replyDays'),
     dept2: Object.fromEntries(
       locales.map((l) => [l, v(`contact.2.dept.${l}` as SettingKey)])

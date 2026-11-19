@@ -83,15 +83,11 @@ function ContactPageContent({config}: {config: SiteConfig}) {
                   <div>
                     <h3>{t('headOffice')}</h3>
                     <p>
+                      <span>{config.street}</span>
+                      <br />
                       <span>{t('address1')}</span>
                       <br />
                       <span>{t('address2')}</span>
-                      <br />
-                      {config.street ? (
-                        <span>{config.street}</span>
-                      ) : (
-                        <span className="tbd">{t('streetTbd')}</span>
-                      )}
                     </p>
                   </div>
                   <div>
