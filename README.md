@@ -1,8 +1,8 @@
 # EFDA website
 
 The website of Education For Development Association, an Ethiopian civil society
-organization working in Oromia and Benishangul Gumuz. Five pages in English,
-Amharic and Afaan Oromoo — fifteen statically generated URLs.
+organization working in Oromia and Benishangul Gumuz. Six pages in English,
+Amharic and Afaan Oromoo — eighteen statically generated URLs.
 
 ```bash
 npm install
@@ -36,7 +36,8 @@ npm run check      # types + locale key parity + open content items + unit tests
 | Hosting | host-agnostic: runs on Vercel, or Cloudflare via `@opennextjs/cloudflare` |
 
 ```
-app/[locale]/        home, about, projects, partners, contact
+app/[locale]/        home, about, projects (+ enset case study), partners,
+                     contact
 app/api/contact/     form endpoint
 components/          one file per piece of the design
 content/             typed data that does not change by language
@@ -162,14 +163,41 @@ Run `npm run check:placeholders` — everything still missing appears on the sit
 in visible `[BRACKETS]`, never silently blank.
 
 - [ ] Native-speaker review of `am.json` and `om.json` — now including the
-      Partners page, the core values, the areas of experience and the policy
-      list, all added from the 2025 profile
+      Partners page with its funding history and references, the enset case
+      study, the core values, the areas of experience and the policy list
 - [ ] EFDA's official Afaan Oromoo name, and Ge'ez spellings of people's names
-- [ ] Funder of the West Wollega peacebuilding project. The 2025 profile shows
-      a USAID/Ethiopia banner at the Gimbi workshop, which is suggestive but
-      not a statement — `[FUNDER — CONFIRM]` stays until EFDA says so
-- [ ] Whether USAID belongs on the funder roster — same evidence, same
-      `[USAID — CONFIRM]` placeholder in `content/funders.ts`
+- [ ] **Which board chair is current.** The board roster says Ilili Hordofa,
+      chair, since 2024; the organizational-chart attachment says Asfaw Kaba.
+      The strategic plan says the board is five members, three of them women
+      "including the board chair lady", which supports Ilili Hordofa — the
+      site keeps her, but confirm it
+- [ ] **The organizational chart differs from the one on the site.** The
+      governance file has an Admin & Finance Head, Program Managers, a
+      Capacity Development Officer and a Cashier, and no separate Planning &
+      Implementation box. The site's chart came from the 2025 profile. Left
+      unchanged: `components/OrgChart.tsx` renders the hierarchy twice and the
+      two sources disagree about what the structure even is
+- [ ] **Three different vision and mission wordings** are in circulation — the
+      2025 profile, the 2024–2028 strategic plan, and the 2023 audit notes.
+      The site follows the 2025 profile. Ask EFDA which is canonical
+- [ ] **The HR policy manual is watermarked DRAFT** on most pages, though its
+      text says the Board approved it on 1 October 2021. Request a clean
+      signed copy before sending the pack to a funder
+- [ ] **Policies named but not supplied.** The site lists safeguarding, a
+      child policy and an SHG training manual; the folder contains only the
+      financial, HR, procurement and code-of-conduct manuals. The code of
+      conduct also cross-references anticorruption, conflict-of-interest,
+      whistleblowing and safeguarding policies that are not in the pack
+- [ ] **The file named `Certificate.pdf` is not the registration certificate** —
+      it is a CCRDA certificate of appreciation. The actual ACSO registration
+      certificate is missing from the folder
+- [ ] Whether the funding-history amounts can be published. The source table
+      mixes four currencies and transposes columns on several rows, so
+      `content/funding.ts` carries dates and donors only
+- [ ] Whether EFDA's TIN should stay on the public About page. It is on the
+      site because EFDA published it in its own 2025 profile, but a tax
+      identifier is the kind of thing an organization may prefer to give on
+      request
 - [ ] Whether `SCD` in the 2024 profile and `SDC` in the 2025 one are the same
       body, and `CSSP2` and `CSSP` the same programme. Listed once each
 - [ ] **Tucho Enkossa's role.** Two documents in the due-diligence folder
