@@ -172,7 +172,10 @@ in visible `[BRACKETS]`, never silently blank.
       `[USAID — CONFIRM]` placeholder in `content/funders.ts`
 - [ ] Whether `SCD` in the 2024 profile and `SDC` in the 2025 one are the same
       body, and `CSSP2` and `CSSP` the same programme. Listed once each
-- [ ] Tucho Enkossa's role
+- [ ] **Tucho Enkossa's role.** Two documents in the due-diligence folder
+      disagree: the address confirmation calls him Program Officer, the staff
+      roster Admin. & finance. The site follows the roster; `/admin/settings`
+      overrides it per language without a deploy
 - [ ] Paste the head-office street address — Gullele Sub City, Woreda 9, House
       No. 430 — into `/admin/settings`. It is settings-table only, with no
       environment fallback
