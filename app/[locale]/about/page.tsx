@@ -222,7 +222,12 @@ function AboutPageContent({config}: {config: SiteConfig}) {
                       <span>{t('asosaPhoto')}</span>
                     </div>
                   )}
-                  <p className="office__region">{officeCopy[i].region}</p>
+                  <p className="office__region">
+                    {officeCopy[i].region}
+                    <span className="office__status">
+                      {office.active ? t('officeActive') : t('officeDormant')}
+                    </span>
+                  </p>
                   <h3>{officeCopy[i].name}</h3>
                   <p>{officeCopy[i].text}</p>
                 </article>

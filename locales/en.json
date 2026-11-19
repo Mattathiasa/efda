@@ -183,7 +183,7 @@
     "whereLabel": "(04) Where we work",
     "whereH2a": "Two regions.",
     "whereH2b": "Seven projects.",
-    "whereP": "Field offices in Woliso, Shambu and Asosa keep our staff close to the communities they serve. Current portfolio as of EFDA’s 2025 organizational profile.",
+    "whereP": "EFDA works from a head office in Addis Ababa and a project office in Woliso, with project teams in the field where the work is. Current portfolio as of EFDA’s 2025 organizational profile.",
     "btnAllProjects": "Explore all projects",
     "projects": [
       {
@@ -241,7 +241,7 @@
     "ctaP": "Funders, government offices and fellow NGOs: talk to our program team about partnering in Oromia or Benishangul Gumuz.",
     "orgName": "Education For Development Association",
     "footContact": "Contact",
-    "footOffices": "Field offices",
+    "footOffices": "Offices",
     "footExplore": "Explore",
     "address1": "P.O. Box 25725, Code 1000",
     "address2": "Addis Ababa, Ethiopia",
@@ -398,24 +398,26 @@
     ],
     "officesLabel": "(06) Our offices",
     "officesH2": "Close to the work.",
+    "officeActive": "Staffed",
+    "officeDormant": "Not currently staffed",
     "asosaPhoto": "[ASOSA OFFICE PHOTO]",
     "offices": [
       {
         "region": "Oromia · South West Shewa",
         "name": "Woliso",
-        "text": "Project office and resource centre — a community training centre and cultural materials archive.",
+        "text": "Project office and resource centre, and the one EFDA office staffed today — a community training centre, a cultural materials archive, and home to the Centre for Enset Business Incubation.",
         "alt": "Woliso project office and resource centre"
       },
       {
         "region": "Oromia · Horro Guduru Wollega",
         "name": "Shambu",
-        "text": "Office, community training centre and cultural materials archive for the Horro Guduru projects.",
+        "text": "Office and community training centre built for the Horro Guduru programmes — the forest, beekeeping and education work of EFDA’s middle years. Not currently staffed.",
         "alt": "EFDA’s office building in Shambu with a covered porch"
       },
       {
         "region": "Benishangul Gumuz",
         "name": "Asosa",
-        "text": "Regional office for our work in Benishangul Gumuz, including within-system education quality and equity support.",
+        "text": "Regional office opened for the education quality and equity work in Benishangul Gumuz, which ran to the end of 2022. Not currently staffed.",
         "alt": ""
       }
     ],
@@ -688,7 +690,7 @@
     ],
     "headOffice": "Head office",
     "streetTbd": "[STREET ADDRESS — CONFIRM]",
-    "fieldOffices": "Field offices",
+    "fieldOffices": "Offices",
     "address1": "P.O. Box 25725, Code 1000",
     "address2": "Addis Ababa, Ethiopia",
     "officeWoliso": "Woliso — South West Shewa",

@@ -183,7 +183,7 @@
     "whereLabel": "(04) Bakka itti hojjennu",
     "whereH2a": "Naannolee lama.",
     "whereH2b": "Pirojektoota torba.",
-    "whereP": "Waajjiraaleen dirree Walisoo, Shaambuu fi Asoosaa jiran hojjettoota keenya hawaasa tajaajilan biratti dhiyeessu. Tarreen kun ibsa dhaabbataa EFDA bara 2025 irratti hundaa'a.",
+    "whereP": "EFDA'n waajjira muummee Finfinnee fi waajjira pirojektii Waliisoo irraa hojjeta; gareen pirojektii immoo bakka hojiin jirutti argama. Tarreen kun ibsa dhaabbataa EFDA bara 2025 irratti hundaa'a.",
     "btnAllProjects": "Pirojektoota hunda ilaalaa",
     "projects": [
       {
@@ -241,7 +241,7 @@
     "ctaP": "Deeggartoota, waajjiraalee mootummaa fi dhaabbilee biroo: Oromiyaa ykn Beenishaangul Gumuz keessatti waliin hojjechuuf garee sagantaa keenyaa qunnamaa.",
     "orgName": "Waldaa Barnoota Misoomaaf (EFDA)",
     "footContact": "Teessoo",
-    "footOffices": "Waajjiraalee dirree",
+    "footOffices": "Waajjiraalee",
     "footExplore": "Daawwadhaa",
     "address1": "S.P. 25725, Koodii 1000",
     "address2": "Finfinnee, Itoophiyaa",
@@ -398,24 +398,26 @@
     ],
     "officesLabel": "(06) Waajjiraalee keenya",
     "officesH2": "Hojii biratti dhiyoo.",
+    "officeActive": "Hojjetaa qaba",
+    "officeDormant": "Yeroo ammaa hojjetaa hin qabu",
     "asosaPhoto": "[SUURAA WAAJJIRA ASOOSAA]",
     "offices": [
       {
-        "region": "Oromiyaa · Shawaa Kibba Lixaa",
-        "name": "Walisoo",
-        "text": "Waajjira pirojektii fi giddugala qabeenyaa — giddugala leenjii hawaasaa fi kuusaa meeshaalee aadaa.",
-        "alt": "Waajjira pirojektii fi giddugala qabeenyaa Walisoo"
+        "region": "Oromiyaa · Kibba Lixa Shawaa",
+        "name": "Waliisoo",
+        "text": "Waajjira pirojektiifi giddugala qabeenyaa, akkasumas waajjira EFDA kan har'a hojjetaa qabu qofa — giddugala leenjii hawaasaa, kuusaa meeshaalee aadaa, akkasumas teessoo Giddugala Daldala Warqee Guddisuu.",
+        "alt": "Waajjira pirojektiifi giddugala qabeenyaa Waliisoo"
       },
       {
         "region": "Oromiyaa · Horroo Guduruu Wallaggaa",
         "name": "Shaambuu",
-        "text": "Waajjira, giddugala leenjii hawaasaa fi kuusaa meeshaalee aadaa pirojektoota Horroo Guduruutiif.",
-        "alt": "Gamoo waajjira EFDA Shaambuu"
+        "text": "Waajjiraafi giddugala leenjii hawaasaa sagantaalee Horroo Guduruutiif ijaarame — hojii bosonaa, kannisaafi barnootaa waggoota EFDA giddugaleessaa. Yeroo ammaa hojjetaa hin qabu.",
+        "alt": "Gamoo waajjira EFDA Shaambuu kan barandaa qabu"
       },
       {
-        "region": "Beenishaangul Gumuz",
+        "region": "Benishaangul Gumuz",
         "name": "Asoosaa",
-        "text": "Waajjira naannoo hojii keenya Beenishaangul Gumuz keessaatiif, deeggarsa qulqullinaa fi haqummaa barnootaa sirna keessaa dabalatee.",
+        "text": "Waajjirri naannoo hojii qulqullinaafi wal-qixxummaa barnootaa Benishaangul Gumuz keessatti baname; hojiin sun hamma dhuma 2022tti ture. Yeroo ammaa hojjetaa hin qabu.",
         "alt": ""
       }
     ],
@@ -688,7 +690,7 @@
     ],
     "headOffice": "Waajjira muummee",
     "streetTbd": "[TEESSOO KARAA — MIRKANEESSAA]",
-    "fieldOffices": "Waajjiraalee dirree",
+    "fieldOffices": "Waajjiraalee",
     "address1": "S.P. 25725, Koodii 1000",
     "address2": "Finfinnee, Itoophiyaa",
     "officeWoliso": "Walisoo — Shawaa Kibba Lixaa",

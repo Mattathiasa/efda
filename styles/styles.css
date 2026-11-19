@@ -587,6 +587,10 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .donors { list-style: none; margin-top: 48px; --min: 240px; --gap: 0 40px; }
 .donor { padding: 20px 0; border-top: 1px solid var(--border); font-family: var(--font-display); font-size: 20px; line-height: 1.3; font-weight: 500; letter-spacing: -.01em; }
 
+/* Staffed-or-not tag beside an office's region. Reads as a second clause of
+   the same mono line, so it needs separating but not shouting. */
+.office__status { margin-left: 10px; padding-left: 10px; border-left: 1px solid var(--border); color: var(--link); }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }
