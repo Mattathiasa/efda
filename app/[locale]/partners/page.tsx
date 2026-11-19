@@ -14,6 +14,14 @@ import {buildMetadata, BreadcrumbJsonLd} from '@/lib/seo';
 import {getSiteConfig} from '@/lib/site-config';
 import type {SiteConfig} from '@/lib/site-config-shared';
 
+interface Testimonial {
+  quote: string;
+  who: string;
+  role: string;
+  when: string;
+  note: string;
+}
+
 export async function generateMetadata({
   params
 }: {
@@ -35,6 +43,7 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
   const locale = useLocale();
   const grantCopy = t.raw('funding') as GrantCopy[];
   const networkCopy = t.raw('networks') as NetworkCopy[];
+  const testimonials = t.raw('testimonials') as Testimonial[];
 
   return (
     <>
@@ -149,7 +158,43 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 6. How we work with partners */}
+        {/* 6. What partners say */}
+        <section className="section section--dust" aria-labelledby="say-title">
+          <div className="container">
+            <div className="split split--wide" data-reveal>
+              <div>
+                <p className="label">{t('sayLabel')}</p>
+                <h2 className="h-section" id="say-title">
+                  {t('sayH2')}
+                </h2>
+              </div>
+              <p className="lead">{t('sayP')}</p>
+            </div>
+
+            <div
+              className="auto-grid"
+              style={{marginTop: 56, '--min': '380px'} as React.CSSProperties}
+              data-reveal-group
+            >
+              {testimonials.map((item, i) => (
+                <figure className="testimonial" key={i}>
+                  <blockquote>
+                    <p>“{item.quote}”</p>
+                  </blockquote>
+                  <figcaption>
+                    <strong>{item.who}</strong>
+                    <span>
+                      {item.role} · {item.when}
+                    </span>
+                    <span className="testimonial__note">{item.note}</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 7. How we work with partners */}
         <section className="section" aria-labelledby="how-title">
           <div className="container about-grid" data-reveal>
             <p className="label">{t('quoteLabel')}</p>

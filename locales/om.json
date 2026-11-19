@@ -792,7 +792,40 @@
     "federerCap1": "Pompii harkaa hawaasaa irratti — 2 Guraandhala 2010",
     "federerAlt2": "Roger Federer dargaggoota qamadii “Roger Federer Foundation” fi “Education For Development Association” jedhu uffatan gidduu dhaabate",
     "federerCap2": "Qamadii maqaa lamaanuu qabu, jecha “Ani abdii boruuti” qabatu",
-    "quoteLabel": "(05) Akkaataa michoota waliin itti hojjennu",
+    "sayLabel": "(05) Michoonni maal jedhu",
+    "sayH2": "Warra deeggaraniin madaalame.",
+    "sayP": "Galmee EFDA irraa ragaalee afur, waggoota kudhan kan haguugan. Asitti kan caqafaman malee guutuun isaanii hin maxxanfamne: jalqabni isaanii xalayaa mallatteeffamaafi chaappaa qabu waan ta'eef, fuula marsariitii irra osoo hin taane faayilii ragaa keessa taa'u.",
+    "testimonials": [
+      {
+        "quote": "Jabinaafi kutannoo inni tajaajila misooma hawaasaatiif qabu, akkasumas dandeettii bulchiinsa pirojektii bu'a qabeessa ta'e hubanneerra… ulaagaalee keenyaaf deebii kennaa, sanadoota herregaa isaas gamaaggamaafi odiitiif yeroodhaan dhiyeesseera.",
+        "who": "HEKS / Gargaarsa Waldaa Kiristaanaa Siwiizerlaand Itoophiyaa",
+        "role": "Daayrektara Biyyaa",
+        "when": "22 Adoolessa 2015",
+        "note": "Bara 2006 irraa kaasee dhaabbata michuu biyyoolessaa; marsaa walitti aanaa sadii Pirojektii Fooyya'iinsa Jireenya Hawaasaa Walitti Makame."
+      },
+      {
+        "quote": "EFDA'n rakkoo hawaas-diinagdee hawaasa xiyyeeffannoo keessa jiruu karaa itti fufiinsa qabuun furuun pirojektoota misooma hawaasa irratti hundaa'an galmaan gahuuf kutateera.",
+        "who": "CCRDA",
+        "role": "Misoomaafi Bulchiinsa Sagantaa",
+        "when": "8 Adoolessa 2016",
+        "note": "Pirojektii Bosona Uumamaa Chaatoo Baraaruu kan Sida deeggare (2007–2013) fi hojii poolyoo balleessuu CCRDA fi WHO Itoophiyaa waliin."
+      },
+      {
+        "quote": "EFDA galateeffachuu barbaanna; pirojektiin sun kaayyoo isaa galmaan gahee milkaa'inaan xumuramuu isaa ni ragaanna… dhaabbatichi michoota biroo waliin ta'uun pirojektoota misoomaafi gargaarsaa biroo hojiirra oolchuu ni danda'a.",
+        "who": "Abbaa Taayitaa Barnootaa Naannoo Benishaangul Gumuz",
+        "role": "Itti Gaafatamaa Qajeelfamaa",
+        "when": "Guraandhala 2023",
+        "note": "Pirojektii barnoota sadarkaa tokkoffaa Education Development Trust waggaa barnootaa lama (2020–2021) irratti."
+      },
+      {
+        "quote": "Godina Arsii aanaalee Mertiifi Gunaa keessatti itti fayyadama tajaajila karoora maatii babal'isuun sagantaa fayyaa walhormaataafi karoora maatii CCRDA/Packard milkaa'inaan xumuruu isaatiif.",
+        "who": "CCRDA",
+        "role": "Waraqaa Ragaa Galateeffannaa",
+        "when": "25 Guraandhala 2025",
+        "note": "Madaallii qaama sadaffaa kan dhiyoo galmee EFDA keessa jiru."
+      }
+    ],
+    "quoteLabel": "(06) Akkaataa michoota waliin itti hojjennu",
     "quoteA": "Nama hunda gargaaruu hin dandeenyu,",
     "quoteB": "garuu namni hundi nama tokko gargaaruu ni danda'a",
     "quoteC": ".",

@@ -596,6 +596,15 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
    the same mono line, so it needs separating but not shouting. */
 .office__status { margin-left: 10px; padding-left: 10px; border-left: 1px solid var(--border); color: var(--link); }
 
+/* Partner references. The quote carries the weight, so the attribution sits
+   quiet beneath it - who and when first, then what the reference was about. */
+.testimonial { border-top: 2px solid var(--text); padding-top: 24px; }
+.testimonial blockquote p { font-family: var(--font-display); font-size: 20px; line-height: 1.35; letter-spacing: -.01em; font-weight: 500; text-wrap: pretty; }
+.testimonial figcaption { margin-top: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.testimonial figcaption strong { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.testimonial figcaption span { color: var(--text-muted); }
+.testimonial__note { margin-top: 8px; font-size: 13px; line-height: 1.5; }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }

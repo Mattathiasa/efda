@@ -792,7 +792,40 @@
     "federerCap1": "At a community hand pump — 2 February 2010",
     "federerAlt2": "Roger Federer standing among young people wearing jerseys printed “Roger Federer Foundation” and “Education For Development Association”",
     "federerCap2": "Jerseys printed with both names, and the words Run “I am tomorrow’s future”",
-    "quoteLabel": "(05) How we work with partners",
+    "sayLabel": "(05) What partners say",
+    "sayH2": "Judged by the people who funded it.",
+    "sayP": "Four references from EFDA’s file, spanning a decade. They are quoted here rather than reproduced: the originals are signed and stamped letters, and those belong in a due-diligence pack, not on a web page.",
+    "testimonials": [
+      {
+        "quote": "We have learned its strength and commitment to the service of community development and effective project management capacity… It has been responsive to our requirements and timely availing its financial documents for reviewing and auditing purposes.",
+        "who": "HEKS / Swiss Church Aid Ethiopia",
+        "role": "Country Director",
+        "when": "22 July 2015",
+        "note": "A national partner NGO since 2006, across three consecutive phases of Integrated Community Livelihood Improvement Projects."
+      },
+      {
+        "quote": "EFDA is committed to achieve community based development projects in a way that it addresses the socio-economic problems of the target community in a sustainable approach.",
+        "who": "CCRDA",
+        "role": "Programme Development and Management",
+        "when": "8 July 2016",
+        "note": "On the Sida-funded Save Chato Natural Forest project, 2007–2013, and polio eradication work with CCRDA and WHO Ethiopia."
+      },
+      {
+        "quote": "We would like to thank EFDA and testify that the project achieved its objective and completed successfully… the organization is capable of implementing other development and relief projects in collaboration with other partners.",
+        "who": "Benishangul Gumuz regional education authority",
+        "role": "Directive Head",
+        "when": "February 2023",
+        "note": "On two academic years of the Education Development Trust primary-education project, 2020–2021."
+      },
+      {
+        "quote": "For the successful accomplishment of the CCRDA/Packard reproductive health and family planning programme in expanding family planning service utilization in Merti and Guna woredas of Arsi zone.",
+        "who": "CCRDA",
+        "role": "Certificate of Appreciation",
+        "when": "25 February 2025",
+        "note": "The most recent third-party assessment in EFDA’s file."
+      }
+    ],
+    "quoteLabel": "(06) How we work with partners",
     "quoteA": "We can’t help everyone,",
     "quoteB": "but everyone can help someone",
     "quoteC": ".",
