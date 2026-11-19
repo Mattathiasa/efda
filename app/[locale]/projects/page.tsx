@@ -62,7 +62,8 @@ function ProjectsPageContent({config}: {config: SiteConfig}) {
                 showing: t.raw('showing') as string,
                 fundedBy: t('fundedBy'),
                 empty: t('empty'),
-                emptyHint: t('emptyHint')
+                emptyHint: t('emptyHint'),
+                caseStudy: t('caseStudy')
               }}
             />
           </div>

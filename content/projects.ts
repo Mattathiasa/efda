@@ -5,6 +5,8 @@ export interface Project {
   id: string;
   theme: Theme;
   region: Region;
+  /** Path to a case study, for the one project that has a published report. */
+  caseStudy?: string;
 }
 
 // Seven projects, in the order the locale files list them. Words live in
@@ -12,7 +14,7 @@ export interface Project {
 export const projects: Project[] = [
   {id: 'speed-school-woliso', theme: 'edu', region: 'or'},
   {id: 'speed-school-sibu-sire', theme: 'edu', region: 'or'},
-  {id: 'enset-woliso', theme: 'live', region: 'or'},
+  {id: 'enset-woliso', theme: 'live', region: 'or', caseStudy: '/projects/enset'},
   {id: 'peacebuilding-west-wollega', theme: 'peace', region: 'or'},
   {id: 'national-dialogue', theme: 'peace', region: 'or'},
   {id: 'reproductive-health-arsi', theme: 'health', region: 'or'},

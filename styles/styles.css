@@ -616,6 +616,13 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .ba-row__before { color: var(--mist); }
 .ba-row__after { font-family: var(--font-display); font-size: 19px; font-weight: 500; letter-spacing: -.01em; color: var(--honey); }
 
+/* The case-study link on a project card. Sits under the funder line as a
+   quiet affordance - only one of the seven projects has one, so it must not
+   make the other six look unfinished. */
+.pcard__case { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--link); text-decoration: none; }
+.pcard__case:hover { color: var(--link-hover); gap: 12px; }
+.pcard__case svg { transition: transform .3s var(--ease); }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }

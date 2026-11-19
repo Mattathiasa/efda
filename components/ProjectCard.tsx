@@ -1,3 +1,5 @@
+import {Link} from '@/i18n/navigation';
+import {ArrowRight} from './icons';
 import type {Project} from '@/content/projects';
 
 export interface ProjectCopy {
@@ -17,6 +19,7 @@ export function ProjectCard({
   regionLabel,
   themeLabel,
   fundedBy,
+  caseStudyLabel,
   hidden
 }: {
   project: Project;
@@ -25,6 +28,7 @@ export function ProjectCard({
   regionLabel: string;
   themeLabel: string;
   fundedBy: string;
+  caseStudyLabel: string;
   hidden?: boolean;
 }) {
   return (
@@ -50,6 +54,12 @@ export function ProjectCard({
         <span>{fundedBy}</span>
         <strong>{copy.funder}</strong>
       </div>
+      {project.caseStudy ? (
+        <Link className="pcard__case" href={project.caseStudy}>
+          {caseStudyLabel}
+          <ArrowRight />
+        </Link>
+      ) : null}
     </article>
   );
 }

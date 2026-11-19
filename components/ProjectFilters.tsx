@@ -16,6 +16,7 @@ interface Labels {
   fundedBy: string;
   empty: string;
   emptyHint: string;
+  caseStudy: string;
 }
 
 /* Theme chips with counts, region chips, a combined filter, a live count and
@@ -84,6 +85,7 @@ export function ProjectFilters({copy, labels}: {copy: ProjectCopy[]; labels: Lab
             regionLabel={labels.regions[project.region]}
             themeLabel={labels.themes[project.theme]}
             fundedBy={labels.fundedBy}
+            caseStudyLabel={labels.caseStudy}
             hidden={!matches(i, theme, region)}
           />
         ))}
