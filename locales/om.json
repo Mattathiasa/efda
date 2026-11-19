@@ -432,7 +432,7 @@
     ],
     "accLabel": "(07) Itti gaafatamummaa",
     "accH2": "Wanti hojii walitti qabu.",
-    "accP": "EFDA'n Boordii Daayrektarootaan geggeeffama; waggaa waggaadhaan oditara alaa walabaan qoratama. Imaammannotaafi qajeelfamni armaan gadii qophaa'anii waajjiraalee pirojektii hunda keessatti hojii irra oolu.",
+    "accP": "EFDA'n Boordii Daayrektarootaan geggeeffama; waggaa waggaadhaan oditara alaa walabaan qoratama. Qajeelfamni armaan gadii qophaa'anii waajjiraalee pirojektii hunda keessatti hojii irra oolu; EFDA'nis yoo gaafatame deeggartootaaf ni dhiyeessa.",
     "capacity": [
       {
         "k": "Hojjettoota",
@@ -453,14 +453,14 @@
     ],
     "policiesLabel": "Imaammataafi qajeelfama",
     "policies": [
-      "Imaammata faayinaansii",
-      "Qajeelfama naamusaa",
+      "Qajeelfama Imaammataafi Adeemsa Faayinaansiifi Herregaa — Onkoloolessa 2021",
+      "Qajeelfama Naamusa Hojjettootaa — Fulbaana 2018",
+      "Imaammata Qabeenya Namaafi Bulchiinsaa — Onkoloolessa 2021",
+      "Qajeelfama Imaammata Bittaa, Kuusaafi Bulchiinsa Qabeenyaa — Onkoloolessa 2021",
+      "Karoora Tarsiimoo 2024–2028 — Amajjii 2024",
       "Qajeelfama imaammata eegumsaa",
       "Imaammata daa'immanii",
-      "Qajeelfama mirga namoomaa",
-      "Imaammata bittaa",
-      "Qajeelfama leenjii garee of-gargaarsaa",
-      "Karoora tarsiimoo"
+      "Qajeelfama leenjii garee of-gargaarsaa"
     ],
     "footH2": "Oromiyaa fi Beenishaangul Gumuz keessatti nu wajjin hojjedhaa.",
     "address1": "S.P. 25725, Koodii 1000",
