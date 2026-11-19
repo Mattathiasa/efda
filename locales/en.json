@@ -980,6 +980,142 @@
     "rights": "© 2026 EFDA",
     "reg": "Ethiopian CSO No. 0035"
   },
+  "strategy": {
+    "meta": {
+      "title": "Strategy 2024–2028",
+      "description": "EFDA’s board-adopted strategic plan: four programme components, five strategic shifts, and what the organization intends to look like by 2028."
+    },
+    "pageLabel": "Strategic plan · January 2024",
+    "h1a": "Where EFDA",
+    "h1b": "is going.",
+    "intro": "In January 2024 EFDA adopted a five-year plan. It is unusually candid about what the organization does not yet do well, and specific about what it intends to change. This page is a summary of it.",
+    "baseLabel": "(01) The starting point",
+    "baseH2": "What the last period actually produced.",
+    "baseP": "The plan opens with a review. These are its own figures for the period before it — the baseline everything that follows is measured against.",
+    "baseline": [
+      {
+        "num": "1,500+",
+        "label": "poor and marginalized women organized in self-help groups, in Ameya, Guto Gidda, Nekemte and Bokoji"
+      },
+      {
+        "num": "64",
+        "label": "young women from poor families completed a diploma or degree; 150 more were kept from dropping out"
+      },
+      {
+        "num": "110 ha",
+        "label": "of Chato natural forest maintained under area closure, Horro Guduru Wollega"
+      },
+      {
+        "num": "5",
+        "label": "projects implemented across EFDA’s thematic areas in the period under review"
+      }
+    ],
+    "compLabel": "(02) Programme components",
+    "compH2": "Four strands, one community.",
+    "compP": "The plan organizes everything EFDA does into four components. Sustainable environment is deliberately not a separate programme — it is mainstreamed across all of them.",
+    "components": [
+      {
+        "title": "Socio-economic empowerment",
+        "text": "Inequality, illiteracy and economic dependency fall hardest on women — in decision-making, in reproductive choice, in wages and in health. This is the component the self-help group work sits in."
+      },
+      {
+        "title": "Reducing women’s and girls’ health risks",
+        "text": "Reproductive health education and psychosocial support, integrated into the economic work rather than run beside it. The plan credits it with local proclamations against harmful traditional practice, agreed with government, religious and traditional leaders."
+      },
+      {
+        "title": "Sustainable environment",
+        "text": "Mainstreamed across every project rather than standing alone. Its concrete achievement is the Chato natural forest and 110 hectares of area closure in Horro Guduru Wollega."
+      },
+      {
+        "title": "Peacebuilding and conflict management",
+        "text": "EFDA describes itself as \"one of a few vibrant CSOs operating in the region\", with over twenty years of grassroots presence — and says plainly that violent conflict has strained its operations and that it lacks the capacity and resources the emergency needs."
+      }
+    ],
+    "shiftLabel": "(03) Five shifts",
+    "shiftH2": "What changes from here.",
+    "shiftP": "The plan names five deliberate changes of direction. Three of them are admissions.",
+    "shifts": [
+      {
+        "title": "Strengthening capacity building",
+        "text": "Of existing staff and of the board, through structured programmes rather than on the job."
+      },
+      {
+        "title": "Partnership, sustainability and documentation",
+        "text": "Documentation today is \"limited to quarterly and annual reports that are sent to donors\". The plan commits to bulletins and news feeds so lessons are shared, not just reported."
+      },
+      {
+        "title": "A different approach to resource mobilization",
+        "text": "\"EFDA is totally dependent on donor funding which is limited to proposal development. As soliciting funding has become highly competitive, the organization needs to look for local resources to generating income.\""
+      },
+      {
+        "title": "Expanding and scaling up",
+        "text": "EFDA’s vision allows it to work anywhere in Ethiopia, but \"most of its past and present interventions are confined in Oromia National Regional State\". The plan commits to new offices in two more Oromia zones and a base beyond the region."
+      },
+      {
+        "title": "A shift in who is served",
+        "text": "Adding unemployed youth, internally displaced people, elderly women, and women and girls at risk of trafficking to the target groups."
+      }
+    ],
+    "targetLabel": "(04) Targets to 2028",
+    "targetH2": "What the plan commits to.",
+    "targetP": "The measurable commitments, as the plan states them.",
+    "targets": [
+      {
+        "k": "Portfolio",
+        "v": "From five projects to eleven over five years — two new projects a year"
+      },
+      {
+        "k": "Geography",
+        "v": "New offices in two further Oromia zones, and a base outside the region"
+      },
+      {
+        "k": "Revenue",
+        "v": "Growth of 30% a year. The plan states the rate but its sentence breaks off before naming a 2028 figure"
+      },
+      {
+        "k": "Funding mix",
+        "v": "75% of the yearly budget from donors, and retention of all existing donors who continue operating in Ethiopia"
+      },
+      {
+        "k": "Budget use",
+        "v": "A 100% burn rate maintained throughout the plan period"
+      },
+      {
+        "k": "Review",
+        "v": "The plan is reviewed at least every six months, with a midterm and a final evaluation"
+      }
+    ],
+    "honestLabel": "(05) What the plan admits",
+    "honestH2": "The weaknesses it names itself.",
+    "honestP": "Strategic plans are usually written to impress. This one is worth reading because it is not. These are its own findings about EFDA.",
+    "admissions": [
+      {
+        "text": "The previous strategic plan, covering 2014 to 2019, \"was not used as a tool to set priorities/goals\" and \"was not shared among staff\"."
+      },
+      {
+        "text": "There is no master budget aligned to the strategy, and no cost-sharing mechanism."
+      },
+      {
+        "text": "Finance and programme staff are too few, and segregation of duties has gaps \"due to limited staff\"."
+      },
+      {
+        "text": "Procurement policy sits inside the human resources policy; the plan notes \"it needs to be separate to meet donor’s requirements\"."
+      },
+      {
+        "text": "Publicity is poor, and there are \"inadequate resources and capacity/skills to document EFDA works, outputs, outcomes/results\"."
+      },
+      {
+        "text": "Operational areas depend on which donors are interested, rather than on where need is greatest."
+      }
+    ],
+    "btnAbout": "How EFDA is governed",
+    "footH2": "Fund a plan that names its own weaknesses.",
+    "btnProjects": "See our projects",
+    "address1": "P.O. Box 25725, Code 1000",
+    "address2": "Addis Ababa, Ethiopia",
+    "rights": "© 2026 EFDA",
+    "reg": "Ethiopian CSO No. 0035"
+  },
   "contact": {
     "meta": {
       "title": "Contact",

@@ -980,6 +980,142 @@
     "rights": "© 2026 EFDA",
     "reg": "Lakk. DHM Itoophiyaa 0035"
   },
+  "strategy": {
+    "meta": {
+      "title": "Tarsiimoo 2024–2028",
+      "description": "Karoora tarsiimoo EFDA kan boordiin raggaase: dameewwan sagantaa afur, jijjiirama tarsiimoo shan, akkasumas dhaabbatichi hanga 2028 maal ta'uu akka barbaadu."
+    },
+    "pageLabel": "Karoora tarsiimoo · Amajjii 2024",
+    "h1a": "EFDA'n gara",
+    "h1b": "eessaa deemaa jira.",
+    "intro": "Amajjii 2024 EFDA'n karoora waggaa shanii raggaase. Wanta dhaabbatichi ammallee sirriitti hin hojjenne ifatti dubbata; wanta jijjiiruu barbaadus addatti tarreessa. Fuulli kun cuunfaa isaati.",
+    "baseLabel": "(01) Ka'umsi",
+    "baseH2": "Wanti yeroo darbe dhugumatti argame.",
+    "baseP": "Karoorichi gamaaggamaan jalqaba. Lakkoofsonni kun kan isaa mataa isaa yeroo karooricha dura tureef — bu'uura wanti itti aanu hundi ittiin madaalamu.",
+    "baseline": [
+      {
+        "num": "1,500+",
+        "label": "Dubartoonni hiyyeeyyiifi dhiibamoo Ameyaa, Guutoo Giddaa, Naqamteefi Boqojjiitti gareewwan of-gargaarsaatiin qindaa'an"
+      },
+      {
+        "num": "64",
+        "label": "Shamarran maatii hiyyeessaa irraa dhufan diploomaa yookaan digirii xumuran; 150 biroos barnoota irraa akka hin citne taasifame"
+      },
+      {
+        "num": "110 heek.",
+        "label": "Bosonni uumamaa Chaatoo Horroo Guduruu Wallaggaatti cufiinsa naannootiin eegame"
+      },
+      {
+        "num": "5",
+        "label": "Pirojektoota yeroo gamaaggamaa keessatti dameewwan xiyyeeffannoo EFDA keessatti hojiirra oolan"
+      }
+    ],
+    "compLabel": "(02) Dameewwan sagantaa",
+    "compH2": "Dameewwan afur, hawaasa tokko.",
+    "compP": "Karoorichi wanta EFDA'n hojjetu hunda damee afuritti qindeessa. Naannoon itti fufiinsa qabu beekumsaan damee adda hin taane — hunda keessatti makameera.",
+    "components": [
+      {
+        "title": "Dandeettii hawaas-diinagdee cimsuu",
+        "text": "Wal-qixxummaa dhabuun, dubbisuu dadhabuufi hirkattummaan diinagdee dubartoota irratti baay'ee ulfaata — murtee kennuu keessatti, filannoo walhormaataa keessatti, mindaafi fayyaa keessatti. Hojiin garee of-gargaarsaa damee kana keessa jira."
+      },
+      {
+        "title": "Saaxilamummaa fayyaa dubartootaafi shamarranii hir'isuu",
+        "text": "Barnoota fayyaa walhormaataafi deeggarsa xin-sammuu; hojii diinagdee cinaatti osoo hin taane isa waliin walitti makamee. Karoorichi akka labsiiwwan naannoo gochawwan aadaa miidhaa qaban dhorkan mootummaa, hoggantoota amantiifi aadaa waliin waliigalamanii argaman ibsa."
+      },
+      {
+        "title": "Naannoo itti fufiinsa qabu",
+        "text": "Kophaa osoo hin dhaabatin pirojektii hunda keessatti makameera. Bu'aan isaa qabatamaan bosona uumamaa Chaatoofi cufiinsa naannoo heektaara 110 Horroo Guduruu Wallaggaa keessatti."
+      },
+      {
+        "title": "Nagaa ijaaruufi bulchiinsa walitti bu'iinsaa",
+        "text": "EFDA'n ofii isaa “dhaabbilee hawaasa siiviilii naannicha keessatti sochii qaban muraasa keessaa tokko” jedhee ibsa; waggaa digdama ol muuxannoo hundee qaba — walitti bu'iinsi hamaan hojii isaa akka rakkise, dandeettiifi qabeenya haala ariifachiisaaf barbaachisus akka hin qabne ifatti dubbata."
+      }
+    ],
+    "shiftLabel": "(03) Jijjiirama shan",
+    "shiftH2": "Wanti asii booda jijjiiramu.",
+    "shiftP": "Karoorichi jijjiirama kallattii shan beekumsaan filataman tarreessa. Isaan keessaa sadii rakkoo fudhachuudha.",
+    "shifts": [
+      {
+        "title": "Ijaarsa dandeettii cimsuu",
+        "text": "Hojjettoota jiraniifi boordii, hojii irratti qofa osoo hin taane sagantaalee caaseffamaniin."
+      },
+      {
+        "title": "Michummaa, itti fufiinsaafi galmeessa",
+        "text": "Galmeessi har'aa “gabaasa kurmaanaafi waggaa deeggartootaaf ergamutti daangeffame”. Karoorichi barumsi akka qoodamu malee gabaasa qofa akka hin taane barruufi oduu waadaa seena."
+      },
+      {
+        "title": "Qabeenya walitti qabuuf tooftaa adda",
+        "text": "“EFDA'n guutumaan guutuutti deeggarsa deeggartootaa irratti hirkata; kunis qophii pirojektiitti daangeffame. Deeggarsa argachuun waan baay'ee morkataa ta'eef, dhaabbatichi galii uumuuf qabeenya naannoo barbaaduu qaba.”"
+      },
+      {
+        "title": "Babal'isuufi guddisuu",
+        "text": "Mul'anni EFDA Itoophiyaa guutuu keessatti akka hojjetu heeyyama; haa ta'u malee “hojiiwwan isaa kan darbes kan ammaas irra caalaan Naannoo Oromiyaatti daangeffamaniiru”. Karoorichi godinaalee Oromiyaa biroo lamatti waajjira banuufi naannicha alattis bu'uura qabaachuu waadaa seena."
+      },
+      {
+        "title": "Jijjiirama warra tajaajilamanii",
+        "text": "Dargaggoota hojii hin qabne, namoota buqqa'an, dubartoota maanguddoo, akkasumas dubartootaafi shamarran daldala namaaf saaxilaman gareewwan xiyyeeffannootti dabaluu."
+      }
+    ],
+    "targetLabel": "(04) Galmawwan hanga 2028",
+    "targetH2": "Wanti karoorichi waadaa seene.",
+    "targetP": "Waadaawwan safaramuu danda'an, akkuma karoorichi jedhetti.",
+    "targets": [
+      {
+        "k": "Baay'ina pirojektii",
+        "v": "Waggaa shan keessatti pirojektii shan irraa gara kudha tokkootti — waggaatti pirojektii haaraa lama"
+      },
+      {
+        "k": "Teessuma lafaa",
+        "v": "Godinaalee Oromiyaa biroo lamatti waajjira haaraa, akkasumas naannicha alatti bu'uura"
+      },
+      {
+        "k": "Galii",
+        "v": "Waggaatti guddina 30%. Karoorichi hammamtaa ni ibsa; hiiknisaa garuu lakkoofsa 2028 osoo hin caqasin addaan cita"
+      },
+      {
+        "k": "Madda maallaqaa",
+        "v": "Baajata waggaa keessaa 75% deeggartoota irraa; akkasumas deeggartoota duraanii Itoophiyaa keessatti hojjechuu itti fufan hunda qabachuu"
+      },
+      {
+        "k": "Itti fayyadama baajataa",
+        "v": "Yeroo karooraa guutuu keessatti itti fayyadama baajataa 100% eeguu"
+      },
+      {
+        "k": "Gamaaggama",
+        "v": "Karoorichi yoo xiqqaate ji'a ja'atti gamaaggamama; gamaaggamni gidduugaleessaafi xumuraas ni jira"
+      }
+    ],
+    "honestLabel": "(05) Wanti karoorichi fudhatu",
+    "honestH2": "Hanqinoota ofumaa caqasu.",
+    "honestP": "Karoorri tarsiimoo yeroo baay'ee nama dinqisiisuuf barreeffama. Kun garuu akkas waan hin taaneef dubbisuun ni ta'a. Kunneen argannoo isaa mataa isaa waa'ee EFDA ti.",
+    "admissions": [
+      {
+        "text": "Karoorri tarsiimoo duraanii kan bara 2014 hanga 2019 “dursaafi kaayyoo murteessuuf meeshaa godhamee hin fayyadamne” akkasumas “hojjettootaaf hin qoodamne”."
+      },
+      {
+        "text": "Baajanni guddaan tarsiimoo waliin walsimu hin jiru; sirni baasii walii qooduus hin jiru."
+      },
+      {
+        "text": "Hojjettoonni faayinaansiifi sagantaa muraasa; “hojjettoota xiqqaa waan ta'eef” qoodni hojiis qaawwa qaba."
+      },
+      {
+        "text": "Imaammanni bittaa imaammata qabeenya namaa keessa jira; karoorichis “ulaagaa deeggartootaa guutuuf adda ba'uu qaba” jedha."
+      },
+      {
+        "text": "Beeksifni laafaadha; “hojii, bu'aafi firii EFDA galmeessuuf qabeenyaafi dandeettiin gahaan hin jiru”."
+      },
+      {
+        "text": "Naannoowwan hojii bakka fedhiin guddaa jiru osoo hin taane fedhii deeggartootaa irratti hundaa'u."
+      }
+    ],
+    "btnAbout": "EFDA'n akkamitti akka bulfamu",
+    "footH2": "Karoora hanqina ofii isaa caqasu deeggari.",
+    "btnProjects": "Pirojektoota keenya ilaali",
+    "address1": "S.P.N. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "rights": "© 2026 EFDA",
+    "reg": "Lakk. DHM Itoophiyaa 0035"
+  },
   "contact": {
     "meta": {
       "title": "Nu qunnamaa",
