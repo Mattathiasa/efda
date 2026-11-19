@@ -349,23 +349,51 @@
         "text": "Hawaasni rakkoo diinagdee, hawaasummaa, naannoo fi fayyaa isaa dandeettii, beekumsaa fi qabeenya mataa isaa irratti hirkatee, deeggarsa alaa xiqqaa qofaan akka to'atu dandeessisuu."
       }
     ],
-    "valuesLabel": "Gatiiwwan bu'uuraa",
+    "valuesLabel": "Gatiiwwan bu’uuraa",
     "values": [
       {
-        "label": "Itti gaafatamummaa",
-        "text": "Hawaasa waliin hojjennuuf, akkasumas warra hojii kana deeggaran hundaaf itti gaafatamoo dha."
+        "label": "Hirmaannaa waliinii jajjabeessuu",
+        "text": "Michoonniifi qooda fudhattoonni qabeenya isaanii gara kaayyoo waliiniitti akka naannessan kutannoo waliinii uumuufi cimsuu."
       },
       {
-        "label": "Iftoomina",
-        "text": "Karoorri, baajanniifi bu'aan namoota ilaallatuuf banaa dha."
+        "label": "Namummaaf kabaja kennuu",
+        "text": "Garaagarummaan, rakkoon yookaan daangeffamni osoo hin daangessin ulfina uumamaafi gatii qulqullina namummaa hunda beekuu."
       },
       {
-        "label": "Saalaaf xiyyeeffannoo kennuu",
-        "text": "Pirojektiin hundi jijjiirama dubartootaafi shamarraniif fidu irratti madaalama."
+        "label": "Michummaa waliinii",
+        "text": "Hojii waliinii keessatti amanamummaafi iftoomina eeguu; kaayyoo waliinii galmaan gahuuf gumaacha wal-qixxeefi faayidaa wal-qixxee barbaaduu."
       },
       {
-        "label": "Abbummaa hawaasaa",
-        "text": "Pirojektiin kan hawaasaati — nuti kan jirru karoorri isaa mataa isaa akka milkaa'u gargaaruuf."
+        "label": "Walabummaa, loogii dhabuufi garee hin deeggaruu",
+        "text": "Duubbee hawaasummaa, diinagdee yookaan aadaa nama kamiyyuu irratti hundaa'uun osoo hin looginee michuu, qooda fudhataafi nama waliin hojjennu hundaaf haqaafi wal-qixxummaan ilaaluu."
+      },
+      {
+        "label": "Miidhamtoota cinaa dhaabachuu",
+        "text": "Mul'ata waliinii irratti hundaa'uun dubartootaafi daa'imman hiyyeeyyiifi dhiibamoo waliin tumsaafi deeggarsa waliinii babal'isuu, itti fufsiisuufi falmuu."
+      },
+      {
+        "label": "Fedhiifi kutannoo",
+        "text": "Jireenyi miidhamtootaa akka fooyya'uufi warri saaxilamoo akka eegamaniif garaa guutuun hojjechuufi murteessuu."
+      },
+      {
+        "label": "Tajaajila keessatti amanamummaa",
+        "text": "Hojii keenya, tajaajila keenyaafi hariiroo keenya keessatti qulqullina dandeenyu hunda amanamummaafi dhugaadhaan dhiyeessuu."
+      },
+      {
+        "label": "Dhugaa fuulduratti dhaabachuuf ija jabaachuu",
+        "text": "Bu'aan isaa balaa qabaatus hin qabaatin, dhugaa amanamummaadhaan fudhachuufi kabajuu."
+      },
+      {
+        "label": "Iftoominaafi itti gaafatamummaa",
+        "text": "Banaa ta'uufi kallattiin hojjechuu; gocha keenyaaf, amala keenyaafi bu'aa isaaniitiif of itti gaafatamaa gochuu."
+      },
+      {
+        "label": "Ogummaa",
+        "text": "Dandeettii ogummaafi ulaagaa naamusaa keessatti beekumsa haaraa yeroo hunda barachuufi qooduu."
+      },
+      {
+        "label": "Hubannoo aadaa",
+        "text": "Gatii, aadaafi duudhaa naannoo kabajuu; akkasumas gocha aadaafi qabeenya naannoo jijjiirama gaariif bu'uura godhanii itti fayyadamuu."
       }
     ],
     "orgLabel": "(04) Caasaa dhaabbatichaa",

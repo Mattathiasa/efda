@@ -623,6 +623,14 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .pcard__case:hover { color: var(--link-hover); gap: 12px; }
 .pcard__case svg { transition: transform .3s var(--ease); }
 
+/* The eleven core values, on the dark philosophy panel. A definition list in
+   two columns rather than the .vmg-card grid: eleven cards is a wall, and the
+   definition is the point - a value without one is a slogan. */
+.value-list { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 0 56px; }
+.value-list div { padding: 18px 0; border-top: 1px solid rgba(242, 241, 236, .18); }
+.value-list dt { font-family: var(--font-display); font-size: 18px; font-weight: 600; letter-spacing: -.01em; color: var(--honey); }
+.value-list dd { margin-top: 6px; font-size: 15px; line-height: 1.55; color: var(--mist); }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }

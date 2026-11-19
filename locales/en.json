@@ -352,20 +352,48 @@
     "valuesLabel": "Core values",
     "values": [
       {
-        "label": "Accountability",
-        "text": "Answerable to the communities we work with, and to everyone who funds the work."
+        "label": "Promotes collective participation",
+        "text": "Generating and enhancing collective dedication among partners and stakeholders, so that they draw their resources toward common goals."
       },
       {
-        "label": "Transparency",
-        "text": "Plans, budgets and results are open to the people they concern."
+        "label": "Respect for humanity",
+        "text": "Being aware of the inherent dignity and the natural value of all human qualities, regardless of difference, difficulty or limitation."
       },
       {
-        "label": "Gender sensitivity",
-        "text": "Every project is weighed by what it changes for women and girls."
+        "label": "Mutual partnership",
+        "text": "Maintaining trustworthiness and transparency in shared work, striving for equal contribution and equal benefit in reaching common goals."
       },
       {
-        "label": "Community ownership",
-        "text": "The community owns the project — we are there to make its own plan work."
+        "label": "Neutrality, impartiality and non-partisanship",
+        "text": "Non-judgemental, fair and equal treatment of every partner, stakeholder and person we work with, without prejudice based on anyone’s social, economic or cultural background."
+      },
+      {
+        "label": "Solidarity with the disadvantaged",
+        "text": "Promoting, sustaining and advocating for collaboration and mutual support with poor and marginalized women and children, built on a reciprocal and shared vision."
+      },
+      {
+        "label": "Passion and commitment",
+        "text": "Acting and deciding wholeheartedly, so that the lives of the disadvantaged improve and those at risk are protected."
+      },
+      {
+        "label": "Integrity in service",
+        "text": "Trustworthiness and honesty, delivering the greatest quality we can in our work, our service and our relationships."
+      },
+      {
+        "label": "Courage to deal with facts",
+        "text": "Being honest, accepting and valuing the truth, whether it carries risk or a positive result."
+      },
+      {
+        "label": "Transparency and accountability",
+        "text": "Being open and acting frankly, and holding ourselves accountable for our actions, our conduct and their consequences."
+      },
+      {
+        "label": "Professionalism",
+        "text": "Learning and sharing new knowledge consistently, within a framework of professional skill and ethical standards."
+      },
+      {
+        "label": "Cultural sensitivity",
+        "text": "Respecting local values, custom and practice, and using customary practices and local assets as the foundation for positive change."
       }
     ],
     "orgLabel": "(04) Organization",

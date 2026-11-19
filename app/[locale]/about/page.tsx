@@ -136,19 +136,14 @@ function AboutPageContent({config}: {config: SiteConfig}) {
             <p className="label" style={{marginTop: 72}}>
               {t('valuesLabel')}
             </p>
-            <div className="auto-grid vmg-cards" data-reveal-group>
+            <dl className="value-list" data-reveal-group>
               {values.map((value, i) => (
-                <div className="vmg-card" key={i}>
-                  <div className="vmg-card__head">
-                    <span className="vmg-card__label">{value.label}</span>
-                    <span className="vmg-card__num">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                  </div>
-                  <p className="vmg-card__text">{value.text}</p>
+                <div key={i}>
+                  <dt>{value.label}</dt>
+                  <dd>{value.text}</dd>
                 </div>
               ))}
-            </div>
+            </dl>
           </div>
         </section>
 
