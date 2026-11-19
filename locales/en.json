@@ -400,25 +400,34 @@
     "officesH2": "Close to the work.",
     "officeActive": "Staffed",
     "officeDormant": "Not currently staffed",
-    "asosaPhoto": "[ASOSA OFFICE PHOTO]",
     "offices": [
       {
         "region": "Oromia · South West Shewa",
         "name": "Woliso",
         "text": "Project office and resource centre, and the one EFDA office staffed today — a community training centre, a cultural materials archive, and home to the Centre for Enset Business Incubation.",
-        "alt": "Woliso project office and resource centre"
+        "alt": "Woliso project office and resource centre",
+        "photoNote": ""
+      },
+      {
+        "region": "Oromia · East Arsi",
+        "name": "Guna and Merti",
+        "text": "Five staff work here — two coordinators, two community mobilizers and an accountant — on the reproductive-health and women’s wellbeing programme in Merti and Guna woredas. EFDA keeps no office building here; the team works out of the woredas themselves.",
+        "alt": "",
+        "photoNote": "A field team, not a building"
       },
       {
         "region": "Oromia · Horro Guduru Wollega",
         "name": "Shambu",
         "text": "Office and community training centre built for the Horro Guduru programmes — the forest, beekeeping and education work of EFDA’s middle years. Not currently staffed.",
-        "alt": "EFDA’s office building in Shambu with a covered porch"
+        "alt": "EFDA’s office building in Shambu with a covered porch",
+        "photoNote": ""
       },
       {
         "region": "Benishangul Gumuz",
         "name": "Asosa",
         "text": "Regional office opened for the education quality and equity work in Benishangul Gumuz, which ran to the end of 2022. Not currently staffed.",
-        "alt": ""
+        "alt": "",
+        "photoNote": "[ASOSA OFFICE PHOTO]"
       }
     ],
     "accLabel": "(07) Accountability",

@@ -400,25 +400,34 @@
     "officesH2": "Hojii biratti dhiyoo.",
     "officeActive": "Hojjetaa qaba",
     "officeDormant": "Yeroo ammaa hojjetaa hin qabu",
-    "asosaPhoto": "[SUURAA WAAJJIRA ASOOSAA]",
     "offices": [
       {
         "region": "Oromiyaa · Kibba Lixa Shawaa",
         "name": "Waliisoo",
         "text": "Waajjira pirojektiifi giddugala qabeenyaa, akkasumas waajjira EFDA kan har'a hojjetaa qabu qofa — giddugala leenjii hawaasaa, kuusaa meeshaalee aadaa, akkasumas teessoo Giddugala Daldala Warqee Guddisuu.",
-        "alt": "Waajjira pirojektiifi giddugala qabeenyaa Waliisoo"
+        "alt": "Waajjira pirojektiifi giddugala qabeenyaa Waliisoo",
+        "photoNote": ""
+      },
+      {
+        "region": "Oromiyaa · Arsii Bahaa",
+        "name": "Gunaa fi Mertii",
+        "text": "Asitti hojjettoonni shan hojjetu — qindeessitoota lama, kakaastota hawaasaa lamaafi herregaa tokko — sagantaa fayyaa walhormaataafi fayyummaa dubartootaa aanaalee Mertiifi Gunaa keessatti. EFDA'n asitti gamoo waajjiraa hin qabu; gareen aanaalee sana keessaa hojjeta.",
+        "alt": "",
+        "photoNote": "Garee dirree malee gamoo miti"
       },
       {
         "region": "Oromiyaa · Horroo Guduruu Wallaggaa",
         "name": "Shaambuu",
         "text": "Waajjiraafi giddugala leenjii hawaasaa sagantaalee Horroo Guduruutiif ijaarame — hojii bosonaa, kannisaafi barnootaa waggoota EFDA giddugaleessaa. Yeroo ammaa hojjetaa hin qabu.",
-        "alt": "Gamoo waajjira EFDA Shaambuu kan barandaa qabu"
+        "alt": "Gamoo waajjira EFDA Shaambuu kan barandaa qabu",
+        "photoNote": ""
       },
       {
         "region": "Benishaangul Gumuz",
         "name": "Asoosaa",
         "text": "Waajjirri naannoo hojii qulqullinaafi wal-qixxummaa barnootaa Benishaangul Gumuz keessatti baname; hojiin sun hamma dhuma 2022tti ture. Yeroo ammaa hojjetaa hin qabu.",
-        "alt": ""
+        "alt": "",
+        "photoNote": "[SUURAA WAAJJIRA ASOOSAA]"
       }
     ],
     "accLabel": "(07) Itti gaafatamummaa",

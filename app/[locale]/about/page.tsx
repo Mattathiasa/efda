@@ -43,6 +43,8 @@ interface OfficeCopy {
   name: string;
   text: string;
   alt: string;
+  /** Shown in place of a photograph, saying why there is not one. */
+  photoNote: string;
 }
 
 export default async function AboutPage() {
@@ -219,7 +221,7 @@ function AboutPageContent({config}: {config: SiteConfig}) {
                     />
                   ) : (
                     <div className="office__placeholder arch--office">
-                      <span>{t('asosaPhoto')}</span>
+                      <span>{officeCopy[i].photoNote}</span>
                     </div>
                   )}
                   <p className="office__region">
