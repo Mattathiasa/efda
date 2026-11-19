@@ -655,7 +655,108 @@
     "rosterLabel": "(01) Who funds the work",
     "rosterH2": "Our funders and partners.",
     "rosterP": "Foundations, bilateral agencies, international NGOs and Ethiopian networks, from EFDA’s first years to today. Names are listed as each organization writes them.",
-    "netLabel": "(02) Networks and coalitions",
+    "fundLabel": "(02) Twenty-six years of funded work",
+    "fundH2": "Every project, and who paid for it.",
+    "fundP": "EFDA’s complete funding record since 1999 — twenty-four projects, twenty-one funders, two regional states. Amounts are not shown: the underlying record mixes four currencies and is internally inconsistent about several of them, and a figure worth doubting is worse than none.",
+    "funding": [
+      {
+        "title": "Reproductive health and women’s wellbeing",
+        "where": "Merti and Guna, East Arsi"
+      },
+      {
+        "title": "Women’s economic empowerment through improved enset processing",
+        "where": "Woliso, South West Shewa"
+      },
+      {
+        "title": "Forging a collective alliance for sustainable peacebuilding",
+        "where": "Four Wollega zones"
+      },
+      {
+        "title": "Youth engagement for sustainable peace and stability",
+        "where": "Four Wollega zones"
+      },
+      {
+        "title": "Scalable models for equitable, quality primary education",
+        "where": "Asosa, Benishangul Gumuz"
+      },
+      {
+        "title": "Speed School for displaced children",
+        "where": "Babile, East Hararghe"
+      },
+      {
+        "title": "Livelihood schemes for unemployed girls",
+        "where": "Six woredas across Oromia"
+      },
+      {
+        "title": "Accelerated Learning for Africa (ALFA)",
+        "where": "Woliso, South West Shewa"
+      },
+      {
+        "title": "Developing apiculture management and market access",
+        "where": "Horro and Jimma Geneti, Horro Guduru"
+      },
+      {
+        "title": "Climate resilience for the hardest to reach",
+        "where": "Mao Komo, Benishangul Gumuz"
+      },
+      {
+        "title": "A funding window for climate resilience",
+        "where": "Mao Komo, Benishangul Gumuz"
+      },
+      {
+        "title": "Reaching the unreached through vaccination",
+        "where": "Oromia and Benishangul Gumuz"
+      },
+      {
+        "title": "Social accountability",
+        "where": "Horro, Gudaya Bila and Kiltu Kara"
+      },
+      {
+        "title": "Improving the wellbeing of women and girls",
+        "where": "Mao Komo, Benishangul Gumuz"
+      },
+      {
+        "title": "Save Chato natural forest",
+        "where": "Horro, Dongoro and Jardega Jarte"
+      },
+      {
+        "title": "Primary school education quality improvement",
+        "where": "Horro Guduru, South West Shewa, East Shewa and Ilubabor"
+      },
+      {
+        "title": "Support for people living with HIV, orphans and vulnerable children",
+        "where": "Sululta and Chancho"
+      },
+      {
+        "title": "Quality education support",
+        "where": "Sululta and Chancho"
+      },
+      {
+        "title": "Alternative basic education and children’s livelihood support",
+        "where": "Woliso"
+      },
+      {
+        "title": "Community livelihood development",
+        "where": "Horro"
+      },
+      {
+        "title": "Potable water and spring development",
+        "where": "Horro Guduru"
+      },
+      {
+        "title": "Reproductive health promotion",
+        "where": "Horro Guduru Wollega"
+      },
+      {
+        "title": "Women’s empowerment",
+        "where": "Horro"
+      },
+      {
+        "title": "Alternative basic education and skills training",
+        "where": "South West Shewa and Horro Guduru"
+      }
+    ],
+    "netLabel": "(03) Networks and coalitions",
     "netH2": "EFDA does not work alone, and is not judged alone.",
     "netP": "Membership of a consortium means peer scrutiny, shared standards and a seat at tables EFDA could not reach on its own. Several of EFDA’s grants have arrived through these bodies rather than directly from the donor.",
     "networks": [
@@ -684,14 +785,14 @@
         "name": "Consortium of Self-Help Group Approach Promoters"
       }
     ],
-    "federerLabel": "(03) A visit that stayed with us",
+    "federerLabel": "(04) A visit that stayed with us",
     "federerH2": "Roger Federer came to see the work.",
     "federerP": "On 2 February 2010 Roger Federer spent a day on EFDA project sites — at a hand pump the community had asked for, and with young people wearing jerseys printed with both our names. The Roger Federer Foundation has supported EFDA’s education work since, and the visit is still the thing people here mention first.",
     "federerAlt1": "Roger Federer in conversation with EFDA staff and community members beside a hand pump, with journalists taking notes",
     "federerCap1": "At a community hand pump — 2 February 2010",
     "federerAlt2": "Roger Federer standing among young people wearing jerseys printed “Roger Federer Foundation” and “Education For Development Association”",
     "federerCap2": "Jerseys printed with both names, and the words Run “I am tomorrow’s future”",
-    "quoteLabel": "(04) How we work with partners",
+    "quoteLabel": "(05) How we work with partners",
     "quoteA": "We can’t help everyone,",
     "quoteB": "but everyone can help someone",
     "quoteC": ".",

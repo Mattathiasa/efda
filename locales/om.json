@@ -655,7 +655,108 @@
     "rosterLabel": "(01) Warra hojii deeggaran",
     "rosterH2": "Deeggartootaafi michoota keenya.",
     "rosterP": "Hundeewwan, dhaabbilee biyyoota lamaa, dhaabbilee mit-mootummaa addunyaa fi marsaalee Itoophiyaa — waggoota EFDA jalqabaa irraa hanga har'aatti. Maqaan akkuma dhaabbanni tokkoon tokkoon isaanii barreessutti tarreeffame.",
-    "netLabel": "(02) Marsaalee fi tumsa",
+    "fundLabel": "(02) Waggaa digdamii ja'a hojii deeggarame",
+    "fundH2": "Pirojektii hundaafi nama kaffale.",
+    "fundP": "Galmeen deeggarsa EFDA guutuun bara 1999 irraa kaasee — pirojektoota digdamii afur, deeggartoota digdamii tokko, naannolee lama. Baay'inni maallaqaa hin agarsiifamne: galmeen bu'uuraa sharafa afur walitti makee, hedduu isaanii irrattis ofuma isaatii wal hin simu; lakkoofsi shakkisiisaa immoo homaa dhabuu caalaa hamaadha.",
+    "funding": [
+      {
+        "title": "Fayyaa walhormaataafi fayyummaa dubartootaa",
+        "where": "Mertiifi Gunaa, Arsii Bahaa"
+      },
+      {
+        "title": "Qophii warqee fooyya'een dandeettii diinagdee dubartootaa",
+        "where": "Waliisoo, Kibba Lixa Shawaa"
+      },
+      {
+        "title": "Nagaa waaraaf tumsa waliinii uumuu",
+        "where": "Godinaalee Wallaggaa afur"
+      },
+      {
+        "title": "Nagaafi tasgabbii waaraaf hirmaannaa dargaggootaa",
+        "where": "Godinaalee Wallaggaa afur"
+      },
+      {
+        "title": "Moodeloota barnoota sadarkaa tokkoffaa qulqullinaafi wal-qixxummaa qabu",
+        "where": "Asoosaa, Benishaangul Gumuz"
+      },
+      {
+        "title": "Barnoota saffisaa ijoollee buqqa'aniif",
+        "where": "Baabbilee, Harargee Bahaa"
+      },
+      {
+        "title": "Sagantaa jireenyaa shamarran hojii hin qabneef",
+        "where": "Aanaalee Oromiyaa ja'a"
+      },
+      {
+        "title": "Barnoota Saffisaa Afrikaaf (ALFA)",
+        "where": "Waliisoo, Kibba Lixa Shawaa"
+      },
+      {
+        "title": "Bulchiinsa kannisaafi gabaa argachuu guddisuu",
+        "where": "Horroofi Jimmaa Ganetii, Horroo Guduruu"
+      },
+      {
+        "title": "Dandeettii qilleensa jijjiirama bakka gahuun rakkisaatti",
+        "where": "Maa'oo Komoo, Benishaangul Gumuz"
+      },
+      {
+        "title": "Foddaa maallaqaa dandeettii qilleensa jijjiiramaaf",
+        "where": "Maa'oo Komoo, Benishaangul Gumuz"
+      },
+      {
+        "title": "Talaallii bakka hin gahamnetti dhiyeessuu",
+        "where": "Oromiyaafi Benishaangul Gumuz"
+      },
+      {
+        "title": "Itti gaafatamummaa hawaasummaa",
+        "where": "Horroo, Gudaayaa Bilaafi Kiltuu Karraa"
+      },
+      {
+        "title": "Fayyummaa dubartootaafi shamarranii fooyyessuu",
+        "where": "Maa'oo Komoo, Benishaangul Gumuz"
+      },
+      {
+        "title": "Bosona uumamaa Chaatoo baraaruu",
+        "where": "Horroo, Donggoroofi Jaardagaa Jaartee"
+      },
+      {
+        "title": "Qulqullina barnoota sadarkaa tokkoffaa fooyyessuu",
+        "where": "Horroo Guduruu, Kibba Lixa Shawaa, Shawaa Bahaafi Iluu Abbaa Booraa"
+      },
+      {
+        "title": "Deeggarsa warra HIV waliin jiraatan, ijoollee abbaa hin qabneefi saaxilamoo",
+        "where": "Sulultaafi Caancoo"
+      },
+      {
+        "title": "Deeggarsa qulqullina barnootaa",
+        "where": "Sulultaafi Caancoo"
+      },
+      {
+        "title": "Barnoota bu'uuraa filannoofi deeggarsa jireenya ijoollee",
+        "where": "Waliisoo"
+      },
+      {
+        "title": "Misooma jireenya hawaasaa",
+        "where": "Horroo"
+      },
+      {
+        "title": "Bishaan dhugaatiifi misooma burqaa",
+        "where": "Horroo Guduruu"
+      },
+      {
+        "title": "Fayyaa walhormaataa beeksisuu",
+        "where": "Horroo Guduruu Wallaggaa"
+      },
+      {
+        "title": "Dandeettii dubartootaa cimsuu",
+        "where": "Horroo"
+      },
+      {
+        "title": "Barnoota bu'uuraa filannoofi leenjii dandeettii",
+        "where": "Kibba Lixa Shawaafi Horroo Guduruu"
+      }
+    ],
+    "netLabel": "(03) Marsaalee fi tumsa",
     "netH2": "EFDA'n kophaa hin hojjetu, kophaas hin madaalamu.",
     "netP": "Miseensummaan waldaa jechuun qoratamuu hiriyootaan, ulaagaa waliinii, akkasumas iddoo EFDA'n kophaa isaa bira gahuu hin dandeenye irratti teessoo argachuu jechuudha. Deeggarsi EFDA hedduun kallattiin deeggaraa irraa osoo hin taane karaa dhaabbilee kanaa dhufeera.",
     "networks": [
@@ -684,14 +785,14 @@
         "name": "Waldaa Babal'istoota Tooftaa Garee Of-gargaarsaa"
       }
     ],
-    "federerLabel": "(03) Daawwannaa hin irraanfatamne",
+    "federerLabel": "(04) Daawwannaa hin irraanfatamne",
     "federerH2": "Roger Federer hojii ilaaluuf dhufee ture.",
     "federerP": "Guyyaa 2 Guraandhala 2010 Roger Federer bakkeewwan pirojektii EFDA keessatti guyyaa tokko dabarse — pompii harkaa hawaasni gaafate bira, akkasumas dargaggoota qamadii maqaa keenya lamaan qabu uffatan waliin. Roger Federer Foundation yeroo sanaa kaasee hojii barnootaa EFDA ni deeggara; daawwannaan sunis amma illee waan namoonni asii jalqaba dubbatanidha.",
     "federerAlt1": "Roger Federer hojjettoota EFDA fi miseensota hawaasaa waliin pompii harkaa bira haasa'aa jira; gaazexeessitoonnis yaadannoo qabachaa jiru",
     "federerCap1": "Pompii harkaa hawaasaa irratti — 2 Guraandhala 2010",
     "federerAlt2": "Roger Federer dargaggoota qamadii “Roger Federer Foundation” fi “Education For Development Association” jedhu uffatan gidduu dhaabate",
     "federerCap2": "Qamadii maqaa lamaanuu qabu, jecha “Ani abdii boruuti” qabatu",
-    "quoteLabel": "(04) Akkaataa michoota waliin itti hojjennu",
+    "quoteLabel": "(05) Akkaataa michoota waliin itti hojjennu",
     "quoteA": "Nama hunda gargaaruu hin dandeenyu,",
     "quoteB": "garuu namni hundi nama tokko gargaaruu ni danda'a",
     "quoteC": ".",

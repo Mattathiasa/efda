@@ -3,6 +3,8 @@ import {useLocale, useTranslations} from 'next-intl';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
 import {DonorRoll} from '@/components/DonorRoll';
+import {FundingHistory} from '@/components/FundingHistory';
+import type {GrantCopy} from '@/components/FundingHistory';
 import {NetworkList} from '@/components/NetworkList';
 import type {NetworkCopy} from '@/components/NetworkList';
 import {Photo} from '@/components/Photo';
@@ -31,6 +33,7 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
   const t = useTranslations('partners');
   const c = useTranslations('common');
   const locale = useLocale();
+  const grantCopy = t.raw('funding') as GrantCopy[];
   const networkCopy = t.raw('networks') as NetworkCopy[];
 
   return (
@@ -70,8 +73,24 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 3. Networks and coalitions */}
-        <section className="section" aria-labelledby="net-title">
+        {/* 3. The funding record */}
+        <section className="section" aria-labelledby="fund-title">
+          <div className="container">
+            <div className="split split--wide" data-reveal>
+              <div>
+                <p className="label">{t('fundLabel')}</p>
+                <h2 className="h-section" id="fund-title">
+                  {t('fundH2')}
+                </h2>
+              </div>
+              <p className="lead">{t('fundP')}</p>
+            </div>
+            <FundingHistory copy={grantCopy} />
+          </div>
+        </section>
+
+        {/* 4. Networks and coalitions */}
+        <section className="section section--dust" aria-labelledby="net-title">
           <div className="container">
             <div className="split split--wide" data-reveal>
               <div>
@@ -86,7 +105,7 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 4. The Roger Federer Foundation visit */}
+        {/* 5. The Roger Federer Foundation visit */}
         <section
           className="section section--dark on-dark"
           aria-labelledby="federer-title"
@@ -130,7 +149,7 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 5. How we work with partners */}
+        {/* 6. How we work with partners */}
         <section className="section" aria-labelledby="how-title">
           <div className="container about-grid" data-reveal>
             <p className="label">{t('quoteLabel')}</p>

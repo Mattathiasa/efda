@@ -475,6 +475,10 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .rows { margin-top: 72px; border-bottom: 1px solid var(--border); }
 .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); align-items: center; gap: 8px 32px; padding: 26px 0; border-top: 1px solid var(--border); color: var(--text); text-decoration: none; transition: background .3s ease, padding .3s ease; }
 .row:hover { color: var(--text); background: var(--surface-2); padding-left: 16px; padding-right: 16px; }
+/* The funding history reuses .row but its rows are not links, so the hover
+   affordance has to go - otherwise the whole table reacts to the pointer and
+   invites a click that does nothing. */
+.rows--static .row:hover { background: none; padding-left: 0; padding-right: 0; }
 /* A row already sits on a --surface-2 section, so its own hover needs a
    shade visibly different from that, not another coat of the same token -
    one step further along each mode's own neutral ramp. */
