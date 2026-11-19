@@ -3,7 +3,14 @@ import {getTranslations} from 'next-intl/server';
 import {routing, type Locale} from '@/i18n/routing';
 import {site} from '@/content/site';
 
-type Page = 'home' | 'about' | 'projects' | 'partners' | 'contact' | 'enset';
+type Page =
+  | 'home'
+  | 'about'
+  | 'projects'
+  | 'partners'
+  | 'strategy'
+  | 'contact'
+  | 'enset';
 
 /** Absolute URL for a page in a given locale. */
 export function urlFor(locale: string, path: string) {
