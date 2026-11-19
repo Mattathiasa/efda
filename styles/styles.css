@@ -631,6 +631,22 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .value-list dt { font-family: var(--font-display); font-size: 18px; font-weight: 600; letter-spacing: -.01em; color: var(--honey); }
 .value-list dd { margin-top: 6px; font-size: 15px; line-height: 1.55; color: var(--mist); }
 
+/* Strategy page. .plan-list is the light-ground sibling of .value-list; the
+   definitions are long enough that two columns beat four. */
+.plan-list { margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 0 56px; }
+.plan-list div { padding: 24px 0; border-top: 1px solid var(--border); }
+.plan-list dt { font-family: var(--font-display); font-size: 21px; font-weight: 600; letter-spacing: -.02em; }
+.plan-list dd { margin-top: 10px; font-size: 16px; line-height: 1.6; color: var(--text-soft); }
+
+/* The five shifts, numbered. A list rather than cards because they are a
+   sequence of commitments, and three of them are admissions - cards would
+   dress that up. */
+.plan-steps { list-style: none; margin-top: 56px; counter-reset: shift; }
+.plan-steps li { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); }
+.plan-steps__num { font-family: var(--font-mono); font-size: 13px; letter-spacing: .1em; color: var(--text-muted); padding-top: 6px; }
+.plan-steps h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; letter-spacing: -.02em; }
+.plan-steps p { margin-top: 10px; font-size: 16px; line-height: 1.6; color: var(--text-soft); text-wrap: pretty; }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }
@@ -783,6 +799,7 @@ html[lang="om"] .nav { gap: 14px; font-size: 14px; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
   .hero__grid { gap: 40px; padding-bottom: 48px; }
   .vmg-cards, .programs { margin-top: 56px; }
+  .plan-steps li { grid-template-columns: 1fr; gap: 8px; }
   /* Stacked: the column headers are gone, so each value carries its own. */
   .ba-head { display: none; }
   .ba-row { grid-template-columns: 1fr; gap: 6px; }
