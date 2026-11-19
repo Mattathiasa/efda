@@ -1,8 +1,8 @@
 # EFDA website
 
 The website of Education For Development Association, an Ethiopian civil society
-organization working in Oromia and Benishangul Gumuz. Six pages in English,
-Amharic and Afaan Oromoo — eighteen statically generated URLs.
+organization working in Oromia and Benishangul Gumuz. Seven pages in English,
+Amharic and Afaan Oromoo — twenty-one statically generated URLs.
 
 ```bash
 npm install
@@ -37,7 +37,7 @@ npm run check      # types + locale key parity + open content items + unit tests
 
 ```
 app/[locale]/        home, about, projects (+ enset case study), partners,
-                     contact
+                     strategy, contact
 app/api/contact/     form endpoint
 components/          one file per piece of the design
 content/             typed data that does not change by language
@@ -183,9 +183,22 @@ in visible `[BRACKETS]`, never silently blank.
       Implementation box. The site's chart came from the 2025 profile. Left
       unchanged: `components/OrgChart.tsx` renders the hierarchy twice and the
       two sources disagree about what the structure even is
-- [ ] **Three different vision and mission wordings** are in circulation — the
-      2025 profile, the 2024–2028 strategic plan, and the 2023 audit notes.
-      The site follows the 2025 profile. Ask EFDA which is canonical
+- [ ] **Three different vision and mission wordings** are in circulation. The
+      vision is identical everywhere and the strategic plan says of it "no
+      modification is needed". The mission is not: the 2025 profile, the 2023
+      audit notes, and the strategic plan's change table all differ, and the
+      plan proposes a fourth — "to fill the gap in information, resource and
+      technical skill". The site follows the 2025 profile as the most recent
+      document. Ask EFDA which is canonical
+- [ ] **Whether the strategic plan's targets are still current.** The plan was
+      adopted January 2024 and commits to doubling the portfolio from five
+      projects to eleven, offices in two further Oromia zones, and 30% revenue
+      growth a year. The 2023 audit shows total expenditure of about 16m birr
+      against the 24m the plan cites for 2022, so the growth target starts
+      from a reduced base. Confirm before a funder asks
+- [ ] The strategic plan's revenue sentence **breaks off before naming a 2028
+      figure** — "the revenue will increase by 30% every year and reach". The
+      site states the rate only
 - [ ] **The HR policy manual is watermarked DRAFT** on most pages, though its
       text says the Board approved it on 1 October 2021. Request a clean
       signed copy before sending the pack to a funder
