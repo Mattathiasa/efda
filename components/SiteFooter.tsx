@@ -27,7 +27,7 @@ export function SiteFooter({
 }: {
   variant: Variant;
   /** Namespace holding this page's footer copy. */
-  ns: 'home' | 'about' | 'projects' | 'partners' | 'contact';
+  ns: 'home' | 'about' | 'projects' | 'partners' | 'contact' | 'enset';
   /** Adds a top rule - needed when the footer abuts a dark section. */
   bordered?: boolean;
   /* Default to the build-time placeholders so a caller that renders this

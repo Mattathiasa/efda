@@ -3,7 +3,7 @@ import {getTranslations} from 'next-intl/server';
 import {routing, type Locale} from '@/i18n/routing';
 import {site} from '@/content/site';
 
-type Page = 'home' | 'about' | 'projects' | 'partners' | 'contact';
+type Page = 'home' | 'about' | 'projects' | 'partners' | 'contact' | 'enset';
 
 /** Absolute URL for a page in a given locale. */
 export function urlFor(locale: string, path: string) {
@@ -63,28 +63,54 @@ export function WebSiteJsonLd({locale}: {locale: string}) {
   return <JsonLd data={data} />;
 }
 
-/* Breadcrumbs. Home is the only ancestor on this site - it is five pages
-   deep-less - but stating it lets search results show the trail rather than a
+/* Breadcrumbs. Stating the trail lets search results show it rather than a
    bare URL. Exclude<Page, 'home'> rather than a second hand-written union, so
-   the two cannot drift apart again. */
+   the two cannot drift apart again.
+
+   `parent` is for the one page that is not a direct child of home: the enset
+   case study sits under Projects, and its crumb has to say so or the trail
+   points at a URL that does not exist. */
 export function BreadcrumbJsonLd({
   locale,
   page,
-  label
+  label,
+  parent
 }: {
   locale: string;
   page: Exclude<Page, 'home'>;
   label: string;
+  parent?: {page: Exclude<Page, 'home'>; label: string};
 }) {
-  const data = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {'@type': 'ListItem', position: 1, name: 'EFDA', item: urlFor(locale, '/')},
-      {'@type': 'ListItem', position: 2, name: label, item: urlFor(locale, `/${page}`)}
-    ]
-  };
-  return <JsonLd data={data} />;
+  const path = parent ? `/${parent.page}/${page}` : `/${page}`;
+  const trail = [
+    {'@type': 'ListItem', position: 1, name: 'EFDA', item: urlFor(locale, '/')},
+    ...(parent
+      ? [
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: parent.label,
+            item: urlFor(locale, `/${parent.page}`)
+          }
+        ]
+      : []),
+    {
+      '@type': 'ListItem',
+      position: parent ? 3 : 2,
+      name: label,
+      item: urlFor(locale, path)
+    }
+  ];
+
+  return (
+    <JsonLd
+      data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: trail
+      }}
+    />
+  );
 }
 
 function JsonLd({data}: {data: unknown}) {
