@@ -182,8 +182,13 @@ in visible `[BRACKETS]`, never silently blank.
       profile says two EFDA-owned offices and names only Shambu and Woliso
 - [ ] Which building is Shambu and which is Woliso. The 2025 profile's caption
       order is ambiguous; the site keeps the 2024 profile's labels
-- [ ] Confirm the seven projects and the impact figures are current. Capacity
-      (22 staff, 5 vehicles, 2 owned offices) is as published in 2025
+- [ ] Confirm the seven projects and the impact figures are current
+- [ ] **Which capacity figures are right.** The 2025 printed profile says 22
+      staff, 5 vehicles and 2 owned offices. The operational staff roster in
+      EFDA's due-diligence folder lists 15 people, "one hard top Toyota
+      vehicle", and only the Woliso office as currently active. The site
+      follows the roster, on the grounds that a named operational list beats a
+      summary figure — but it is a visible downgrade and EFDA should confirm it
 - [ ] Domain, HTTPS, and role addresses replacing the personal ones in
       `content/contacts.ts` and `content/site.ts`
 - [ ] Set `NEXT_PUBLIC_SITE_URL`, then submit `sitemap.xml` to Search Console
