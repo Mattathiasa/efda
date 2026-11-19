@@ -605,6 +605,17 @@ html[lang="om"] .h-hero, html[lang="om"] .h-page, html[lang="om"] .h-section { l
 .testimonial figcaption span { color: var(--text-muted); }
 .testimonial__note { margin-top: 8px; font-size: 13px; line-height: 1.5; }
 
+/* Before-and-after rows for the case study. Three columns on a laptop so the
+   comparison reads across; on a phone the header row is hidden and each cell
+   carries its own label through ::before, because a stranded "Traditional
+   method" column header is worse than a repeated one. */
+.ba-rows { margin-top: 56px; border-bottom: 1px solid rgba(242, 241, 236, .18); }
+.ba-head, .ba-row { display: grid; grid-template-columns: 1fr 1.4fr 1.4fr; gap: 16px 32px; padding: 20px 0; border-top: 1px solid rgba(242, 241, 236, .18); align-items: baseline; }
+.ba-head { font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--sage); border-top: 0; padding-bottom: 8px; }
+.ba-row__k { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sage); }
+.ba-row__before { color: var(--mist); }
+.ba-row__after { font-family: var(--font-display); font-size: 19px; font-weight: 500; letter-spacing: -.01em; color: var(--honey); }
+
 .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--border); transition: transform .3s ease; }
 .person:hover { transform: translateY(-3px); }
 .person__badge { width: 64px; height: 64px; border-radius: 999px 999px 12px 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 22px; font-weight: 700; background: var(--canopy); color: var(--chalk); }
@@ -757,6 +768,10 @@ html[lang="om"] .nav { gap: 14px; font-size: 14px; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
   .hero__grid { gap: 40px; padding-bottom: 48px; }
   .vmg-cards, .programs { margin-top: 56px; }
+  /* Stacked: the column headers are gone, so each value carries its own. */
+  .ba-head { display: none; }
+  .ba-row { grid-template-columns: 1fr; gap: 6px; }
+  .ba-row__before::before, .ba-row__after::before { content: attr(data-label) " — "; font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--sage); }
   .marquee__group { font-size: 28px; }
   .cta { border-radius: 28px; }
   .hero__eyebrow { gap: 4px 12px; }

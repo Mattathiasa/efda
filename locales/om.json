@@ -643,6 +643,119 @@
     "rights": "© 2026 EFDA",
     "reg": "Dhaabbata Hawaasa Siviilii Lak. 0035"
   },
+  "enset": {
+    "meta": {
+      "title": "Warqee Waliisoo — qorannoo muuxannoo",
+      "description": "EFDA'n Tumsa Misooma Siwiizerlaand waliin dadhabbii qophii warqee akkamitti akka hir'ise: dubartoota 8–10 guyyaatti hidda sadii irraa gara nama shan hidda kudha shanitti; bullaa'uunis ji'a sadii irraa gara guyyaa kudha shanitti."
+    },
+    "pageLabel": "Qorannoo muuxannoo · Waliisoo, 2023–2024",
+    "h1a": "Mukti beela ittisu,",
+    "h1b": "fi dadhabbii inni fidu.",
+    "intro": "Warqeen Itoophiyaanota miliyoona 20 ol nyaachisa. Qophiin isaa harkaan, irra caalaa dubartootaan hojjetama, ji'oota illee fudhata. EFDA'n Waliisootti ji'oota kudha saddeet keessatti kana jijjiiruuf yaale — waan ta'es, waan hin milkoofnes barreesseera.",
+    "facts": [
+      {
+        "k": "Eessatti",
+        "v": "Magaalaa Waliisoo, Kibba Lixa Shawaa, Oromiyaa"
+      },
+      {
+        "k": "Yoom",
+        "v": "Amajjii 2023 – Waxabajjii 2024"
+      },
+      {
+        "k": "Deeggaraa",
+        "v": "Embaasii Siwiizerlaand / SDC — baajata CHF 310,277 keessaa 65%"
+      },
+      {
+        "k": "Bira gahame",
+        "v": "Dhaabbilee oomishtootaa lama keessatti miseensota 220; 91% dubartoota"
+      }
+    ],
+    "problemLabel": "(01) Rakkoon",
+    "problemH2": "Midhaan beela dandamatu, karaa dubartoota dadhabsiisuun qophaa'a.",
+    "problemParas": [
+      {
+        "text": "Warqeen — muuzii sobaa — gara waggaa kuma kudhan dura Itoophiyaatti bocame. Hongee ni dandamata, yeroo kamiyyuu walitti qabamuu danda'a, erga bulla'ee boodas yeroo dheeraaf tura. Muka beela ittisu jedhamuun isaa sababa qaba: beeloota midhaan dhagaa balleessan keessa dandamateera."
+      },
+      {
+        "text": "Qophiin isaa garuu baay'ee hin jijjiiramne. Baala haaduufi hidda daakuun hojii harkaa yoo ta'u, aadaanis dubartoota irra kaa'eera. Dubartoonni saddeet hanga kudhanii guyyaatti hidda warqee sadii qopheessu turan; tokkoon tokkoon isaaniis qarshii 100 ol argatu turan. Makaan sun achiis boolla biyyee keessatti ji'a lamaa hanga sadiitti bulla'a ture; yeroo hunda walmakuu barbaada; biyyeetti, lolaafi raammoo badiisaatti saaxilamaadha."
+      },
+      {
+        "text": "Bu'aan isaas nyaata foolii mana gurgurtaa magaalaa keessaa isa baasu, gabaa naannootti golee adda ta'etti gurguramu, warra oomisheefi qopheesseef immoo waan baay'ee xiqqaa deebisudha."
+      }
+    ],
+    "workLabel": "(02) Wanta EFDA'n hojjete",
+    "workH2": "Giddugala agarsiisaa, fi maashinoota dursanii mirkanaa'uu qaban.",
+    "workParas": [
+      {
+        "text": "EFDA'n dhaabbata isaa Waliisoo keessatti Giddugala Daldala Warqee Guddisuu ijaare — sinkii dhiqaa, muraa, maashina haaduufi daakuu hojii lamaa kan Giddugala Meeshaalee Qonnaa Baakoo irraa dhufe, akkasumas cuunfaa hamma adda addaatiif qophaa'e. Cuunfaan jalqabaa sadarkaa maatiitti hojjeta ture; hamma gabaatiif garuu dadhabsiisaa ta'ee hafe; kanaafuu hojjettoonni EFDA cuunfaa guddaa jaakii haayidiroolikiin hojjetu bocan."
+      },
+      {
+        "text": "Bulla'uun boolla biyyee keessaa gara baarmeelii pilaastikii cufamanitti ce'e. Yunivarsiitii Arba Minch waliin EFDA'n raacitii fi dabalataa muuzii, baala, ashaboofi shiferaa irraa hojjetame qore. Sana booda sadarkaan calaltuu qophii warqeetiif haaraa ta'e makaa bulla'e dhiqee fayibarii baasa; maxxansuufis baalli jiidhaan pilaastikii sadarkaa nyaataatiin bakka bu'e."
+      },
+      {
+        "text": "Wanti giddugalatti hin qoratamin tokkoyyuu nama kamiifuu hin kennamne. Dubartootaafi dargaggoota hojii hin qabne qabeenya xiqqaa qaban keessaa dhaabbileen oomishtootaa lama hundeeffaman; tooftaadhaanis daldalaanis leenjifamanii, meeshaafi kaappitaalli jalqabaa kennameefii, gorsaafis giddugala waliin walqunnaman."
+      }
+    ],
+    "resultLabel": "(03) Wanti jijjiirame",
+    "resultH2": "Madaalame malee hin himamne.",
+    "beforeTag": "Tooftaa durii",
+    "afterTag": "Qorannoo booda",
+    "results": [
+      {
+        "k": "Qophii",
+        "before": "Dubartoota 8–10, guyyaatti hidda warqee sadii",
+        "after": "Nama shan, guyyaatti hidda 10–15"
+      },
+      {
+        "k": "Bulla'uu",
+        "before": "Boolla biyyee keessatti ji'a lamaa hanga sadii",
+        "after": "Baarmeelii cufame keessatti hanga guyyaa 15"
+      },
+      {
+        "k": "Qulqullina",
+        "before": "Sadarkaa hundatti biyyee tuquu",
+        "after": "Dhiqame, maashinaan haadame, cufamee calalame"
+      },
+      {
+        "k": "Gabaa",
+        "before": "Gabaa naannootti golee adda ta'e",
+        "after": "Maamiltoota haaraa gatii fooyya'aan"
+      }
+    ],
+    "honestLabel": "(04) Wanti hin milkoofne",
+    "honestH2": "Wantoota sadii EFDA'n furuu hin dandeenye.",
+    "honestParas": [
+      {
+        "text": "Dhiibbaa gatii. Simintoon, qorqorroon, cirrachi, dhagaan, mukniifi mismaarri yeroo pirojektii guutuu dabalan; haaromsi dhaabbatichaafi gaaddisni agarsiisaas isaan irratti hirkatu turan. SDC'n fooyya'iinsa baajataafi hojiiwwan murteessoo hin taane haquu waan fudhateef qofa giddugalichi xumurame."
+      },
+      {
+        "text": "Yeroo. Qorannoon kun ji'oota kudha saddeetiif karoorfamee ture. Sadarkaan tokko utuu hin xumuramin kan itti aanu jalqabuu hin danda'u ture; gabaasnis yeroon sun “waan dhugaa hin turre; rakkoo guddaas fide” jechuun ifatti dubbata."
+      },
+      {
+        "text": "Dhukkuba. Hojjettoonni pirojektii yeroo hawaasa argan hunda dhukkubni warqee ni ka'a ture; sababa guddaa qonni warqee ittiin hir'achaa jirus isuma. EFDA'n kana furuuf aangoo akka hin qabne ifatti dubbata — mootummaa biyyoolessaafi xiyyeeffannoo addunyaa barbaada — waa'ee isaa falmuu qofa waadaa seena."
+      }
+    ],
+    "nextLabel": "(05) Wanti itti aanu",
+    "nextH2": "Oomishtoota gonkumaa gara giddugalaa hin dhufne bira gahuuf karaa sadii.",
+    "nextParas": [
+      {
+        "text": "Tooftaa maatii, kan itti hojjettoonni sochooan meeshaa qabatanii kaffaltiidhaan mana dhaqan. Tooftaa giddugalaa, kan itti dhaabbanni qonnaan bultoota naannoo irraa warqee bitee qopheessee gurguru. Yookaan tooftaa makaa, kan itti maatiin hidda isaanii gara giddugalaatti fidanii haadsisanii bulla'uuf gara manaatti deebisan."
+      },
+      {
+        "text": "Kana malees EFDA'n sanyiiwwan dhukkuba dandaman kan haala qilleensa adda addaatiif qophaa'an, sirna babal'ina qonnaa kan warqee midhaan booda waan salphaatti hin ilaalle, akkasumas maashinoota sochoo'oo beekumsa naannootiin hojjetamuu danda'an ni falma."
+      }
+    ],
+    "alt1": "Buddeenaafi qocoo waadame gabatee irratti Waliisootti dhiyaate",
+    "cap1": "Qocoofi bullaa giddugala agarsiisaatti qophaa'e",
+    "alt2": "Biqiltuu warqee namoonni jalatti sassaaban",
+    "cap2": "Warqee walitti qabamaa jiru — biqiltichi nyaata, meeshaa ijaarsaafi nyaata horii ti",
+    "btnProjects": "Pirojektoota keenya hunda ilaali",
+    "footH2": "Garee waan hin milkoofne barreessu waliin qorannoo itti aanu deeggari.",
+    "address1": "S.P.N. 25725, Koodii 1000",
+    "address2": "Finfinnee, Itoophiyaa",
+    "rights": "© 2026 EFDA",
+    "reg": "Lakk. DHM Itoophiyaa 0035"
+  },
   "partners": {
     "meta": {
       "title": "Michoota",

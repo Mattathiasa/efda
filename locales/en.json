@@ -643,6 +643,119 @@
     "rights": "© 2026 EFDA",
     "reg": "Ethiopian CSO No. 0035"
   },
+  "enset": {
+    "meta": {
+      "title": "Enset in Woliso — a case study",
+      "description": "How EFDA cut the work of processing enset, with the Swiss Development Cooperation: from 8–10 women handling three stems a day to five people handling fifteen, and fermentation from three months to fifteen days."
+    },
+    "pageLabel": "Case study · Woliso, 2023–2024",
+    "h1a": "The tree against hunger,",
+    "h1b": "and the work it costs.",
+    "intro": "Enset feeds more than 20 million Ethiopians. Processing it is done by hand, mostly by women, and takes months. Over eighteen months in Woliso, EFDA tried to change that — and wrote down what happened, including what did not work.",
+    "facts": [
+      {
+        "k": "Where",
+        "v": "Woliso town, South West Shewa, Oromia"
+      },
+      {
+        "k": "When",
+        "v": "January 2023 – June 2024"
+      },
+      {
+        "k": "Funder",
+        "v": "Swiss Embassy / SDC — 65% of a CHF 310,277 budget"
+      },
+      {
+        "k": "Reached",
+        "v": "220 members across two producer enterprises, 91% women"
+      }
+    ],
+    "problemLabel": "(01) The problem",
+    "problemH2": "A crop that survives famine, processed in a way that exhausts women.",
+    "problemParas": [
+      {
+        "text": "Enset — false banana — was domesticated in Ethiopia around ten thousand years ago. It tolerates drought, can be harvested at any time of year, and stores for long periods after fermenting. It is called the tree against hunger for good reason: it held through the famines that broke cereal crops."
+      },
+      {
+        "text": "But the processing has barely changed. Scraping the leaf sheath and pulverising the corm is manual work, and cultural norms put it on women. A group of eight to ten women would process three enset stems in a day, for about 100 birr each. The mixture then fermented in an earthen pit for two to three months, needing regular mixing, exposed to soil, flooding and spoiling microorganisms."
+      },
+      {
+        "text": "The result is a food with an odour that keeps it out of city shops, sold in a separate corner of the local market, returning very little to the people who grew and processed it."
+      }
+    ],
+    "workLabel": "(02) What EFDA did",
+    "workH2": "A demonstration centre, and machines that had to be proven first.",
+    "workParas": [
+      {
+        "text": "EFDA built the Centre for Enset Business Incubation at its Woliso facility — a washing sink, cutters, a dual-purpose scraping and pulverising machine from the Bako Agricultural Mechanization Centre, and squeezers sized for different volumes. The first squeezer worked at household scale but stayed labour-intensive for market quantities, so EFDA staff designed a larger one driven by a hydraulic jack."
+      },
+      {
+        "text": "Fermentation moved out of earthen pits and into sealed plastic barrels. Working with Arba Minch University, EFDA tested a starter culture and an additive made from banana, leaves, salt and moringa. Then a filtering step, new to enset processing, washes the fermented mixture to take out the fibre, and food-grade plastic replaces damp leaf sheaths for packaging."
+      },
+      {
+        "text": "Nothing was handed to anyone until it had been tested at the centre. Two producer enterprises were formed from women and unemployed young people with the fewest assets, trained in both the technique and the business, given equipment and start-up capital, and linked back to the centre for advice."
+      }
+    ],
+    "resultLabel": "(03) What changed",
+    "resultH2": "Measured, not asserted.",
+    "beforeTag": "Traditional method",
+    "afterTag": "After the pilot",
+    "results": [
+      {
+        "k": "Processing",
+        "before": "8–10 women, three enset stems a day",
+        "after": "five people, 10–15 stems a day"
+      },
+      {
+        "k": "Fermentation",
+        "before": "two to three months in an earthen pit",
+        "after": "as little as 15 days in a sealed barrel"
+      },
+      {
+        "k": "Sanitation",
+        "before": "soil contact at every stage",
+        "after": "washed, machine-scraped, sealed and filtered"
+      },
+      {
+        "k": "Market",
+        "before": "a separate corner of the local market",
+        "after": "new customers at better prices"
+      }
+    ],
+    "honestLabel": "(04) What did not work",
+    "honestH2": "Three things EFDA could not fix.",
+    "honestParas": [
+      {
+        "text": "Inflation. Cement, iron sheet, sand, gravel, wood and nails all rose through the project, and the renovation and the demonstration shade both depended on them. SDC accepted a budget revision and the removal of non-essential activities, which is the only reason the centre was finished."
+      },
+      {
+        "text": "Time. The pilot was planned for eighteen months. Each stage had to finish before the next could start, and the report says plainly that the period \"was not realistic and it presented significant challenges\"."
+      },
+      {
+        "text": "Disease. Every time project staff met the community, enset disease came up, and it is the main reason enset cultivation is shrinking. EFDA states it is not in a position to address this — it needs national government and international attention — and commits only to keep advocating for it."
+      }
+    ],
+    "nextLabel": "(05) What comes next",
+    "nextH2": "Three ways to reach producers who will never come to a centre.",
+    "nextParas": [
+      {
+        "text": "A household approach, where mobile operators bring portable equipment to the homestead for a fee. A centre-based approach, where an enterprise buys enset from nearby farmers, processes it and sells the product. Or a mixed approach, where households carry their stems to a centre for scraping and take the product home to ferment."
+      },
+      {
+        "text": "Beyond that, EFDA argues for disease-resistant varieties bred for different agro-ecologies, an agricultural extension system that stops treating enset as an afterthought to cereals, and portable machines simple enough to run on local knowledge."
+      }
+    ],
+    "alt1": "Trays of kocho bread and fried kocho laid out on a table in Woliso",
+    "cap1": "Kocho and bulla prepared at the demonstration centre",
+    "alt2": "A stand of enset plants with people harvesting beneath them",
+    "cap2": "Enset under harvest — the plant is a staple, a building material and livestock feed",
+    "btnProjects": "See all our projects",
+    "footH2": "Fund the next pilot with a team that writes down what failed.",
+    "address1": "P.O. Box 25725, Code 1000",
+    "address2": "Addis Ababa, Ethiopia",
+    "rights": "© 2026 EFDA",
+    "reg": "Ethiopian CSO No. 0035"
+  },
   "partners": {
     "meta": {
       "title": "Partners",
