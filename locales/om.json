@@ -655,14 +655,43 @@
     "rosterLabel": "(01) Warra hojii deeggaran",
     "rosterH2": "Deeggartootaafi michoota keenya.",
     "rosterP": "Hundeewwan, dhaabbilee biyyoota lamaa, dhaabbilee mit-mootummaa addunyaa fi marsaalee Itoophiyaa — waggoota EFDA jalqabaa irraa hanga har'aatti. Maqaan akkuma dhaabbanni tokkoon tokkoon isaanii barreessutti tarreeffame.",
-    "federerLabel": "(02) Daawwannaa hin irraanfatamne",
+    "netLabel": "(02) Marsaalee fi tumsa",
+    "netH2": "EFDA'n kophaa hin hojjetu, kophaas hin madaalamu.",
+    "netP": "Miseensummaan waldaa jechuun qoratamuu hiriyootaan, ulaagaa waliinii, akkasumas iddoo EFDA'n kophaa isaa bira gahuu hin dandeenye irratti teessoo argachuu jechuudha. Deeggarsi EFDA hedduun kallattiin deeggaraa irraa osoo hin taane karaa dhaabbilee kanaa dhufeera.",
+    "networks": [
+      {
+        "name": "Waldaa Gargaarsaafi Misooma Kiristiyaanaa"
+      },
+      {
+        "name": "Marsaa Waldaalee Misooma Benishaangul Gumuz"
+      },
+      {
+        "name": "Marsaa Dhaabbilee Hawaasa Siiviilii Oromiyaa Keessatti Hojjetan"
+      },
+      {
+        "name": "Waldaa Itti Gaafatamummaa Hawaasummaa Biyyoolessaa"
+      },
+      {
+        "name": "Bulchiinsa Itti Fayyadama Lafaa Hawaasummaa Hirmaachisaa, Itoophiyaa"
+      },
+      {
+        "name": "Tumsa Dhaabbilee Hawaasa Siiviilii Itoophiyaa Filannoof"
+      },
+      {
+        "name": "Marsaa Barnoota Bu'uuraa"
+      },
+      {
+        "name": "Waldaa Babal'istoota Tooftaa Garee Of-gargaarsaa"
+      }
+    ],
+    "federerLabel": "(03) Daawwannaa hin irraanfatamne",
     "federerH2": "Roger Federer hojii ilaaluuf dhufee ture.",
     "federerP": "Guyyaa 2 Guraandhala 2010 Roger Federer bakkeewwan pirojektii EFDA keessatti guyyaa tokko dabarse — pompii harkaa hawaasni gaafate bira, akkasumas dargaggoota qamadii maqaa keenya lamaan qabu uffatan waliin. Roger Federer Foundation yeroo sanaa kaasee hojii barnootaa EFDA ni deeggara; daawwannaan sunis amma illee waan namoonni asii jalqaba dubbatanidha.",
     "federerAlt1": "Roger Federer hojjettoota EFDA fi miseensota hawaasaa waliin pompii harkaa bira haasa'aa jira; gaazexeessitoonnis yaadannoo qabachaa jiru",
     "federerCap1": "Pompii harkaa hawaasaa irratti — 2 Guraandhala 2010",
     "federerAlt2": "Roger Federer dargaggoota qamadii “Roger Federer Foundation” fi “Education For Development Association” jedhu uffatan gidduu dhaabate",
     "federerCap2": "Qamadii maqaa lamaanuu qabu, jecha “Ani abdii boruuti” qabatu",
-    "quoteLabel": "(03) Akkaataa michoota waliin itti hojjennu",
+    "quoteLabel": "(04) Akkaataa michoota waliin itti hojjennu",
     "quoteA": "Nama hunda gargaaruu hin dandeenyu,",
     "quoteB": "garuu namni hundi nama tokko gargaaruu ni danda'a",
     "quoteC": ".",

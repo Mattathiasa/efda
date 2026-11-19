@@ -655,14 +655,43 @@
     "rosterLabel": "(01) Who funds the work",
     "rosterH2": "Our funders and partners.",
     "rosterP": "Foundations, bilateral agencies, international NGOs and Ethiopian networks, from EFDA’s first years to today. Names are listed as each organization writes them.",
-    "federerLabel": "(02) A visit that stayed with us",
+    "netLabel": "(02) Networks and coalitions",
+    "netH2": "EFDA does not work alone, and is not judged alone.",
+    "netP": "Membership of a consortium means peer scrutiny, shared standards and a seat at tables EFDA could not reach on its own. Several of EFDA’s grants have arrived through these bodies rather than directly from the donor.",
+    "networks": [
+      {
+        "name": "Consortium of Christian Relief and Development Associations"
+      },
+      {
+        "name": "Benishangul Gumuz Development Associations Network"
+      },
+      {
+        "name": "Network of Civil Society Organizations Operating in Oromia"
+      },
+      {
+        "name": "National Social Accountability Consortium"
+      },
+      {
+        "name": "Participatory Ecological Land Use Management, Ethiopia"
+      },
+      {
+        "name": "Coalition of Ethiopian Civil Society Organizations for Elections"
+      },
+      {
+        "name": "Basic Education Network"
+      },
+      {
+        "name": "Consortium of Self-Help Group Approach Promoters"
+      }
+    ],
+    "federerLabel": "(03) A visit that stayed with us",
     "federerH2": "Roger Federer came to see the work.",
     "federerP": "On 2 February 2010 Roger Federer spent a day on EFDA project sites — at a hand pump the community had asked for, and with young people wearing jerseys printed with both our names. The Roger Federer Foundation has supported EFDA’s education work since, and the visit is still the thing people here mention first.",
     "federerAlt1": "Roger Federer in conversation with EFDA staff and community members beside a hand pump, with journalists taking notes",
     "federerCap1": "At a community hand pump — 2 February 2010",
     "federerAlt2": "Roger Federer standing among young people wearing jerseys printed “Roger Federer Foundation” and “Education For Development Association”",
     "federerCap2": "Jerseys printed with both names, and the words Run “I am tomorrow’s future”",
-    "quoteLabel": "(03) How we work with partners",
+    "quoteLabel": "(04) How we work with partners",
     "quoteA": "We can’t help everyone,",
     "quoteB": "but everyone can help someone",
     "quoteC": ".",

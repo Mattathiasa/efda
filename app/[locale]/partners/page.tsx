@@ -3,6 +3,8 @@ import {useLocale, useTranslations} from 'next-intl';
 import {SiteHeader} from '@/components/SiteHeader';
 import {SiteFooter} from '@/components/SiteFooter';
 import {DonorRoll} from '@/components/DonorRoll';
+import {NetworkList} from '@/components/NetworkList';
+import type {NetworkCopy} from '@/components/NetworkList';
 import {Photo} from '@/components/Photo';
 import {Grain} from '@/components/Grain';
 import {Link} from '@/i18n/navigation';
@@ -29,6 +31,7 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
   const t = useTranslations('partners');
   const c = useTranslations('common');
   const locale = useLocale();
+  const networkCopy = t.raw('networks') as NetworkCopy[];
 
   return (
     <>
@@ -67,7 +70,23 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 3. The Roger Federer Foundation visit */}
+        {/* 3. Networks and coalitions */}
+        <section className="section" aria-labelledby="net-title">
+          <div className="container">
+            <div className="split split--wide" data-reveal>
+              <div>
+                <p className="label">{t('netLabel')}</p>
+                <h2 className="h-section" id="net-title">
+                  {t('netH2')}
+                </h2>
+              </div>
+              <p className="lead">{t('netP')}</p>
+            </div>
+            <NetworkList copy={networkCopy} />
+          </div>
+        </section>
+
+        {/* 4. The Roger Federer Foundation visit */}
         <section
           className="section section--dark on-dark"
           aria-labelledby="federer-title"
@@ -111,7 +130,7 @@ function PartnersPageContent({config}: {config: SiteConfig}) {
           </div>
         </section>
 
-        {/* 4. How we work with partners */}
+        {/* 5. How we work with partners */}
         <section className="section" aria-labelledby="how-title">
           <div className="container about-grid" data-reveal>
             <p className="label">{t('quoteLabel')}</p>
