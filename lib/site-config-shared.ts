@@ -132,13 +132,18 @@ export function mergeSiteConfig(
   };
 }
 
-/** Substitute the configured reply time into an already-translated sentence. */
+/* Substitute the configured reply time into an already-translated sentence.
+
+   Returns null when no reply time is configured, so the caller drops the
+   sentence rather than printing a raw token. Promising a reply time nobody
+   has agreed to is worse than promising none, and "{days} working days" on a
+   live page is worse than either.
+
+   The token is {days}, matching the {n} that projects.showing already uses. */
 export function applyReplyDays(
   translated: string,
   replyDays: string | null
-): string {
-  if (!replyDays) return translated;
-  // Source string is "We usually reply within [X] working days."; the Amharic
-  // and Afaan Oromoo drafts carry the same [X] token.
-  return translated.replace(/\[X\]/g, replyDays);
+): string | null {
+  if (!replyDays) return null;
+  return translated.replace(/\{days\}/g, replyDays);
 }

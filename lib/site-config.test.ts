@@ -132,7 +132,7 @@ describe('SETTING_FIELDS', () => {
 });
 
 describe('applyReplyDays', () => {
-  const sentence = 'We usually reply within [X] working days.';
+  const sentence = 'We usually reply within {days} working days.';
 
   it('substitutes the configured number', () => {
     expect(applyReplyDays(sentence, '3')).toBe(
@@ -140,9 +140,9 @@ describe('applyReplyDays', () => {
     );
   });
 
-  it('leaves the sentence alone when the reply time is unset', () => {
-    // The [X] stays visible, which is what check-placeholders.mjs looks for.
-    expect(applyReplyDays(sentence, null)).toBe(sentence);
+  it('drops the sentence when the reply time is unset', () => {
+    // Not the raw token, and not a promise nobody agreed to - nothing.
+    expect(applyReplyDays(sentence, null)).toBeNull();
   });
 
   it('is a no-op on a sentence with no token', () => {

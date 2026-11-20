@@ -416,7 +416,7 @@
     },
     "leadLabel": "(05) Hooggansa",
     "leadH2": "Boordii Daayreektarootaa.",
-    "portraitsNote": "[SUURAAN NI DHIYAATA — HANGA SANAATTI QUBEE JALQABAA MAQAA]",
+    "portraitsNote": "Qubee jalqabaa maqaatiin agarsiifame — boordiin suuraaf hin taa'ne.",
     "roles": [
       "Dura taa'aa Boordii",
       "Barreessaa fi Daayrektara Hoji Raawwachiisaa",
@@ -456,7 +456,7 @@
         "name": "Asoosaa",
         "text": "Waajjirri naannoo hojii qulqullinaafi wal-qixxummaa barnootaa Benishaangul Gumuz keessatti baname; hojiin sun hamma dhuma 2022tti ture. Yeroo ammaa hojjetaa hin qabu.",
         "alt": "",
-        "photoNote": "[SUURAA WAAJJIRA ASOOSAA]"
+        "photoNote": "Suuraan hin jiru"
       }
     ],
     "accLabel": "(07) Itti gaafatamummaa",
@@ -1159,7 +1159,7 @@
     "fEmail": "Imeelii",
     "fPhone": "Bilbila (dirqama miti)",
     "fMsg": "Ergaa",
-    "replyNote": "Yeroo baay'ee guyyoota hojii [X] keessatti deebii kennina.",
+    "replyNote": "Yeroo baay'ee guyyoota hojii {days} keessatti deebii kennina.",
     "send": "Ergaa ergaa",
     "sending": "Ergamaa jira…",
     "errorP": "Ergaan hin ergamne. Maaloo irra deebi’aa yaalaa, yookaan nuuf bilbilaa",

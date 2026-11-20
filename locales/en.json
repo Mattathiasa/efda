@@ -416,7 +416,7 @@
     },
     "leadLabel": "(05) Leadership",
     "leadH2": "Board of Directors.",
-    "portraitsNote": "[PORTRAITS TO BE SUPPLIED — INITIALS SHOWN UNTIL THEN]",
+    "portraitsNote": "Shown as initials — the board has not sat for portraits.",
     "roles": [
       "Board Chair",
       "Secretary & Managing Director",
@@ -456,7 +456,7 @@
         "name": "Asosa",
         "text": "Regional office opened for the education quality and equity work in Benishangul Gumuz, which ran to the end of 2022. Not currently staffed.",
         "alt": "",
-        "photoNote": "[ASOSA OFFICE PHOTO]"
+        "photoNote": "No photograph on file"
       }
     ],
     "accLabel": "(07) Accountability",
@@ -1159,7 +1159,7 @@
     "fEmail": "Email",
     "fPhone": "Phone (optional)",
     "fMsg": "Message",
-    "replyNote": "We usually reply within [X] working days.",
+    "replyNote": "We usually reply within {days} working days.",
     "send": "Send message",
     "sending": "Sending…",
     "errorP": "That did not send. Please try again, or call us on",

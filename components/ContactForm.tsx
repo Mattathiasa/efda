@@ -235,7 +235,7 @@ export function ContactForm({replyDays = null}: {replyDays?: string | null}) {
             ) : state === 'invalid' ? (
               t('errFix')
             ) : (
-              applyReplyDays(t('replyNote'), replyDays)
+              applyReplyDays(t('replyNote'), replyDays) ?? ''
             )}
           </span>
           <button className="btn btn--primary" type="submit" disabled={state === 'sending'}>
