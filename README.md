@@ -159,8 +159,13 @@ loads when unset, so there is no consent banner.
 
 ## Before launch
 
-Run `npm run check:placeholders` — everything still missing appears on the site
-in visible `[BRACKETS]`, never silently blank.
+`npm run check:placeholders` reports none, and no bracketed text appears in
+any of the 21 prerendered pages. What remains below is not missing from the
+site — it is work that needs EFDA, or a decision somebody has to make.
+
+**Nothing on the site is invented.** If a fact is not in one of EFDA's own
+documents it is not published. Where two documents disagree, the site follows
+one and this list says which and why.
 
 - [ ] **Confirm the header does not wrap**, in Afaan Oromoo, just above the
       1460px burger threshold. The threshold has been raised twice from
@@ -223,11 +228,21 @@ in visible `[BRACKETS]`, never silently blank.
       disagree: the address confirmation calls him Program Officer, the staff
       roster Admin. & finance. The site follows the roster; `/admin/settings`
       overrides it per language without a deploy
-- [ ] Paste the head-office street address — Gullele Sub City, Woreda 9, House
-      No. 430 — into `/admin/settings`. It is settings-table only, with no
-      environment fallback
-- [ ] Reply time for the form's "[X] working days"
-- [ ] Board portraits, and an Asosa office photo
+- [ ] **Confirm the street address.** The site shows Gullele Sub City, Woreda
+      9, House No. 430, from the 2025 profile. The 2016 TIN certificate gives
+      the same sub-city but Woreda 148, Kebele 10, House No. 243 — consistent
+      with Addis's woreda renumbering, but worth confirming
+- [ ] **Get a domain mailbox.** The site publishes `efhda@yahoo.com` because
+      it works. `info@edu-development.org` was configured at one point and
+      bounces: EFDA does not own the domain yet
+- [ ] **Role addresses for the Contact page.** All three people route to the
+      organisation's landline and mailbox, because the only details on file
+      are personal mobiles and personal Gmail accounts. `programs@` and
+      `finance@` would let each person have their own row
+- [ ] Confirm the two-working-day reply time currently configured is one
+      EFDA can actually keep
+- [ ] Board portraits — initials show until they arrive — and an Asosa
+      office photograph, if one exists
 - [ ] Whether Asosa should still be listed in `content/offices.ts`. The 2025
       profile says two EFDA-owned offices and names only Shambu and Woliso
 - [ ] Which building is Shambu and which is Woliso. The 2025 profile's caption
